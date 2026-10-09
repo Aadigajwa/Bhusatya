@@ -1,0 +1,4867 @@
+{
+  "module": "Bhusatya Font and Text Layout Inconsistency Analyzer",
+  "image_size": {
+    "width": 1012,
+    "height": 1554
+  },
+  "summary": {
+    "regions_detected": 67,
+    "regions_flagged": 48,
+    "high_risk_regions": 11,
+    "moderate_risk_regions": 37,
+    "low_anomaly_regions": 19,
+    "document_anomaly_percentage": 71.64,
+    "interpretation": "Potential text-appearance inconsistencies detected.",
+    "limitation": "Scores are relative to this document's detected regions, not a trained probability of fraud. Compare like-for-like fields and validate on real data."
+  },
+  "feature_coverage": [
+    "text size proxy",
+    "glyph/region width and aspect ratio",
+    "stroke thickness proxy",
+    "font-style appearance proxy (slant/stroke)",
+    "font-family appearance proxy (not definitive font identification)",
+    "line spacing",
+    "word spacing",
+    "character spacing proxy",
+    "baseline alignment",
+    "indentation / line start",
+    "ink density",
+    "local background mean and texture",
+    "edge density and sharpness"
+  ],
+  "findings": [
+    {
+      "region_id": 0,
+      "text": "र",
+      "box": [
+        101,
+        83,
+        147,
+        122
+      ],
+      "risk_level": "moderate",
+      "flags": [
+        {
+          "feature": "estimated_slant",
+          "label": "text slant / style proxy",
+          "robust_z_score": 85.571
+        },
+        {
+          "feature": "char_gap",
+          "label": "character-spacing anomaly",
+          "robust_z_score": 5.001
+        }
+      ],
+      "note": "Visual anomaly requiring review; not proof of tampering."
+    },
+    {
+      "region_id": 2,
+      "text": "गैर",
+      "box": [
+        461,
+        75,
+        523,
+        125
+      ],
+      "risk_level": "moderate",
+      "flags": [
+        {
+          "feature": "estimated_slant",
+          "label": "text slant / style proxy",
+          "robust_z_score": 20.095
+        }
+      ],
+      "note": "Visual anomaly requiring review; not proof of tampering."
+    },
+    {
+      "region_id": 3,
+      "text": "न्यायिक",
+      "box": [
+        530,
+        75,
+        677,
+        143
+      ],
+      "risk_level": "moderate",
+      "flags": [
+        {
+          "feature": "baseline",
+          "label": "baseline-alignment anomaly",
+          "robust_z_score": 12.478
+        }
+      ],
+      "note": "Visual anomaly requiring review; not proof of tampering."
+    },
+    {
+      "region_id": 5,
+      "text": "भारतीय",
+      "box": [
+        328,
+        78,
+        457,
+        143
+      ],
+      "risk_level": "moderate",
+      "flags": [
+        {
+          "feature": "estimated_slant",
+          "label": "text slant / style proxy",
+          "robust_z_score": 4.833
+        },
+        {
+          "feature": "baseline",
+          "label": "baseline-alignment anomaly",
+          "robust_z_score": 12.478
+        }
+      ],
+      "note": "Visual anomaly requiring review; not proof of tampering."
+    },
+    {
+      "region_id": 9,
+      "text": "NON",
+      "box": [
+        445,
+        124,
+        520,
+        166
+      ],
+      "risk_level": "moderate",
+      "flags": [
+        {
+          "feature": "baseline",
+          "label": "baseline-alignment anomaly",
+          "robust_z_score": 8.768
+        }
+      ],
+      "note": "Visual anomaly requiring review; not proof of tampering."
+    },
+    {
+      "region_id": 10,
+      "text": "JUDICIAL",
+      "box": [
+        516,
+        124,
+        655,
+        178
+      ],
+      "risk_level": "moderate",
+      "flags": [
+        {
+          "feature": "baseline",
+          "label": "baseline-alignment anomaly",
+          "robust_z_score": 16.862
+        }
+      ],
+      "note": "Visual anomaly requiring review; not proof of tampering."
+    },
+    {
+      "region_id": 12,
+      "text": "हजार",
+      "box": [
+        798,
+        126,
+        857,
+        151
+      ],
+      "risk_level": "moderate",
+      "flags": [
+        {
+          "feature": "indentation",
+          "label": "indentation / line-start anomaly",
+          "robust_z_score": 3.192
+        }
+      ],
+      "note": "Visual anomaly requiring review; not proof of tampering."
+    },
+    {
+      "region_id": 13,
+      "text": "रूपये",
+      "box": [
+        857,
+        122,
+        913,
+        149
+      ],
+      "risk_level": "moderate",
+      "flags": [
+        {
+          "feature": "indentation",
+          "label": "indentation / line-start anomaly",
+          "robust_z_score": 3.505
+        }
+      ],
+      "note": "Visual anomaly requiring review; not proof of tampering."
+    },
+    {
+      "region_id": 14,
+      "text": "INDIA",
+      "box": [
+        353,
+        129,
+        450,
+        179
+      ],
+      "risk_level": "moderate",
+      "flags": [
+        {
+          "feature": "estimated_slant",
+          "label": "text slant / style proxy",
+          "robust_z_score": 6.938
+        },
+        {
+          "feature": "baseline",
+          "label": "baseline-alignment anomaly",
+          "robust_z_score": 17.537
+        }
+      ],
+      "note": "Visual anomaly requiring review; not proof of tampering."
+    },
+    {
+      "region_id": 15,
+      "text": "R",
+      "box": [
+        116,
+        261,
+        170,
+        300
+      ],
+      "risk_level": "high",
+      "flags": [
+        {
+          "feature": "background_mean",
+          "label": "local-background difference",
+          "robust_z_score": 4.233
+        },
+        {
+          "feature": "char_gap",
+          "label": "character-spacing anomaly",
+          "robust_z_score": 6.343
+        },
+        {
+          "feature": "line_spacing",
+          "label": "line-spacing anomaly",
+          "robust_z_score": 4.584
+        }
+      ],
+      "note": "Visual anomaly requiring review; not proof of tampering."
+    },
+    {
+      "region_id": 16,
+      "text": "25000",
+      "box": [
+        151,
+        257,
+        292,
+        302
+      ],
+      "risk_level": "high",
+      "flags": [
+        {
+          "feature": "background_mean",
+          "label": "local-background difference",
+          "robust_z_score": 4.456
+        },
+        {
+          "feature": "word_gap",
+          "label": "word-spacing anomaly",
+          "robust_z_score": 4.165
+        },
+        {
+          "feature": "line_spacing",
+          "label": "line-spacing anomaly",
+          "robust_z_score": 3.651
+        }
+      ],
+      "note": "Visual anomaly requiring review; not proof of tampering."
+    },
+    {
+      "region_id": 17,
+      "text": "2500",
+      "box": [
+        774,
+        260,
+        884,
+        303
+      ],
+      "risk_level": "high",
+      "flags": [
+        {
+          "feature": "background_mean",
+          "label": "local-background difference",
+          "robust_z_score": 4.75
+        },
+        {
+          "feature": "line_spacing",
+          "label": "line-spacing anomaly",
+          "robust_z_score": 3.933
+        },
+        {
+          "feature": "indentation",
+          "label": "indentation / line-start anomaly",
+          "robust_z_score": 3.064
+        }
+      ],
+      "note": "Visual anomaly requiring review; not proof of tampering."
+    },
+    {
+      "region_id": 18,
+      "text": "पच्चीस",
+      "box": [
+        110,
+        301,
+        182,
+        330
+      ],
+      "risk_level": "moderate",
+      "flags": [
+        {
+          "feature": "background_mean",
+          "label": "local-background difference",
+          "robust_z_score": 4.856
+        }
+      ],
+      "note": "Visual anomaly requiring review; not proof of tampering."
+    },
+    {
+      "region_id": 19,
+      "text": "हजार",
+      "box": [
+        184,
+        303,
+        238,
+        329
+      ],
+      "risk_level": "moderate",
+      "flags": [
+        {
+          "feature": "background_mean",
+          "label": "local-background difference",
+          "robust_z_score": 5.143
+        }
+      ],
+      "note": "Visual anomaly requiring review; not proof of tampering."
+    },
+    {
+      "region_id": 20,
+      "text": "रूपये",
+      "box": [
+        240,
+        299,
+        293,
+        328
+      ],
+      "risk_level": "moderate",
+      "flags": [
+        {
+          "feature": "background_mean",
+          "label": "local-background difference",
+          "robust_z_score": 5.185
+        },
+        {
+          "feature": "word_gap",
+          "label": "word-spacing anomaly",
+          "robust_z_score": 5.973
+        }
+      ],
+      "note": "Visual anomaly requiring review; not proof of tampering."
+    },
+    {
+      "region_id": 21,
+      "text": "पच्वीस",
+      "box": [
+        719,
+        301,
+        786,
+        327
+      ],
+      "risk_level": "moderate",
+      "flags": [
+        {
+          "feature": "background_mean",
+          "label": "local-background difference",
+          "robust_z_score": 4.994
+        }
+      ],
+      "note": "Visual anomaly requiring review; not proof of tampering."
+    },
+    {
+      "region_id": 22,
+      "text": "हजार",
+      "box": [
+        790,
+        305,
+        839,
+        328
+      ],
+      "risk_level": "moderate",
+      "flags": [
+        {
+          "feature": "background_mean",
+          "label": "local-background difference",
+          "robust_z_score": 5.415
+        },
+        {
+          "feature": "indentation",
+          "label": "indentation / line-start anomaly",
+          "robust_z_score": 3.149
+        }
+      ],
+      "note": "Visual anomaly requiring review; not proof of tampering."
+    },
+    {
+      "region_id": 23,
+      "text": "रूपये",
+      "box": [
+        841,
+        301,
+        889,
+        328
+      ],
+      "risk_level": "moderate",
+      "flags": [
+        {
+          "feature": "background_mean",
+          "label": "local-background difference",
+          "robust_z_score": 5.299
+        },
+        {
+          "feature": "indentation",
+          "label": "indentation / line-start anomaly",
+          "robust_z_score": 3.42
+        }
+      ],
+      "note": "Visual anomaly requiring review; not proof of tampering."
+    },
+    {
+      "region_id": 24,
+      "text": "सत्यमेव",
+      "box": [
+        441,
+        383,
+        508,
+        404
+      ],
+      "risk_level": "moderate",
+      "flags": [
+        {
+          "feature": "line_spacing",
+          "label": "line-spacing anomaly",
+          "robust_z_score": 4.215
+        }
+      ],
+      "note": "Visual anomaly requiring review; not proof of tampering."
+    },
+    {
+      "region_id": 25,
+      "text": "जयते",
+      "box": [
+        513,
+        382,
+        561,
+        404
+      ],
+      "risk_level": "moderate",
+      "flags": [
+        {
+          "feature": "line_spacing",
+          "label": "line-spacing anomaly",
+          "robust_z_score": 3.914
+        }
+      ],
+      "note": "Visual anomaly requiring review; not proof of tampering."
+    },
+    {
+      "region_id": 26,
+      "text": "प्रदेश",
+      "box": [
+        209,
+        423,
+        313,
+        479
+      ],
+      "risk_level": "moderate",
+      "flags": [
+        {
+          "feature": "background_mean",
+          "label": "local-background difference",
+          "robust_z_score": 3.59
+        }
+      ],
+      "note": "Visual anomaly requiring review; not proof of tampering."
+    },
+    {
+      "region_id": 27,
+      "text": "र",
+      "box": [
+        721,
+        420,
+        750,
+        455
+      ],
+      "risk_level": "high",
+      "flags": [
+        {
+          "feature": "estimated_slant",
+          "label": "text slant / style proxy",
+          "robust_z_score": 87.381
+        },
+        {
+          "feature": "background_mean",
+          "label": "local-background difference",
+          "robust_z_score": 4.108
+        },
+        {
+          "feature": "baseline",
+          "label": "baseline-alignment anomaly",
+          "robust_z_score": 15.513
+        }
+      ],
+      "note": "Visual anomaly requiring review; not proof of tampering."
+    },
+    {
+      "region_id": 28,
+      "text": "25000",
+      "box": [
+        763,
+        416,
+        891,
+        459
+      ],
+      "risk_level": "high",
+      "flags": [
+        {
+          "feature": "background_mean",
+          "label": "local-background difference",
+          "robust_z_score": 3.759
+        },
+        {
+          "feature": "baseline",
+          "label": "baseline-alignment anomaly",
+          "robust_z_score": 12.815
+        },
+        {
+          "feature": "indentation",
+          "label": "indentation / line-start anomaly",
+          "robust_z_score": 3.006
+        }
+      ],
+      "note": "Visual anomaly requiring review; not proof of tampering."
+    },
+    {
+      "region_id": 29,
+      "text": "उत्तर",
+      "box": [
+        99,
+        437,
+        197,
+        477
+      ],
+      "risk_level": "moderate",
+      "flags": [
+        {
+          "feature": "background_mean",
+          "label": "local-background difference",
+          "robust_z_score": 3.712
+        }
+      ],
+      "note": "Visual anomaly requiring review; not proof of tampering."
+    },
+    {
+      "region_id": 30,
+      "text": "UTTAR PRADESH",
+      "box": [
+        380,
+        435,
+        636,
+        469
+      ],
+      "risk_level": "high",
+      "flags": [
+        {
+          "feature": "width",
+          "label": "text-width proxy",
+          "robust_z_score": 4.472
+        },
+        {
+          "feature": "aspect_ratio",
+          "label": "glyph/region shape proxy",
+          "robust_z_score": 6.031
+        },
+        {
+          "feature": "baseline",
+          "label": "baseline-alignment anomaly",
+          "robust_z_score": 6.07
+        }
+      ],
+      "note": "Visual anomaly requiring review; not proof of tampering."
+    },
+    {
+      "region_id": 31,
+      "text": "पच्चीस",
+      "box": [
+        710,
+        454,
+        787,
+        486
+      ],
+      "risk_level": "moderate",
+      "flags": [
+        {
+          "feature": "background_mean",
+          "label": "local-background difference",
+          "robust_z_score": 3.969
+        },
+        {
+          "feature": "baseline",
+          "label": "baseline-alignment anomaly",
+          "robust_z_score": 5.396
+        }
+      ],
+      "note": "Visual anomaly requiring review; not proof of tampering."
+    },
+    {
+      "region_id": 32,
+      "text": "हजार",
+      "box": [
+        790,
+        460,
+        846,
+        487
+      ],
+      "risk_level": "high",
+      "flags": [
+        {
+          "feature": "background_mean",
+          "label": "local-background difference",
+          "robust_z_score": 4.65
+        },
+        {
+          "feature": "baseline",
+          "label": "baseline-alignment anomaly",
+          "robust_z_score": 6.07
+        },
+        {
+          "feature": "indentation",
+          "label": "indentation / line-start anomaly",
+          "robust_z_score": 3.149
+        }
+      ],
+      "note": "Visual anomaly requiring review; not proof of tampering."
+    },
+    {
+      "region_id": 33,
+      "text": "रूपये",
+      "box": [
+        848,
+        456,
+        903,
+        486
+      ],
+      "risk_level": "high",
+      "flags": [
+        {
+          "feature": "background_mean",
+          "label": "local-background difference",
+          "robust_z_score": 4.352
+        },
+        {
+          "feature": "baseline",
+          "label": "baseline-alignment anomaly",
+          "robust_z_score": 5.396
+        },
+        {
+          "feature": "indentation",
+          "label": "indentation / line-start anomaly",
+          "robust_z_score": 3.457
+        }
+      ],
+      "note": "Visual anomaly requiring review; not proof of tampering."
+    },
+    {
+      "region_id": 35,
+      "text": "उत्तर",
+      "box": [
+        45,
+        561,
+        112,
+        591
+      ],
+      "risk_level": "moderate",
+      "flags": [
+        {
+          "feature": "line_spacing",
+          "label": "line-spacing anomaly",
+          "robust_z_score": 4.638
+        }
+      ],
+      "note": "Visual anomaly requiring review; not proof of tampering."
+    },
+    {
+      "region_id": 36,
+      "text": "UTTAR PRADESH",
+      "box": [
+        200,
+        558,
+        482,
+        592
+      ],
+      "risk_level": "high",
+      "flags": [
+        {
+          "feature": "width",
+          "label": "text-width proxy",
+          "robust_z_score": 5.121
+        },
+        {
+          "feature": "aspect_ratio",
+          "label": "glyph/region shape proxy",
+          "robust_z_score": 6.932
+        },
+        {
+          "feature": "word_gap",
+          "label": "word-spacing anomaly",
+          "robust_z_score": 3.759
+        },
+        {
+          "feature": "line_spacing",
+          "label": "line-spacing anomaly",
+          "robust_z_score": 3.808
+        }
+      ],
+      "note": "Visual anomaly requiring review; not proof of tampering."
+    },
+    {
+      "region_id": 37,
+      "text": "736301",
+      "box": [
+        831,
+        560,
+        963,
+        595
+      ],
+      "risk_level": "moderate",
+      "flags": [
+        {
+          "feature": "line_spacing",
+          "label": "line-spacing anomaly",
+          "robust_z_score": 3.631
+        },
+        {
+          "feature": "indentation",
+          "label": "indentation / line-start anomaly",
+          "robust_z_score": 3.367
+        }
+      ],
+      "note": "Visual anomaly requiring review; not proof of tampering."
+    },
+    {
+      "region_id": 38,
+      "text": "जिला",
+      "box": [
+        92,
+        624,
+        161,
+        661
+      ],
+      "risk_level": "moderate",
+      "flags": [
+        {
+          "feature": "estimated_slant",
+          "label": "text slant / style proxy",
+          "robust_z_score": 4.136
+        }
+      ],
+      "note": "Visual anomaly requiring review; not proof of tampering."
+    },
+    {
+      "region_id": 42,
+      "text": "*",
+      "box": [
+        282,
+        664,
+        302,
+        685
+      ],
+      "risk_level": "moderate",
+      "flags": [
+        {
+          "feature": "estimated_slant",
+          "label": "text slant / style proxy",
+          "robust_z_score": 17.949
+        },
+        {
+          "feature": "char_gap",
+          "label": "character-spacing anomaly",
+          "robust_z_score": 3.515
+        }
+      ],
+      "note": "Visual anomaly requiring review; not proof of tampering."
+    },
+    {
+      "region_id": 45,
+      "text": "प्रमाणित",
+      "box": [
+        145,
+        727,
+        232,
+        755
+      ],
+      "risk_level": "moderate",
+      "flags": [
+        {
+          "feature": "background_mean",
+          "label": "local-background difference",
+          "robust_z_score": 3.192
+        }
+      ],
+      "note": "Visual anomaly requiring review; not proof of tampering."
+    },
+    {
+      "region_id": 46,
+      "text": "दिनांक",
+      "box": [
+        59,
+        762,
+        126,
+        795
+      ],
+      "risk_level": "moderate",
+      "flags": [
+        {
+          "feature": "estimated_slant",
+          "label": "text slant / style proxy",
+          "robust_z_score": 3.516
+        },
+        {
+          "feature": "baseline",
+          "label": "baseline-alignment anomaly",
+          "robust_z_score": 3.372
+        }
+      ],
+      "note": "Visual anomaly requiring review; not proof of tampering."
+    },
+    {
+      "region_id": 50,
+      "text": "यह",
+      "box": [
+        71,
+        846,
+        111,
+        876
+      ],
+      "risk_level": "moderate",
+      "flags": [
+        {
+          "feature": "estimated_slant",
+          "label": "text slant / style proxy",
+          "robust_z_score": 10.178
+        }
+      ],
+      "note": "Visual anomaly requiring review; not proof of tampering."
+    },
+    {
+      "region_id": 52,
+      "text": "किया जाता है कि प्र्तुत दस्तावेज़ पर ₹25,000 (पच्चीस हजार रुपये) का",
+      "box": [
+        210,
+        838,
+        979,
+        885
+      ],
+      "risk_level": "high",
+      "flags": [
+        {
+          "feature": "width",
+          "label": "text-width proxy",
+          "robust_z_score": 17.287
+        },
+        {
+          "feature": "aspect_ratio",
+          "label": "glyph/region shape proxy",
+          "robust_z_score": 16.43
+        },
+        {
+          "feature": "baseline",
+          "label": "baseline-alignment anomaly",
+          "robust_z_score": 4.721
+        }
+      ],
+      "note": "Visual anomaly requiring review; not proof of tampering."
+    },
+    {
+      "region_id": 55,
+      "text": "शुल्क विधिवत रूप से अदा किया गया है। यह दस्तावेज़ दिनांक 26 मई 2024",
+      "box": [
+        218,
+        895,
+        980,
+        936
+      ],
+      "risk_level": "moderate",
+      "flags": [
+        {
+          "feature": "width",
+          "label": "text-width proxy",
+          "robust_z_score": 17.112
+        },
+        {
+          "feature": "aspect_ratio",
+          "label": "glyph/region shape proxy",
+          "robust_z_score": 19.048
+        }
+      ],
+      "note": "Visual anomaly requiring review; not proof of tampering."
+    },
+    {
+      "region_id": 56,
+      "text": "को मेरे समक्ष प्रस्तुत किया गया, जिसमें निम्नलिखित विवरण दर्ज है:",
+      "box": [
+        70,
+        947,
+        755,
+        988
+      ],
+      "risk_level": "moderate",
+      "flags": [
+        {
+          "feature": "width",
+          "label": "text-width proxy",
+          "robust_z_score": 15.189
+        },
+        {
+          "feature": "aspect_ratio",
+          "label": "glyph/region shape proxy",
+          "robust_z_score": 16.837
+        }
+      ],
+      "note": "Visual anomaly requiring review; not proof of tampering."
+    },
+    {
+      "region_id": 57,
+      "text": "श्री/श्रीमती राम कुमार पुत्र श्री सुरेश प्रसाद निवासी ग्राम सैदपुर, तहसील सदर,",
+      "box": [
+        69,
+        1004,
+        977,
+        1052
+      ],
+      "risk_level": "moderate",
+      "flags": [
+        {
+          "feature": "width",
+          "label": "text-width proxy",
+          "robust_z_score": 20.759
+        },
+        {
+          "feature": "aspect_ratio",
+          "label": "glyph/region shape proxy",
+          "robust_z_score": 19.438
+        }
+      ],
+      "note": "Visual anomaly requiring review; not proof of tampering."
+    },
+    {
+      "region_id": 58,
+      "text": "जिला लखनऊ, उत्तर प्रदेश, द्वारा अपनी कृषि भूमि के स्वामित्व एवं विक्रय संबंधी",
+      "box": [
+        69,
+        1062,
+        977,
+        1105
+      ],
+      "risk_level": "moderate",
+      "flags": [
+        {
+          "feature": "width",
+          "label": "text-width proxy",
+          "robust_z_score": 20.759
+        },
+        {
+          "feature": "aspect_ratio",
+          "label": "glyph/region shape proxy",
+          "robust_z_score": 22.027
+        }
+      ],
+      "note": "Visual anomaly requiring review; not proof of tampering."
+    },
+    {
+      "region_id": 59,
+      "text": "घोषणा पत्र प्र्तुत किया गया है। उक्त भूमि खसरा संख्या 142, रकबा 0.229 हेक्टेयर,",
+      "box": [
+        70,
+        1118,
+        977,
+        1162
+      ],
+      "risk_level": "moderate",
+      "flags": [
+        {
+          "feature": "width",
+          "label": "text-width proxy",
+          "robust_z_score": 20.734
+        },
+        {
+          "feature": "aspect_ratio",
+          "label": "glyph/region shape proxy",
+          "robust_z_score": 21.435
+        }
+      ],
+      "note": "Visual anomaly requiring review; not proof of tampering."
+    },
+    {
+      "region_id": 60,
+      "text": "जो ग्राम सैदपुर, परगना मोहनलालगंज, तहसील सदर के अंतर्गत स्थित है, जिसकी",
+      "box": [
+        69,
+        1175,
+        978,
+        1218
+      ],
+      "risk_level": "moderate",
+      "flags": [
+        {
+          "feature": "width",
+          "label": "text-width proxy",
+          "robust_z_score": 20.784
+        },
+        {
+          "feature": "aspect_ratio",
+          "label": "glyph/region shape proxy",
+          "robust_z_score": 22.055
+        }
+      ],
+      "note": "Visual anomaly requiring review; not proof of tampering."
+    },
+    {
+      "region_id": 61,
+      "text": "बिक्री/हस्तांतरण राशि र 94.50 (चौरानवे रूपये पचास पैसे मात्र) नि्ारित की गई है।",
+      "box": [
+        69,
+        1232,
+        981,
+        1276
+      ],
+      "risk_level": "moderate",
+      "flags": [
+        {
+          "feature": "width",
+          "label": "text-width proxy",
+          "robust_z_score": 20.859
+        },
+        {
+          "feature": "aspect_ratio",
+          "label": "glyph/region shape proxy",
+          "robust_z_score": 21.569
+        }
+      ],
+      "note": "Visual anomaly requiring review; not proof of tampering."
+    },
+    {
+      "region_id": 62,
+      "text": "यह दस्तावेज पूर्णतः स्वच्छा से एवं बिना किसी दबाव के प्रस्तुत किया गया है।",
+      "box": [
+        68,
+        1291,
+        890,
+        1336
+      ],
+      "risk_level": "moderate",
+      "flags": [
+        {
+          "feature": "width",
+          "label": "text-width proxy",
+          "robust_z_score": 18.611
+        },
+        {
+          "feature": "aspect_ratio",
+          "label": "glyph/region shape proxy",
+          "robust_z_score": 18.672
+        }
+      ],
+      "note": "Visual anomaly requiring review; not proof of tampering."
+    },
+    {
+      "region_id": 63,
+      "text": "राम कुमार",
+      "box": [
+        86,
+        1366,
+        307,
+        1455
+      ],
+      "risk_level": "high",
+      "flags": [
+        {
+          "feature": "height",
+          "label": "text-size / character-height proxy",
+          "robust_z_score": 4.553
+        },
+        {
+          "feature": "width",
+          "label": "text-width proxy",
+          "robust_z_score": 3.597
+        },
+        {
+          "feature": "estimated_slant",
+          "label": "text slant / style proxy",
+          "robust_z_score": 10.902
+        }
+      ],
+      "note": "Visual anomaly requiring review; not proof of tampering."
+    },
+    {
+      "region_id": 64,
+      "text": "(हस्ताक्षर)",
+      "box": [
+        138,
+        1466,
+        254,
+        1512
+      ],
+      "risk_level": "moderate",
+      "flags": [
+        {
+          "feature": "baseline",
+          "label": "baseline-alignment anomaly",
+          "robust_z_score": 8.768
+        }
+      ],
+      "note": "Visual anomaly requiring review; not proof of tampering."
+    },
+    {
+      "region_id": 66,
+      "text": "(अंगूठा निशान)",
+      "box": [
+        796,
+        1478,
+        963,
+        1527
+      ],
+      "risk_level": "moderate",
+      "flags": [
+        {
+          "feature": "indentation",
+          "label": "indentation / line-start anomaly",
+          "robust_z_score": 3.181
+        }
+      ],
+      "note": "Visual anomaly requiring review; not proof of tampering."
+    }
+  ],
+  "regions": [
+    {
+      "region_id": 0,
+      "text": "र",
+      "ocr_confidence": 0.4522,
+      "box": [
+        101,
+        83,
+        147,
+        122
+      ],
+      "measurements": {
+        "width_px": 46,
+        "height_px": 39,
+        "aspect_ratio": 1.1795,
+        "stroke_width_estimate_px": 2.739,
+        "ink_density": 0.2163,
+        "edge_density": 0.1104,
+        "edge_sharpness": 3779.009,
+        "background_mean": 226.431,
+        "background_std": 45.941,
+        "estimated_slant_degrees_proxy": 85.728,
+        "word_gap_normalized": 0.0,
+        "character_spacing_proxy": 1.179,
+        "line_spacing_normalized": 0.0,
+        "baseline_deviation_px": -2.5,
+        "line_start_x_px": 101.0
+      },
+      "anomaly_scores": {
+        "height": 0.337,
+        "width": 0.774,
+        "stroke_width": 1.283,
+        "ink_density": 0.847,
+        "aspect_ratio": 1.444,
+        "estimated_slant": 85.571,
+        "edge_sharpness": 1.943,
+        "background_mean": 0.426,
+        "background_std": 0.81,
+        "edge_density": 1.202,
+        "word_gap": 0.0,
+        "char_gap": 5.001,
+        "line_spacing": 2.415,
+        "baseline": 1.686,
+        "indentation": 0.51
+      },
+      "flags": [
+        {
+          "feature": "estimated_slant",
+          "label": "text slant / style proxy",
+          "robust_z_score": 85.571
+        },
+        {
+          "feature": "char_gap",
+          "label": "character-spacing anomaly",
+          "robust_z_score": 5.001
+        }
+      ],
+      "risk_level": "moderate",
+      "mean_flagged_deviation": 45.286
+    },
+    {
+      "region_id": 1,
+      "text": "25000",
+      "ocr_confidence": 0.9998,
+      "box": [
+        137,
+        80,
+        283,
+        123
+      ],
+      "measurements": {
+        "width_px": 146,
+        "height_px": 43,
+        "aspect_ratio": 3.3953,
+        "stroke_width_estimate_px": 3.82,
+        "ink_density": 0.4098,
+        "edge_density": 0.1623,
+        "edge_sharpness": 5398.484,
+        "background_mean": 236.062,
+        "background_std": 31.82,
+        "estimated_slant_degrees_proxy": -0.327,
+        "word_gap_normalized": 0.938,
+        "character_spacing_proxy": 0.679,
+        "line_spacing_normalized": 0.0,
+        "baseline_deviation_px": -1.5,
+        "line_start_x_px": 137.0
+      },
+      "anomaly_scores": {
+        "height": 0.674,
+        "width": 1.724,
+        "stroke_width": 2.958,
+        "ink_density": 0.693,
+        "aspect_ratio": 1.164,
+        "estimated_slant": 0.332,
+        "edge_sharpness": 0.813,
+        "background_mean": 0.12,
+        "background_std": 0.335,
+        "edge_density": 0.485,
+        "word_gap": 0.348,
+        "char_gap": 1.726,
+        "line_spacing": 2.415,
+        "baseline": 1.012,
+        "indentation": 0.319
+      },
+      "flags": [],
+      "risk_level": "low",
+      "mean_flagged_deviation": 0.0
+    },
+    {
+      "region_id": 2,
+      "text": "गैर",
+      "ocr_confidence": 0.9875,
+      "box": [
+        461,
+        75,
+        523,
+        125
+      ],
+      "measurements": {
+        "width_px": 62,
+        "height_px": 50,
+        "aspect_ratio": 1.24,
+        "stroke_width_estimate_px": 2.739,
+        "ink_density": 0.2339,
+        "edge_density": 0.1816,
+        "edge_sharpness": 4313.139,
+        "background_mean": 212.928,
+        "background_std": 50.153,
+        "estimated_slant_degrees_proxy": 20.137,
+        "word_gap_normalized": 0.146,
+        "character_spacing_proxy": 0.413,
+        "line_spacing_normalized": 0.0,
+        "baseline_deviation_px": 0.5,
+        "line_start_x_px": 461.0
+      },
+      "anomaly_scores": {
+        "height": 1.265,
+        "width": 0.375,
+        "stroke_width": 1.283,
+        "ink_density": 0.707,
+        "aspect_ratio": 1.373,
+        "estimated_slant": 20.095,
+        "edge_sharpness": 1.524,
+        "background_mean": 1.191,
+        "background_std": 0.951,
+        "edge_density": 0.219,
+        "word_gap": 0.054,
+        "char_gap": 0.013,
+        "line_spacing": 2.415,
+        "baseline": 0.337,
+        "indentation": 1.402
+      },
+      "flags": [
+        {
+          "feature": "estimated_slant",
+          "label": "text slant / style proxy",
+          "robust_z_score": 20.095
+        }
+      ],
+      "risk_level": "moderate",
+      "mean_flagged_deviation": 20.095
+    },
+    {
+      "region_id": 3,
+      "text": "न्यायिक",
+      "ocr_confidence": 0.9511,
+      "box": [
+        530,
+        75,
+        677,
+        143
+      ],
+      "measurements": {
+        "width_px": 147,
+        "height_px": 68,
+        "aspect_ratio": 2.1618,
+        "stroke_width_estimate_px": 1.91,
+        "ink_density": 0.2577,
+        "edge_density": 0.2571,
+        "edge_sharpness": 4660.042,
+        "background_mean": 205.392,
+        "background_std": 52.971,
+        "estimated_slant_degrees_proxy": 2.109,
+        "word_gap_normalized": 0.854,
+        "character_spacing_proxy": 0.309,
+        "line_spacing_normalized": 0.0,
+        "baseline_deviation_px": 18.5,
+        "line_start_x_px": 530.0
+      },
+      "anomaly_scores": {
+        "height": 2.782,
+        "width": 1.749,
+        "stroke_width": 0.0,
+        "ink_density": 0.517,
+        "aspect_ratio": 0.288,
+        "estimated_slant": 2.099,
+        "edge_sharpness": 1.279,
+        "background_mean": 1.618,
+        "background_std": 1.046,
+        "edge_density": 0.822,
+        "word_gap": 0.317,
+        "char_gap": 0.697,
+        "line_spacing": 2.415,
+        "baseline": 12.478,
+        "indentation": 1.769
+      },
+      "flags": [
+        {
+          "feature": "baseline",
+          "label": "baseline-alignment anomaly",
+          "robust_z_score": 12.478
+        }
+      ],
+      "risk_level": "moderate",
+      "mean_flagged_deviation": 12.478
+    },
+    {
+      "region_id": 4,
+      "text": "र 25000",
+      "ocr_confidence": 0.9142,
+      "box": [
+        718,
+        78,
+        888,
+        124
+      ],
+      "measurements": {
+        "width_px": 170,
+        "height_px": 46,
+        "aspect_ratio": 3.6957,
+        "stroke_width_estimate_px": 3.82,
+        "ink_density": 0.3572,
+        "edge_density": 0.1486,
+        "edge_sharpness": 4460.598,
+        "background_mean": 214.222,
+        "background_std": 53.892,
+        "estimated_slant_degrees_proxy": 0.585,
+        "word_gap_normalized": 0.0,
+        "character_spacing_proxy": 0.616,
+        "line_spacing_normalized": 0.0,
+        "baseline_deviation_px": -0.5,
+        "line_start_x_px": 718.0
+      },
+      "anomaly_scores": {
+        "height": 0.927,
+        "width": 2.323,
+        "stroke_width": 2.958,
+        "ink_density": 0.274,
+        "aspect_ratio": 1.518,
+        "estimated_slant": 0.578,
+        "edge_sharpness": 1.417,
+        "background_mean": 1.118,
+        "background_std": 1.077,
+        "edge_density": 0.674,
+        "word_gap": 0.0,
+        "char_gap": 1.313,
+        "line_spacing": 2.415,
+        "baseline": 0.337,
+        "indentation": 2.767
+      },
+      "flags": [],
+      "risk_level": "low",
+      "mean_flagged_deviation": 0.0
+    },
+    {
+      "region_id": 5,
+      "text": "भारतीय",
+      "ocr_confidence": 0.9999,
+      "box": [
+        328,
+        78,
+        457,
+        143
+      ],
+      "measurements": {
+        "width_px": 129,
+        "height_px": 65,
+        "aspect_ratio": 1.9846,
+        "stroke_width_estimate_px": 1.91,
+        "ink_density": 0.247,
+        "edge_density": 0.2113,
+        "edge_sharpness": 4376.981,
+        "background_mean": 207.041,
+        "background_std": 52.636,
+        "estimated_slant_degrees_proxy": -4.836,
+        "word_gap_normalized": 0.083,
+        "character_spacing_proxy": 0.331,
+        "line_spacing_normalized": 0.0,
+        "baseline_deviation_px": 18.5,
+        "line_start_x_px": 328.0
+      },
+      "anomaly_scores": {
+        "height": 2.529,
+        "width": 1.299,
+        "stroke_width": 0.0,
+        "ink_density": 0.602,
+        "aspect_ratio": 0.496,
+        "estimated_slant": 4.833,
+        "edge_sharpness": 1.477,
+        "background_mean": 1.525,
+        "background_std": 1.035,
+        "edge_density": 0.191,
+        "word_gap": 0.031,
+        "char_gap": 0.554,
+        "line_spacing": 2.415,
+        "baseline": 12.478,
+        "indentation": 0.696
+      },
+      "flags": [
+        {
+          "feature": "estimated_slant",
+          "label": "text slant / style proxy",
+          "robust_z_score": 4.833
+        },
+        {
+          "feature": "baseline",
+          "label": "baseline-alignment anomaly",
+          "robust_z_score": 12.478
+        }
+      ],
+      "risk_level": "moderate",
+      "mean_flagged_deviation": 8.655
+    },
+    {
+      "region_id": 6,
+      "text": "पच्दीस",
+      "ocr_confidence": 0.973,
+      "box": [
+        88,
+        124,
+        161,
+        153
+      ],
+      "measurements": {
+        "width_px": 73,
+        "height_px": 29,
+        "aspect_ratio": 2.5172,
+        "stroke_width_estimate_px": 1.91,
+        "ink_density": 0.3269,
+        "edge_density": 0.214,
+        "edge_sharpness": 5601.695,
+        "background_mean": 246.122,
+        "background_std": 7.409,
+        "estimated_slant_degrees_proxy": 1.11,
+        "word_gap_normalized": 0.233,
+        "character_spacing_proxy": 0.42,
+        "line_spacing_normalized": 0.983,
+        "baseline_deviation_px": 0.0,
+        "line_start_x_px": 88.0
+      },
+      "anomaly_scores": {
+        "height": 0.506,
+        "width": 0.1,
+        "stroke_width": 0.0,
+        "ink_density": 0.033,
+        "aspect_ratio": 0.131,
+        "estimated_slant": 1.102,
+        "edge_sharpness": 0.695,
+        "background_mean": 0.69,
+        "background_std": 0.486,
+        "edge_density": 0.227,
+        "word_gap": 0.087,
+        "char_gap": 0.027,
+        "line_spacing": 0.614,
+        "baseline": 0.0,
+        "indentation": 0.579
+      },
+      "flags": [],
+      "risk_level": "low",
+      "mean_flagged_deviation": 0.0
+    },
+    {
+      "region_id": 7,
+      "text": "हजार",
+      "ocr_confidence": 0.9999,
+      "box": [
+        168,
+        128,
+        226,
+        153
+      ],
+      "measurements": {
+        "width_px": 58,
+        "height_px": 25,
+        "aspect_ratio": 2.32,
+        "stroke_width_estimate_px": 1.91,
+        "ink_density": 0.3421,
+        "edge_density": 0.2448,
+        "edge_sharpness": 6346.626,
+        "background_mean": 247.714,
+        "background_std": 1.464,
+        "estimated_slant_degrees_proxy": -2.45,
+        "word_gap_normalized": 0.1,
+        "character_spacing_proxy": 0.58,
+        "line_spacing_normalized": 1.14,
+        "baseline_deviation_px": 0.0,
+        "line_start_x_px": 168.0
+      },
+      "anomaly_scores": {
+        "height": 0.843,
+        "width": 0.475,
+        "stroke_width": 0.0,
+        "ink_density": 0.154,
+        "aspect_ratio": 0.102,
+        "estimated_slant": 2.452,
+        "edge_sharpness": 0.3,
+        "background_mean": 0.78,
+        "background_std": 0.686,
+        "edge_density": 0.652,
+        "word_gap": 0.037,
+        "char_gap": 1.077,
+        "line_spacing": 0.326,
+        "baseline": 0.0,
+        "indentation": 0.154
+      },
+      "flags": [],
+      "risk_level": "low",
+      "mean_flagged_deviation": 0.0
+    },
+    {
+      "region_id": 8,
+      "text": "रूपये",
+      "ocr_confidence": 0.9856,
+      "box": [
+        229,
+        122,
+        287,
+        152
+      ],
+      "measurements": {
+        "width_px": 58,
+        "height_px": 30,
+        "aspect_ratio": 1.9333,
+        "stroke_width_estimate_px": 1.91,
+        "ink_density": 0.2724,
+        "edge_density": 0.1816,
+        "edge_sharpness": 4913.067,
+        "background_mean": 232.945,
+        "background_std": 41.499,
+        "estimated_slant_degrees_proxy": -2.118,
+        "word_gap_normalized": 2.2,
+        "character_spacing_proxy": 0.387,
+        "line_spacing_normalized": 0.95,
+        "baseline_deviation_px": -1.0,
+        "line_start_x_px": 229.0
+      },
+      "anomaly_scores": {
+        "height": 0.422,
+        "width": 0.475,
+        "stroke_width": 0.0,
+        "ink_density": 0.4,
+        "aspect_ratio": 0.557,
+        "estimated_slant": 2.12,
+        "edge_sharpness": 1.111,
+        "background_mean": 0.057,
+        "background_std": 0.66,
+        "edge_density": 0.219,
+        "word_gap": 0.817,
+        "char_gap": 0.188,
+        "line_spacing": 0.674,
+        "baseline": 0.674,
+        "indentation": 0.17
+      },
+      "flags": [],
+      "risk_level": "low",
+      "mean_flagged_deviation": 0.0
+    },
+    {
+      "region_id": 9,
+      "text": "NON",
+      "ocr_confidence": 0.9969,
+      "box": [
+        445,
+        124,
+        520,
+        166
+      ],
+      "measurements": {
+        "width_px": 75,
+        "height_px": 42,
+        "aspect_ratio": 1.7857,
+        "stroke_width_estimate_px": 1.91,
+        "ink_density": 0.3098,
+        "edge_density": 0.2419,
+        "edge_sharpness": 6975.772,
+        "background_mean": 222.869,
+        "background_std": 40.997,
+        "estimated_slant_degrees_proxy": -1.631,
+        "word_gap_normalized": 0.0,
+        "character_spacing_proxy": 0.595,
+        "line_spacing_normalized": 0.679,
+        "baseline_deviation_px": 13.0,
+        "line_start_x_px": 445.0
+      },
+      "anomaly_scores": {
+        "height": 0.59,
+        "width": 0.05,
+        "stroke_width": 0.0,
+        "ink_density": 0.102,
+        "aspect_ratio": 0.731,
+        "estimated_slant": 1.634,
+        "edge_sharpness": 0.0,
+        "background_mean": 0.628,
+        "background_std": 0.643,
+        "edge_density": 0.612,
+        "word_gap": 0.0,
+        "char_gap": 1.177,
+        "line_spacing": 1.172,
+        "baseline": 8.768,
+        "indentation": 1.317
+      },
+      "flags": [
+        {
+          "feature": "baseline",
+          "label": "baseline-alignment anomaly",
+          "robust_z_score": 8.768
+        }
+      ],
+      "risk_level": "moderate",
+      "mean_flagged_deviation": 8.768
+    },
+    {
+      "region_id": 10,
+      "text": "JUDICIAL",
+      "ocr_confidence": 0.9984,
+      "box": [
+        516,
+        124,
+        655,
+        178
+      ],
+      "measurements": {
+        "width_px": 139,
+        "height_px": 54,
+        "aspect_ratio": 2.5741,
+        "stroke_width_estimate_px": 1.91,
+        "ink_density": 0.2627,
+        "edge_density": 0.2351,
+        "edge_sharpness": 5753.735,
+        "background_mean": 203.078,
+        "background_std": 51.148,
+        "estimated_slant_degrees_proxy": 1.31,
+        "word_gap_normalized": 2.2,
+        "character_spacing_proxy": 0.322,
+        "line_spacing_normalized": 0.528,
+        "baseline_deviation_px": 25.0,
+        "line_start_x_px": 516.0
+      },
+      "anomaly_scores": {
+        "height": 1.602,
+        "width": 1.549,
+        "stroke_width": 0.0,
+        "ink_density": 0.477,
+        "aspect_ratio": 0.198,
+        "estimated_slant": 1.302,
+        "edge_sharpness": 0.611,
+        "background_mean": 1.749,
+        "background_std": 0.985,
+        "edge_density": 0.519,
+        "word_gap": 0.817,
+        "char_gap": 0.613,
+        "line_spacing": 1.448,
+        "baseline": 16.862,
+        "indentation": 1.694
+      },
+      "flags": [
+        {
+          "feature": "baseline",
+          "label": "baseline-alignment anomaly",
+          "robust_z_score": 16.862
+        }
+      ],
+      "risk_level": "moderate",
+      "mean_flagged_deviation": 16.862
+    },
+    {
+      "region_id": 11,
+      "text": "पच्चीस",
+      "ocr_confidence": 0.9365,
+      "box": [
+        721,
+        122,
+        796,
+        152
+      ],
+      "measurements": {
+        "width_px": 75,
+        "height_px": 30,
+        "aspect_ratio": 2.5,
+        "stroke_width_estimate_px": 1.91,
+        "ink_density": 0.3036,
+        "edge_density": 0.2004,
+        "edge_sharpness": 5133.465,
+        "background_mean": 246.684,
+        "background_std": 10.051,
+        "estimated_slant_degrees_proxy": 0.403,
+        "word_gap_normalized": 0.067,
+        "character_spacing_proxy": 0.417,
+        "line_spacing_normalized": 0.95,
+        "baseline_deviation_px": -1.0,
+        "line_start_x_px": 721.0
+      },
+      "anomaly_scores": {
+        "height": 0.422,
+        "width": 0.05,
+        "stroke_width": 0.0,
+        "ink_density": 0.152,
+        "aspect_ratio": 0.11,
+        "estimated_slant": 0.396,
+        "edge_sharpness": 0.972,
+        "background_mean": 0.722,
+        "background_std": 0.397,
+        "edge_density": 0.04,
+        "word_gap": 0.025,
+        "char_gap": 0.008,
+        "line_spacing": 0.674,
+        "baseline": 0.674,
+        "indentation": 2.783
+      },
+      "flags": [],
+      "risk_level": "low",
+      "mean_flagged_deviation": 0.0
+    },
+    {
+      "region_id": 12,
+      "text": "हजार",
+      "ocr_confidence": 0.9536,
+      "box": [
+        798,
+        126,
+        857,
+        151
+      ],
+      "measurements": {
+        "width_px": 59,
+        "height_px": 25,
+        "aspect_ratio": 2.36,
+        "stroke_width_estimate_px": 1.91,
+        "ink_density": 0.3227,
+        "edge_density": 0.2325,
+        "edge_sharpness": 6042.856,
+        "background_mean": 247.639,
+        "background_std": 1.543,
+        "estimated_slant_degrees_proxy": -2.37,
+        "word_gap_normalized": 0.0,
+        "character_spacing_proxy": 0.59,
+        "line_spacing_normalized": 1.14,
+        "baseline_deviation_px": -2.0,
+        "line_start_x_px": 798.0
+      },
+      "anomaly_scores": {
+        "height": 0.843,
+        "width": 0.45,
+        "stroke_width": 0.0,
+        "ink_density": 0.0,
+        "aspect_ratio": 0.054,
+        "estimated_slant": 2.372,
+        "edge_sharpness": 0.455,
+        "background_mean": 0.776,
+        "background_std": 0.683,
+        "edge_density": 0.483,
+        "word_gap": 0.0,
+        "char_gap": 1.143,
+        "line_spacing": 0.326,
+        "baseline": 1.349,
+        "indentation": 3.192
+      },
+      "flags": [
+        {
+          "feature": "indentation",
+          "label": "indentation / line-start anomaly",
+          "robust_z_score": 3.192
+        }
+      ],
+      "risk_level": "moderate",
+      "mean_flagged_deviation": 3.192
+    },
+    {
+      "region_id": 13,
+      "text": "रूपये",
+      "ocr_confidence": 0.9473,
+      "box": [
+        857,
+        122,
+        913,
+        149
+      ],
+      "measurements": {
+        "width_px": 56,
+        "height_px": 27,
+        "aspect_ratio": 2.0741,
+        "stroke_width_estimate_px": 1.91,
+        "ink_density": 0.3069,
+        "edge_density": 0.2143,
+        "edge_sharpness": 5155.187,
+        "background_mean": 244.181,
+        "background_std": 17.816,
+        "estimated_slant_degrees_proxy": -2.374,
+        "word_gap_normalized": 0.0,
+        "character_spacing_proxy": 0.415,
+        "line_spacing_normalized": 1.056,
+        "baseline_deviation_px": -4.0,
+        "line_start_x_px": 857.0
+      },
+      "anomaly_scores": {
+        "height": 0.674,
+        "width": 0.525,
+        "stroke_width": 0.0,
+        "ink_density": 0.126,
+        "aspect_ratio": 0.391,
+        "estimated_slant": 2.376,
+        "edge_sharpness": 0.959,
+        "background_mean": 0.58,
+        "background_std": 0.136,
+        "edge_density": 0.231,
+        "word_gap": 0.0,
+        "char_gap": 0.004,
+        "line_spacing": 0.481,
+        "baseline": 2.698,
+        "indentation": 3.505
+      },
+      "flags": [
+        {
+          "feature": "indentation",
+          "label": "indentation / line-start anomaly",
+          "robust_z_score": 3.505
+        }
+      ],
+      "risk_level": "moderate",
+      "mean_flagged_deviation": 3.505
+    },
+    {
+      "region_id": 14,
+      "text": "INDIA",
+      "ocr_confidence": 0.9962,
+      "box": [
+        353,
+        129,
+        450,
+        179
+      ],
+      "measurements": {
+        "width_px": 97,
+        "height_px": 50,
+        "aspect_ratio": 1.94,
+        "stroke_width_estimate_px": 1.91,
+        "ink_density": 0.259,
+        "edge_density": 0.2206,
+        "edge_sharpness": 5638.814,
+        "background_mean": 207.944,
+        "background_std": 49.135,
+        "estimated_slant_degrees_proxy": -6.945,
+        "word_gap_normalized": 0.0,
+        "character_spacing_proxy": 0.388,
+        "line_spacing_normalized": 0.57,
+        "baseline_deviation_px": 26.0,
+        "line_start_x_px": 353.0
+      },
+      "anomaly_scores": {
+        "height": 1.265,
+        "width": 0.5,
+        "stroke_width": 0.0,
+        "ink_density": 0.507,
+        "aspect_ratio": 0.549,
+        "estimated_slant": 6.938,
+        "edge_sharpness": 0.674,
+        "background_mean": 1.473,
+        "background_std": 0.917,
+        "edge_density": 0.319,
+        "word_gap": 0.0,
+        "char_gap": 0.179,
+        "line_spacing": 1.371,
+        "baseline": 17.537,
+        "indentation": 0.829
+      },
+      "flags": [
+        {
+          "feature": "estimated_slant",
+          "label": "text slant / style proxy",
+          "robust_z_score": 6.938
+        },
+        {
+          "feature": "baseline",
+          "label": "baseline-alignment anomaly",
+          "robust_z_score": 17.537
+        }
+      ],
+      "risk_level": "moderate",
+      "mean_flagged_deviation": 12.237
+    },
+    {
+      "region_id": 15,
+      "text": "R",
+      "ocr_confidence": 0.5019,
+      "box": [
+        116,
+        261,
+        170,
+        300
+      ],
+      "measurements": {
+        "width_px": 54,
+        "height_px": 39,
+        "aspect_ratio": 1.3846,
+        "stroke_width_estimate_px": 1.91,
+        "ink_density": 0.6002,
+        "edge_density": 0.3048,
+        "edge_sharpness": 10373.51,
+        "background_mean": 159.245,
+        "background_std": 42.873,
+        "estimated_slant_degrees_proxy": -2.07,
+        "word_gap_normalized": 0.0,
+        "character_spacing_proxy": 1.385,
+        "line_spacing_normalized": 3.821,
+        "baseline_deviation_px": -2.0,
+        "line_start_x_px": 116.0
+      },
+      "anomaly_scores": {
+        "height": 0.337,
+        "width": 0.575,
+        "stroke_width": 0.0,
+        "ink_density": 2.208,
+        "aspect_ratio": 1.203,
+        "estimated_slant": 2.072,
+        "edge_sharpness": 1.258,
+        "background_mean": 4.233,
+        "background_std": 0.707,
+        "edge_density": 1.48,
+        "word_gap": 0.0,
+        "char_gap": 6.343,
+        "line_spacing": 4.584,
+        "baseline": 1.349,
+        "indentation": 0.43
+      },
+      "flags": [
+        {
+          "feature": "background_mean",
+          "label": "local-background difference",
+          "robust_z_score": 4.233
+        },
+        {
+          "feature": "char_gap",
+          "label": "character-spacing anomaly",
+          "robust_z_score": 6.343
+        },
+        {
+          "feature": "line_spacing",
+          "label": "line-spacing anomaly",
+          "robust_z_score": 4.584
+        }
+      ],
+      "risk_level": "high",
+      "mean_flagged_deviation": 5.053
+    },
+    {
+      "region_id": 16,
+      "text": "25000",
+      "ocr_confidence": 0.9999,
+      "box": [
+        151,
+        257,
+        292,
+        302
+      ],
+      "measurements": {
+        "width_px": 141,
+        "height_px": 45,
+        "aspect_ratio": 3.1333,
+        "stroke_width_estimate_px": 2.739,
+        "ink_density": 0.5579,
+        "edge_density": 0.2764,
+        "edge_sharpness": 6632.402,
+        "background_mean": 155.317,
+        "background_std": 40.138,
+        "estimated_slant_degrees_proxy": -0.158,
+        "word_gap_normalized": 11.209,
+        "character_spacing_proxy": 0.627,
+        "line_spacing_normalized": 3.311,
+        "baseline_deviation_px": 0.0,
+        "line_start_x_px": 151.0
+      },
+      "anomaly_scores": {
+        "height": 0.843,
+        "width": 1.599,
+        "stroke_width": 1.283,
+        "ink_density": 1.871,
+        "aspect_ratio": 0.856,
+        "estimated_slant": 0.164,
+        "edge_sharpness": 0.16,
+        "background_mean": 4.456,
+        "background_std": 0.615,
+        "edge_density": 1.088,
+        "word_gap": 4.165,
+        "char_gap": 1.383,
+        "line_spacing": 3.651,
+        "baseline": 0.0,
+        "indentation": 0.244
+      },
+      "flags": [
+        {
+          "feature": "background_mean",
+          "label": "local-background difference",
+          "robust_z_score": 4.456
+        },
+        {
+          "feature": "word_gap",
+          "label": "word-spacing anomaly",
+          "robust_z_score": 4.165
+        },
+        {
+          "feature": "line_spacing",
+          "label": "line-spacing anomaly",
+          "robust_z_score": 3.651
+        }
+      ],
+      "risk_level": "high",
+      "mean_flagged_deviation": 4.091
+    },
+    {
+      "region_id": 17,
+      "text": "2500",
+      "ocr_confidence": 1.0,
+      "box": [
+        774,
+        260,
+        884,
+        303
+      ],
+      "measurements": {
+        "width_px": 110,
+        "height_px": 43,
+        "aspect_ratio": 2.5581,
+        "stroke_width_estimate_px": 3.82,
+        "ink_density": 0.5877,
+        "edge_density": 0.2668,
+        "edge_sharpness": 6009.809,
+        "background_mean": 150.12,
+        "background_std": 41.311,
+        "estimated_slant_degrees_proxy": 0.3,
+        "word_gap_normalized": 0.0,
+        "character_spacing_proxy": 0.64,
+        "line_spacing_normalized": 3.465,
+        "baseline_deviation_px": 1.0,
+        "line_start_x_px": 774.0
+      },
+      "anomaly_scores": {
+        "height": 0.674,
+        "width": 0.824,
+        "stroke_width": 2.958,
+        "ink_density": 2.109,
+        "aspect_ratio": 0.179,
+        "estimated_slant": 0.294,
+        "edge_sharpness": 0.472,
+        "background_mean": 4.75,
+        "background_std": 0.654,
+        "edge_density": 0.955,
+        "word_gap": 0.0,
+        "char_gap": 1.467,
+        "line_spacing": 3.933,
+        "baseline": 0.674,
+        "indentation": 3.064
+      },
+      "flags": [
+        {
+          "feature": "background_mean",
+          "label": "local-background difference",
+          "robust_z_score": 4.75
+        },
+        {
+          "feature": "line_spacing",
+          "label": "line-spacing anomaly",
+          "robust_z_score": 3.933
+        },
+        {
+          "feature": "indentation",
+          "label": "indentation / line-start anomaly",
+          "robust_z_score": 3.064
+        }
+      ],
+      "risk_level": "high",
+      "mean_flagged_deviation": 3.916
+    },
+    {
+      "region_id": 18,
+      "text": "पच्चीस",
+      "ocr_confidence": 0.9711,
+      "box": [
+        110,
+        301,
+        182,
+        330
+      ],
+      "measurements": {
+        "width_px": 72,
+        "height_px": 29,
+        "aspect_ratio": 2.4828,
+        "stroke_width_estimate_px": 2.739,
+        "ink_density": 0.6456,
+        "edge_density": 0.3309,
+        "edge_sharpness": 6443.201,
+        "background_mean": 148.253,
+        "background_std": 33.052,
+        "estimated_slant_degrees_proxy": -0.512,
+        "word_gap_normalized": 0.075,
+        "character_spacing_proxy": 0.414,
+        "line_spacing_normalized": 0.897,
+        "baseline_deviation_px": 2.0,
+        "line_start_x_px": 110.0
+      },
+      "anomaly_scores": {
+        "height": 0.506,
+        "width": 0.125,
+        "stroke_width": 1.283,
+        "ink_density": 2.569,
+        "aspect_ratio": 0.09,
+        "estimated_slant": 0.517,
+        "edge_sharpness": 0.252,
+        "background_mean": 4.856,
+        "background_std": 0.376,
+        "edge_density": 1.84,
+        "word_gap": 0.028,
+        "char_gap": 0.01,
+        "line_spacing": 0.772,
+        "baseline": 1.349,
+        "indentation": 0.462
+      },
+      "flags": [
+        {
+          "feature": "background_mean",
+          "label": "local-background difference",
+          "robust_z_score": 4.856
+        }
+      ],
+      "risk_level": "moderate",
+      "mean_flagged_deviation": 4.856
+    },
+    {
+      "region_id": 19,
+      "text": "हजार",
+      "ocr_confidence": 0.9999,
+      "box": [
+        184,
+        303,
+        238,
+        329
+      ],
+      "measurements": {
+        "width_px": 54,
+        "height_px": 26,
+        "aspect_ratio": 2.0769,
+        "stroke_width_estimate_px": 3.82,
+        "ink_density": 0.6567,
+        "edge_density": 0.3276,
+        "edge_sharpness": 6268.984,
+        "background_mean": 143.185,
+        "background_std": 18.949,
+        "estimated_slant_degrees_proxy": 1.629,
+        "word_gap_normalized": 0.075,
+        "character_spacing_proxy": 0.519,
+        "line_spacing_normalized": 1.0,
+        "baseline_deviation_px": 1.0,
+        "line_start_x_px": 184.0
+      },
+      "anomaly_scores": {
+        "height": 0.759,
+        "width": 0.575,
+        "stroke_width": 2.958,
+        "ink_density": 2.657,
+        "aspect_ratio": 0.388,
+        "estimated_slant": 1.62,
+        "edge_sharpness": 0.339,
+        "background_mean": 5.143,
+        "background_std": 0.098,
+        "edge_density": 1.794,
+        "word_gap": 0.028,
+        "char_gap": 0.68,
+        "line_spacing": 0.583,
+        "baseline": 0.674,
+        "indentation": 0.069
+      },
+      "flags": [
+        {
+          "feature": "background_mean",
+          "label": "local-background difference",
+          "robust_z_score": 5.143
+        }
+      ],
+      "risk_level": "moderate",
+      "mean_flagged_deviation": 5.143
+    },
+    {
+      "region_id": 20,
+      "text": "रूपये",
+      "ocr_confidence": 0.9895,
+      "box": [
+        240,
+        299,
+        293,
+        328
+      ],
+      "measurements": {
+        "width_px": 53,
+        "height_px": 29,
+        "aspect_ratio": 1.8276,
+        "stroke_width_estimate_px": 3.82,
+        "ink_density": 0.6929,
+        "edge_density": 0.2902,
+        "edge_sharpness": 5282.913,
+        "background_mean": 142.458,
+        "background_std": 29.611,
+        "estimated_slant_degrees_proxy": 0.353,
+        "word_gap_normalized": 16.075,
+        "character_spacing_proxy": 0.366,
+        "line_spacing_normalized": 0.897,
+        "baseline_deviation_px": 0.0,
+        "line_start_x_px": 240.0
+      },
+      "anomaly_scores": {
+        "height": 0.506,
+        "width": 0.6,
+        "stroke_width": 2.958,
+        "ink_density": 2.945,
+        "aspect_ratio": 0.681,
+        "estimated_slant": 0.346,
+        "edge_sharpness": 0.881,
+        "background_mean": 5.185,
+        "background_std": 0.261,
+        "edge_density": 1.278,
+        "word_gap": 5.973,
+        "char_gap": 0.326,
+        "line_spacing": 0.772,
+        "baseline": 0.0,
+        "indentation": 0.228
+      },
+      "flags": [
+        {
+          "feature": "background_mean",
+          "label": "local-background difference",
+          "robust_z_score": 5.185
+        },
+        {
+          "feature": "word_gap",
+          "label": "word-spacing anomaly",
+          "robust_z_score": 5.973
+        }
+      ],
+      "risk_level": "moderate",
+      "mean_flagged_deviation": 5.579
+    },
+    {
+      "region_id": 21,
+      "text": "पच्वीस",
+      "ocr_confidence": 0.9665,
+      "box": [
+        719,
+        301,
+        786,
+        327
+      ],
+      "measurements": {
+        "width_px": 67,
+        "height_px": 26,
+        "aspect_ratio": 2.5769,
+        "stroke_width_estimate_px": 2.739,
+        "ink_density": 0.6297,
+        "edge_density": 0.3278,
+        "edge_sharpness": 7016.913,
+        "background_mean": 145.814,
+        "background_std": 27.871,
+        "estimated_slant_degrees_proxy": -0.303,
+        "word_gap_normalized": 0.151,
+        "character_spacing_proxy": 0.429,
+        "line_spacing_normalized": 1.0,
+        "baseline_deviation_px": -1.0,
+        "line_start_x_px": 719.0
+      },
+      "anomaly_scores": {
+        "height": 0.759,
+        "width": 0.25,
+        "stroke_width": 1.283,
+        "ink_density": 2.443,
+        "aspect_ratio": 0.201,
+        "estimated_slant": 0.308,
+        "edge_sharpness": 0.019,
+        "background_mean": 4.994,
+        "background_std": 0.202,
+        "edge_density": 1.796,
+        "word_gap": 0.056,
+        "char_gap": 0.092,
+        "line_spacing": 0.583,
+        "baseline": 0.674,
+        "indentation": 2.772
+      },
+      "flags": [
+        {
+          "feature": "background_mean",
+          "label": "local-background difference",
+          "robust_z_score": 4.994
+        }
+      ],
+      "risk_level": "moderate",
+      "mean_flagged_deviation": 4.994
+    },
+    {
+      "region_id": 22,
+      "text": "हजार",
+      "ocr_confidence": 0.8839,
+      "box": [
+        790,
+        305,
+        839,
+        328
+      ],
+      "measurements": {
+        "width_px": 49,
+        "height_px": 23,
+        "aspect_ratio": 2.1304,
+        "stroke_width_estimate_px": 3.82,
+        "ink_density": 0.638,
+        "edge_density": 0.3327,
+        "edge_sharpness": 7124.997,
+        "background_mean": 138.398,
+        "background_std": 18.299,
+        "estimated_slant_degrees_proxy": 1.504,
+        "word_gap_normalized": 0.075,
+        "character_spacing_proxy": 0.533,
+        "line_spacing_normalized": 1.13,
+        "baseline_deviation_px": 0.0,
+        "line_start_x_px": 790.0
+      },
+      "anomaly_scores": {
+        "height": 1.012,
+        "width": 0.699,
+        "stroke_width": 2.958,
+        "ink_density": 2.508,
+        "aspect_ratio": 0.325,
+        "estimated_slant": 1.496,
+        "edge_sharpness": 0.067,
+        "background_mean": 5.415,
+        "background_std": 0.12,
+        "edge_density": 1.865,
+        "word_gap": 0.028,
+        "char_gap": 0.767,
+        "line_spacing": 0.344,
+        "baseline": 0.0,
+        "indentation": 3.149
+      },
+      "flags": [
+        {
+          "feature": "background_mean",
+          "label": "local-background difference",
+          "robust_z_score": 5.415
+        },
+        {
+          "feature": "indentation",
+          "label": "indentation / line-start anomaly",
+          "robust_z_score": 3.149
+        }
+      ],
+      "risk_level": "moderate",
+      "mean_flagged_deviation": 4.282
+    },
+    {
+      "region_id": 23,
+      "text": "रूपये",
+      "ocr_confidence": 0.9944,
+      "box": [
+        841,
+        301,
+        889,
+        328
+      ],
+      "measurements": {
+        "width_px": 48,
+        "height_px": 27,
+        "aspect_ratio": 1.7778,
+        "stroke_width_estimate_px": 3.82,
+        "ink_density": 0.686,
+        "edge_density": 0.3349,
+        "edge_sharpness": 6321.21,
+        "background_mean": 140.436,
+        "background_std": 30.701,
+        "estimated_slant_degrees_proxy": 0.56,
+        "word_gap_normalized": 0.0,
+        "character_spacing_proxy": 0.356,
+        "line_spacing_normalized": 0.963,
+        "baseline_deviation_px": 0.0,
+        "line_start_x_px": 841.0
+      },
+      "anomaly_scores": {
+        "height": 0.674,
+        "width": 0.724,
+        "stroke_width": 2.958,
+        "ink_density": 2.89,
+        "aspect_ratio": 0.74,
+        "estimated_slant": 0.553,
+        "edge_sharpness": 0.312,
+        "background_mean": 5.299,
+        "background_std": 0.297,
+        "edge_density": 1.894,
+        "word_gap": 0.0,
+        "char_gap": 0.392,
+        "line_spacing": 0.651,
+        "baseline": 0.0,
+        "indentation": 3.42
+      },
+      "flags": [
+        {
+          "feature": "background_mean",
+          "label": "local-background difference",
+          "robust_z_score": 5.299
+        },
+        {
+          "feature": "indentation",
+          "label": "indentation / line-start anomaly",
+          "robust_z_score": 3.42
+        }
+      ],
+      "risk_level": "moderate",
+      "mean_flagged_deviation": 4.36
+    },
+    {
+      "region_id": 24,
+      "text": "सत्यमेव",
+      "ocr_confidence": 0.9298,
+      "box": [
+        441,
+        383,
+        508,
+        404
+      ],
+      "measurements": {
+        "width_px": 67,
+        "height_px": 21,
+        "aspect_ratio": 3.1905,
+        "stroke_width_estimate_px": 1.91,
+        "ink_density": 0.3547,
+        "edge_density": 0.2893,
+        "edge_sharpness": 7805.569,
+        "background_mean": 237.375,
+        "background_std": 17.382,
+        "estimated_slant_degrees_proxy": -0.023,
+        "word_gap_normalized": 0.233,
+        "character_spacing_proxy": 0.456,
+        "line_spacing_normalized": 3.619,
+        "baseline_deviation_px": 0.0,
+        "line_start_x_px": 441.0
+      },
+      "anomaly_scores": {
+        "height": 1.18,
+        "width": 0.25,
+        "stroke_width": 0.0,
+        "ink_density": 0.254,
+        "aspect_ratio": 0.923,
+        "estimated_slant": 0.028,
+        "edge_sharpness": 0.356,
+        "background_mean": 0.195,
+        "background_std": 0.151,
+        "edge_density": 1.265,
+        "word_gap": 0.086,
+        "char_gap": 0.264,
+        "line_spacing": 4.215,
+        "baseline": 0.0,
+        "indentation": 1.296
+      },
+      "flags": [
+        {
+          "feature": "line_spacing",
+          "label": "line-spacing anomaly",
+          "robust_z_score": 4.215
+        }
+      ],
+      "risk_level": "moderate",
+      "mean_flagged_deviation": 4.215
+    },
+    {
+      "region_id": 25,
+      "text": "जयते",
+      "ocr_confidence": 0.9994,
+      "box": [
+        513,
+        382,
+        561,
+        404
+      ],
+      "measurements": {
+        "width_px": 48,
+        "height_px": 22,
+        "aspect_ratio": 2.1818,
+        "stroke_width_estimate_px": 1.91,
+        "ink_density": 0.3258,
+        "edge_density": 0.2803,
+        "edge_sharpness": 7736.482,
+        "background_mean": 237.639,
+        "background_std": 12.121,
+        "estimated_slant_degrees_proxy": -2.56,
+        "word_gap_normalized": 0.0,
+        "character_spacing_proxy": 0.545,
+        "line_spacing_normalized": 3.455,
+        "baseline_deviation_px": 0.0,
+        "line_start_x_px": 513.0
+      },
+      "anomaly_scores": {
+        "height": 1.096,
+        "width": 0.724,
+        "stroke_width": 0.0,
+        "ink_density": 0.024,
+        "aspect_ratio": 0.264,
+        "estimated_slant": 2.561,
+        "edge_sharpness": 0.328,
+        "background_mean": 0.209,
+        "background_std": 0.328,
+        "edge_density": 1.142,
+        "word_gap": 0.0,
+        "char_gap": 0.851,
+        "line_spacing": 3.914,
+        "baseline": 0.0,
+        "indentation": 1.678
+      },
+      "flags": [
+        {
+          "feature": "line_spacing",
+          "label": "line-spacing anomaly",
+          "robust_z_score": 3.914
+        }
+      ],
+      "risk_level": "moderate",
+      "mean_flagged_deviation": 3.914
+    },
+    {
+      "region_id": 26,
+      "text": "प्रदेश",
+      "ocr_confidence": 0.9679,
+      "box": [
+        209,
+        423,
+        313,
+        479
+      ],
+      "measurements": {
+        "width_px": 104,
+        "height_px": 56,
+        "aspect_ratio": 1.8571,
+        "stroke_width_estimate_px": 1.91,
+        "ink_density": 0.4852,
+        "edge_density": 0.2732,
+        "edge_sharpness": 6555.601,
+        "background_mean": 170.604,
+        "background_std": 31.107,
+        "estimated_slant_degrees_proxy": -2.258,
+        "word_gap_normalized": 1.942,
+        "character_spacing_proxy": 0.31,
+        "line_spacing_normalized": 1.321,
+        "baseline_deviation_px": 1.0,
+        "line_start_x_px": 209.0
+      },
+      "anomaly_scores": {
+        "height": 1.771,
+        "width": 0.674,
+        "stroke_width": 0.0,
+        "ink_density": 1.293,
+        "aspect_ratio": 0.646,
+        "estimated_slant": 2.26,
+        "edge_sharpness": 0.197,
+        "background_mean": 3.59,
+        "background_std": 0.311,
+        "edge_density": 1.043,
+        "word_gap": 0.722,
+        "char_gap": 0.693,
+        "line_spacing": 0.006,
+        "baseline": 0.674,
+        "indentation": 0.064
+      },
+      "flags": [
+        {
+          "feature": "background_mean",
+          "label": "local-background difference",
+          "robust_z_score": 3.59
+        }
+      ],
+      "risk_level": "moderate",
+      "mean_flagged_deviation": 3.59
+    },
+    {
+      "region_id": 27,
+      "text": "र",
+      "ocr_confidence": 0.5441,
+      "box": [
+        721,
+        420,
+        750,
+        455
+      ],
+      "measurements": {
+        "width_px": 29,
+        "height_px": 35,
+        "aspect_ratio": 0.8286,
+        "stroke_width_estimate_px": 1.91,
+        "ink_density": 0.5271,
+        "edge_density": 0.2601,
+        "edge_sharpness": 6079.295,
+        "background_mean": 161.453,
+        "background_std": 20.316,
+        "estimated_slant_degrees_proxy": 87.541,
+        "word_gap_normalized": 0.377,
+        "character_spacing_proxy": 0.829,
+        "line_spacing_normalized": 2.114,
+        "baseline_deviation_px": -23.0,
+        "line_start_x_px": 721.0
+      },
+      "anomaly_scores": {
+        "height": 0.0,
+        "width": 1.199,
+        "stroke_width": 0.0,
+        "ink_density": 1.626,
+        "aspect_ratio": 1.857,
+        "estimated_slant": 87.381,
+        "edge_sharpness": 0.436,
+        "background_mean": 4.108,
+        "background_std": 0.052,
+        "edge_density": 0.863,
+        "word_gap": 0.14,
+        "char_gap": 2.704,
+        "line_spacing": 1.458,
+        "baseline": 15.513,
+        "indentation": 2.783
+      },
+      "flags": [
+        {
+          "feature": "estimated_slant",
+          "label": "text slant / style proxy",
+          "robust_z_score": 87.381
+        },
+        {
+          "feature": "background_mean",
+          "label": "local-background difference",
+          "robust_z_score": 4.108
+        },
+        {
+          "feature": "baseline",
+          "label": "baseline-alignment anomaly",
+          "robust_z_score": 15.513
+        }
+      ],
+      "risk_level": "high",
+      "mean_flagged_deviation": 35.667
+    },
+    {
+      "region_id": 28,
+      "text": "25000",
+      "ocr_confidence": 1.0,
+      "box": [
+        763,
+        416,
+        891,
+        459
+      ],
+      "measurements": {
+        "width_px": 128,
+        "height_px": 43,
+        "aspect_ratio": 2.9767,
+        "stroke_width_estimate_px": 2.739,
+        "ink_density": 0.5451,
+        "edge_density": 0.2376,
+        "edge_sharpness": 5502.017,
+        "background_mean": 167.615,
+        "background_std": 39.981,
+        "estimated_slant_degrees_proxy": 0.287,
+        "word_gap_normalized": 0.0,
+        "character_spacing_proxy": 0.595,
+        "line_spacing_normalized": 1.721,
+        "baseline_deviation_px": -19.0,
+        "line_start_x_px": 763.0
+      },
+      "anomaly_scores": {
+        "height": 0.674,
+        "width": 1.274,
+        "stroke_width": 1.283,
+        "ink_density": 1.769,
+        "aspect_ratio": 0.672,
+        "estimated_slant": 0.281,
+        "edge_sharpness": 0.752,
+        "background_mean": 3.759,
+        "background_std": 0.609,
+        "edge_density": 0.553,
+        "word_gap": 0.0,
+        "char_gap": 1.178,
+        "line_spacing": 0.738,
+        "baseline": 12.815,
+        "indentation": 3.006
+      },
+      "flags": [
+        {
+          "feature": "background_mean",
+          "label": "local-background difference",
+          "robust_z_score": 3.759
+        },
+        {
+          "feature": "baseline",
+          "label": "baseline-alignment anomaly",
+          "robust_z_score": 12.815
+        },
+        {
+          "feature": "indentation",
+          "label": "indentation / line-start anomaly",
+          "robust_z_score": 3.006
+        }
+      ],
+      "risk_level": "high",
+      "mean_flagged_deviation": 6.527
+    },
+    {
+      "region_id": 29,
+      "text": "उत्तर",
+      "ocr_confidence": 0.9993,
+      "box": [
+        99,
+        437,
+        197,
+        477
+      ],
+      "measurements": {
+        "width_px": 98,
+        "height_px": 40,
+        "aspect_ratio": 2.45,
+        "stroke_width_estimate_px": 1.91,
+        "ink_density": 0.4849,
+        "edge_density": 0.2872,
+        "edge_sharpness": 6089.522,
+        "background_mean": 168.452,
+        "background_std": 24.554,
+        "estimated_slant_degrees_proxy": 0.526,
+        "word_gap_normalized": 0.348,
+        "character_spacing_proxy": 0.49,
+        "line_spacing_normalized": 1.85,
+        "baseline_deviation_px": -1.0,
+        "line_start_x_px": 99.0
+      },
+      "anomaly_scores": {
+        "height": 0.422,
+        "width": 0.525,
+        "stroke_width": 0.0,
+        "ink_density": 1.291,
+        "aspect_ratio": 0.052,
+        "estimated_slant": 0.519,
+        "edge_sharpness": 0.431,
+        "background_mean": 3.712,
+        "background_std": 0.09,
+        "edge_density": 1.237,
+        "word_gap": 0.129,
+        "char_gap": 0.488,
+        "line_spacing": 0.974,
+        "baseline": 0.674,
+        "indentation": 0.52
+      },
+      "flags": [
+        {
+          "feature": "background_mean",
+          "label": "local-background difference",
+          "robust_z_score": 3.712
+        }
+      ],
+      "risk_level": "moderate",
+      "mean_flagged_deviation": 3.712
+    },
+    {
+      "region_id": 30,
+      "text": "UTTAR PRADESH",
+      "ocr_confidence": 0.9889,
+      "box": [
+        380,
+        435,
+        636,
+        469
+      ],
+      "measurements": {
+        "width_px": 256,
+        "height_px": 34,
+        "aspect_ratio": 7.5294,
+        "stroke_width_estimate_px": 2.739,
+        "ink_density": 0.3276,
+        "edge_density": 0.1592,
+        "edge_sharpness": 3825.484,
+        "background_mean": 224.098,
+        "background_std": 41.202,
+        "estimated_slant_degrees_proxy": -0.322,
+        "word_gap_normalized": 2.145,
+        "character_spacing_proxy": 0.627,
+        "line_spacing_normalized": 2.176,
+        "baseline_deviation_px": -9.0,
+        "line_start_x_px": 380.0
+      },
+      "anomaly_scores": {
+        "height": 0.084,
+        "width": 4.472,
+        "stroke_width": 1.283,
+        "ink_density": 0.038,
+        "aspect_ratio": 6.031,
+        "estimated_slant": 0.327,
+        "edge_sharpness": 1.904,
+        "background_mean": 0.558,
+        "background_std": 0.65,
+        "edge_density": 0.528,
+        "word_gap": 0.797,
+        "char_gap": 1.388,
+        "line_spacing": 1.572,
+        "baseline": 6.07,
+        "indentation": 0.972
+      },
+      "flags": [
+        {
+          "feature": "width",
+          "label": "text-width proxy",
+          "robust_z_score": 4.472
+        },
+        {
+          "feature": "aspect_ratio",
+          "label": "glyph/region shape proxy",
+          "robust_z_score": 6.031
+        },
+        {
+          "feature": "baseline",
+          "label": "baseline-alignment anomaly",
+          "robust_z_score": 6.07
+        }
+      ],
+      "risk_level": "high",
+      "mean_flagged_deviation": 5.524
+    },
+    {
+      "region_id": 31,
+      "text": "पच्चीस",
+      "ocr_confidence": 0.9331,
+      "box": [
+        710,
+        454,
+        787,
+        486
+      ],
+      "measurements": {
+        "width_px": 77,
+        "height_px": 32,
+        "aspect_ratio": 2.4062,
+        "stroke_width_estimate_px": 2.739,
+        "ink_density": 0.642,
+        "edge_density": 0.2606,
+        "edge_sharpness": 4866.986,
+        "background_mean": 163.913,
+        "background_std": 35.564,
+        "estimated_slant_degrees_proxy": 0.682,
+        "word_gap_normalized": 0.0,
+        "character_spacing_proxy": 0.401,
+        "line_spacing_normalized": 2.312,
+        "baseline_deviation_px": 8.0,
+        "line_start_x_px": 710.0
+      },
+      "anomaly_scores": {
+        "height": 0.253,
+        "width": 0.0,
+        "stroke_width": 1.283,
+        "ink_density": 2.541,
+        "aspect_ratio": 0.0,
+        "estimated_slant": 0.674,
+        "edge_sharpness": 1.141,
+        "background_mean": 3.969,
+        "background_std": 0.461,
+        "edge_density": 0.869,
+        "word_gap": 0.0,
+        "char_gap": 0.094,
+        "line_spacing": 1.822,
+        "baseline": 5.396,
+        "indentation": 2.725
+      },
+      "flags": [
+        {
+          "feature": "background_mean",
+          "label": "local-background difference",
+          "robust_z_score": 3.969
+        },
+        {
+          "feature": "baseline",
+          "label": "baseline-alignment anomaly",
+          "robust_z_score": 5.396
+        }
+      ],
+      "risk_level": "moderate",
+      "mean_flagged_deviation": 4.683
+    },
+    {
+      "region_id": 32,
+      "text": "हजार",
+      "ocr_confidence": 0.8798,
+      "box": [
+        790,
+        460,
+        846,
+        487
+      ],
+      "measurements": {
+        "width_px": 56,
+        "height_px": 27,
+        "aspect_ratio": 2.0741,
+        "stroke_width_estimate_px": 2.739,
+        "ink_density": 0.6415,
+        "edge_density": 0.3175,
+        "edge_sharpness": 5594.521,
+        "background_mean": 151.898,
+        "background_std": 21.864,
+        "estimated_slant_degrees_proxy": 0.035,
+        "word_gap_normalized": 0.058,
+        "character_spacing_proxy": 0.519,
+        "line_spacing_normalized": 2.741,
+        "baseline_deviation_px": 9.0,
+        "line_start_x_px": 790.0
+      },
+      "anomaly_scores": {
+        "height": 0.674,
+        "width": 0.525,
+        "stroke_width": 1.283,
+        "ink_density": 2.537,
+        "aspect_ratio": 0.391,
+        "estimated_slant": 0.029,
+        "edge_sharpness": 0.699,
+        "background_mean": 4.65,
+        "background_std": 0.0,
+        "edge_density": 1.654,
+        "word_gap": 0.022,
+        "char_gap": 0.675,
+        "line_spacing": 2.606,
+        "baseline": 6.07,
+        "indentation": 3.149
+      },
+      "flags": [
+        {
+          "feature": "background_mean",
+          "label": "local-background difference",
+          "robust_z_score": 4.65
+        },
+        {
+          "feature": "baseline",
+          "label": "baseline-alignment anomaly",
+          "robust_z_score": 6.07
+        },
+        {
+          "feature": "indentation",
+          "label": "indentation / line-start anomaly",
+          "robust_z_score": 3.149
+        }
+      ],
+      "risk_level": "high",
+      "mean_flagged_deviation": 4.623
+    },
+    {
+      "region_id": 33,
+      "text": "रूपये",
+      "ocr_confidence": 0.9105,
+      "box": [
+        848,
+        456,
+        903,
+        486
+      ],
+      "measurements": {
+        "width_px": 55,
+        "height_px": 30,
+        "aspect_ratio": 1.8333,
+        "stroke_width_estimate_px": 3.82,
+        "ink_density": 0.68,
+        "edge_density": 0.2552,
+        "edge_sharpness": 4672.874,
+        "background_mean": 157.154,
+        "background_std": 31.609,
+        "estimated_slant_degrees_proxy": 1.18,
+        "word_gap_normalized": 0.0,
+        "character_spacing_proxy": 0.367,
+        "line_spacing_normalized": 2.467,
+        "baseline_deviation_px": 8.0,
+        "line_start_x_px": 848.0
+      },
+      "anomaly_scores": {
+        "height": 0.422,
+        "width": 0.55,
+        "stroke_width": 2.958,
+        "ink_density": 2.843,
+        "aspect_ratio": 0.674,
+        "estimated_slant": 1.172,
+        "edge_sharpness": 1.27,
+        "background_mean": 4.352,
+        "background_std": 0.328,
+        "edge_density": 0.795,
+        "word_gap": 0.0,
+        "char_gap": 0.319,
+        "line_spacing": 2.104,
+        "baseline": 5.396,
+        "indentation": 3.457
+      },
+      "flags": [
+        {
+          "feature": "background_mean",
+          "label": "local-background difference",
+          "robust_z_score": 4.352
+        },
+        {
+          "feature": "baseline",
+          "label": "baseline-alignment anomaly",
+          "robust_z_score": 5.396
+        },
+        {
+          "feature": "indentation",
+          "label": "indentation / line-start anomaly",
+          "robust_z_score": 3.457
+        }
+      ],
+      "risk_level": "high",
+      "mean_flagged_deviation": 4.402
+    },
+    {
+      "region_id": 34,
+      "text": "प्रदेश",
+      "ocr_confidence": 1.0,
+      "box": [
+        114,
+        549,
+        195,
+        595
+      ],
+      "measurements": {
+        "width_px": 81,
+        "height_px": 46,
+        "aspect_ratio": 1.7609,
+        "stroke_width_estimate_px": 2.739,
+        "ink_density": 0.2611,
+        "edge_density": 0.135,
+        "edge_sharpness": 7587.078,
+        "background_mean": 244.852,
+        "background_std": 15.632,
+        "estimated_slant_degrees_proxy": -0.655,
+        "word_gap_normalized": 0.145,
+        "character_spacing_proxy": 0.293,
+        "line_spacing_normalized": 2.511,
+        "baseline_deviation_px": 1.5,
+        "line_start_x_px": 114.0
+      },
+      "anomaly_scores": {
+        "height": 0.927,
+        "width": 0.1,
+        "stroke_width": 1.283,
+        "ink_density": 0.49,
+        "aspect_ratio": 0.76,
+        "estimated_slant": 0.66,
+        "edge_sharpness": 0.266,
+        "background_mean": 0.618,
+        "background_std": 0.21,
+        "edge_density": 0.862,
+        "word_gap": 0.054,
+        "char_gap": 0.798,
+        "line_spacing": 2.185,
+        "baseline": 1.012,
+        "indentation": 0.441
+      },
+      "flags": [],
+      "risk_level": "low",
+      "mean_flagged_deviation": 0.0
+    },
+    {
+      "region_id": 35,
+      "text": "उत्तर",
+      "ocr_confidence": 1.0,
+      "box": [
+        45,
+        561,
+        112,
+        591
+      ],
+      "measurements": {
+        "width_px": 67,
+        "height_px": 30,
+        "aspect_ratio": 2.2333,
+        "stroke_width_estimate_px": 2.739,
+        "ink_density": 0.3692,
+        "edge_density": 0.1975,
+        "edge_sharpness": 11179.698,
+        "background_mean": 246.265,
+        "background_std": 0.866,
+        "estimated_slant_degrees_proxy": -1.014,
+        "word_gap_normalized": 0.058,
+        "character_spacing_proxy": 0.447,
+        "line_spacing_normalized": 3.85,
+        "baseline_deviation_px": -2.5,
+        "line_start_x_px": 45.0
+      },
+      "anomaly_scores": {
+        "height": 0.422,
+        "width": 0.25,
+        "stroke_width": 1.283,
+        "ink_density": 0.369,
+        "aspect_ratio": 0.204,
+        "estimated_slant": 1.018,
+        "edge_sharpness": 1.495,
+        "background_mean": 0.698,
+        "background_std": 0.706,
+        "edge_density": 0.0,
+        "word_gap": 0.022,
+        "char_gap": 0.205,
+        "line_spacing": 4.638,
+        "baseline": 1.686,
+        "indentation": 0.807
+      },
+      "flags": [
+        {
+          "feature": "line_spacing",
+          "label": "line-spacing anomaly",
+          "robust_z_score": 4.638
+        }
+      ],
+      "risk_level": "moderate",
+      "mean_flagged_deviation": 4.638
+    },
+    {
+      "region_id": 36,
+      "text": "UTTAR PRADESH",
+      "ocr_confidence": 0.9882,
+      "box": [
+        200,
+        558,
+        482,
+        592
+      ],
+      "measurements": {
+        "width_px": 282,
+        "height_px": 34,
+        "aspect_ratio": 8.2941,
+        "stroke_width_estimate_px": 2.739,
+        "ink_density": 0.3087,
+        "edge_density": 0.1649,
+        "edge_sharpness": 9715.57,
+        "background_mean": 245.464,
+        "background_std": 0.598,
+        "estimated_slant_degrees_proxy": 0.329,
+        "word_gap_normalized": 10.116,
+        "character_spacing_proxy": 0.691,
+        "line_spacing_normalized": 3.397,
+        "baseline_deviation_px": -1.5,
+        "line_start_x_px": 200.0
+      },
+      "anomaly_scores": {
+        "height": 0.084,
+        "width": 5.121,
+        "stroke_width": 1.283,
+        "ink_density": 0.111,
+        "aspect_ratio": 6.932,
+        "estimated_slant": 0.323,
+        "edge_sharpness": 1.05,
+        "background_mean": 0.653,
+        "background_std": 0.715,
+        "edge_density": 0.45,
+        "word_gap": 3.759,
+        "char_gap": 1.805,
+        "line_spacing": 3.808,
+        "baseline": 1.012,
+        "indentation": 0.016
+      },
+      "flags": [
+        {
+          "feature": "width",
+          "label": "text-width proxy",
+          "robust_z_score": 5.121
+        },
+        {
+          "feature": "aspect_ratio",
+          "label": "glyph/region shape proxy",
+          "robust_z_score": 6.932
+        },
+        {
+          "feature": "word_gap",
+          "label": "word-spacing anomaly",
+          "robust_z_score": 3.759
+        },
+        {
+          "feature": "line_spacing",
+          "label": "line-spacing anomaly",
+          "robust_z_score": 3.808
+        }
+      ],
+      "risk_level": "high",
+      "mean_flagged_deviation": 4.905
+    },
+    {
+      "region_id": 37,
+      "text": "736301",
+      "ocr_confidence": 0.9999,
+      "box": [
+        831,
+        560,
+        963,
+        595
+      ],
+      "measurements": {
+        "width_px": 132,
+        "height_px": 35,
+        "aspect_ratio": 3.7714,
+        "stroke_width_estimate_px": 1.91,
+        "ink_density": 0.2489,
+        "edge_density": 0.1517,
+        "edge_sharpness": 4945.373,
+        "background_mean": 245.844,
+        "background_std": 0.478,
+        "estimated_slant_degrees_proxy": 0.665,
+        "word_gap_normalized": 0.0,
+        "character_spacing_proxy": 0.629,
+        "line_spacing_normalized": 3.3,
+        "baseline_deviation_px": 1.5,
+        "line_start_x_px": 831.0
+      },
+      "anomaly_scores": {
+        "height": 0.0,
+        "width": 1.374,
+        "stroke_width": 0.0,
+        "ink_density": 0.587,
+        "aspect_ratio": 1.607,
+        "estimated_slant": 0.658,
+        "edge_sharpness": 1.09,
+        "background_mean": 0.674,
+        "background_std": 0.719,
+        "edge_density": 0.631,
+        "word_gap": 0.0,
+        "char_gap": 1.395,
+        "line_spacing": 3.631,
+        "baseline": 1.012,
+        "indentation": 3.367
+      },
+      "flags": [
+        {
+          "feature": "line_spacing",
+          "label": "line-spacing anomaly",
+          "robust_z_score": 3.631
+        },
+        {
+          "feature": "indentation",
+          "label": "indentation / line-start anomaly",
+          "robust_z_score": 3.367
+        }
+      ],
+      "risk_level": "moderate",
+      "mean_flagged_deviation": 3.499
+    },
+    {
+      "region_id": 38,
+      "text": "जिला",
+      "ocr_confidence": 0.9225,
+      "box": [
+        92,
+        624,
+        161,
+        661
+      ],
+      "measurements": {
+        "width_px": 69,
+        "height_px": 37,
+        "aspect_ratio": 1.8649,
+        "stroke_width_estimate_px": 1.91,
+        "ink_density": 0.3231,
+        "edge_density": 0.188,
+        "edge_sharpness": 8325.937,
+        "background_mean": 227.192,
+        "background_std": 52.545,
+        "estimated_slant_degrees_proxy": 4.149,
+        "word_gap_normalized": 0.0,
+        "character_spacing_proxy": 0.466,
+        "line_spacing_normalized": 1.811,
+        "baseline_deviation_px": 0.5,
+        "line_start_x_px": 92.0
+      },
+      "anomaly_scores": {
+        "height": 0.169,
+        "width": 0.2,
+        "stroke_width": 0.0,
+        "ink_density": 0.003,
+        "aspect_ratio": 0.637,
+        "estimated_slant": 4.136,
+        "edge_sharpness": 0.561,
+        "background_mean": 0.383,
+        "background_std": 1.032,
+        "edge_density": 0.131,
+        "word_gap": 0.0,
+        "char_gap": 0.333,
+        "line_spacing": 0.902,
+        "baseline": 0.337,
+        "indentation": 0.558
+      },
+      "flags": [
+        {
+          "feature": "estimated_slant",
+          "label": "text slant / style proxy",
+          "robust_z_score": 4.136
+        }
+      ],
+      "risk_level": "moderate",
+      "mean_flagged_deviation": 4.136
+    },
+    {
+      "region_id": 39,
+      "text": "कोषागार",
+      "ocr_confidence": 0.9993,
+      "box": [
+        161,
+        624,
+        268,
+        660
+      ],
+      "measurements": {
+        "width_px": 107,
+        "height_px": 36,
+        "aspect_ratio": 2.9722,
+        "stroke_width_estimate_px": 2.739,
+        "ink_density": 0.3307,
+        "edge_density": 0.1809,
+        "edge_sharpness": 9820.751,
+        "background_mean": 227.834,
+        "background_std": 50.833,
+        "estimated_slant_degrees_proxy": 0.176,
+        "word_gap_normalized": 0.0,
+        "character_spacing_proxy": 0.425,
+        "line_spacing_normalized": 1.861,
+        "baseline_deviation_px": -0.5,
+        "line_start_x_px": 161.0
+      },
+      "anomaly_scores": {
+        "height": 0.084,
+        "width": 0.749,
+        "stroke_width": 1.283,
+        "ink_density": 0.064,
+        "aspect_ratio": 0.666,
+        "estimated_slant": 0.17,
+        "edge_sharpness": 1.084,
+        "background_mean": 0.346,
+        "background_std": 0.974,
+        "edge_density": 0.228,
+        "word_gap": 0.0,
+        "char_gap": 0.06,
+        "line_spacing": 0.995,
+        "baseline": 0.337,
+        "indentation": 0.191
+      },
+      "flags": [],
+      "risk_level": "low",
+      "mean_flagged_deviation": 0.0
+    },
+    {
+      "region_id": 40,
+      "text": "उत्तर",
+      "ocr_confidence": 0.9076,
+      "box": [
+        126,
+        661,
+        180,
+        687
+      ],
+      "measurements": {
+        "width_px": 54,
+        "height_px": 26,
+        "aspect_ratio": 2.0769,
+        "stroke_width_estimate_px": 1.91,
+        "ink_density": 0.3383,
+        "edge_density": 0.2073,
+        "edge_sharpness": 8499.392,
+        "background_mean": 246.104,
+        "background_std": 1.856,
+        "estimated_slant_degrees_proxy": -1.273,
+        "word_gap_normalized": 0.077,
+        "character_spacing_proxy": 0.415,
+        "line_spacing_normalized": 1.019,
+        "baseline_deviation_px": 0.0,
+        "line_start_x_px": 126.0
+      },
+      "anomaly_scores": {
+        "height": 0.759,
+        "width": 0.575,
+        "stroke_width": 0.0,
+        "ink_density": 0.124,
+        "aspect_ratio": 0.388,
+        "estimated_slant": 1.277,
+        "edge_sharpness": 0.626,
+        "background_mean": 0.689,
+        "background_std": 0.673,
+        "edge_density": 0.134,
+        "word_gap": 0.029,
+        "char_gap": 0.0,
+        "line_spacing": 0.548,
+        "baseline": 0.0,
+        "indentation": 0.377
+      },
+      "flags": [],
+      "risk_level": "low",
+      "mean_flagged_deviation": 0.0
+    },
+    {
+      "region_id": 41,
+      "text": "प्रदेश",
+      "ocr_confidence": 1.0,
+      "box": [
+        182,
+        657,
+        241,
+        688
+      ],
+      "measurements": {
+        "width_px": 59,
+        "height_px": 31,
+        "aspect_ratio": 1.9032,
+        "stroke_width_estimate_px": 1.91,
+        "ink_density": 0.3188,
+        "edge_density": 0.1897,
+        "edge_sharpness": 9843.487,
+        "background_mean": 230.016,
+        "background_std": 50.262,
+        "estimated_slant_degrees_proxy": -0.409,
+        "word_gap_normalized": 1.577,
+        "character_spacing_proxy": 0.317,
+        "line_spacing_normalized": 0.855,
+        "baseline_deviation_px": 1.0,
+        "line_start_x_px": 182.0
+      },
+      "anomaly_scores": {
+        "height": 0.337,
+        "width": 0.45,
+        "stroke_width": 0.0,
+        "ink_density": 0.031,
+        "aspect_ratio": 0.592,
+        "estimated_slant": 0.414,
+        "edge_sharpness": 1.092,
+        "background_mean": 0.223,
+        "background_std": 0.955,
+        "edge_density": 0.107,
+        "word_gap": 0.586,
+        "char_gap": 0.643,
+        "line_spacing": 0.849,
+        "baseline": 0.674,
+        "indentation": 0.08
+      },
+      "flags": [],
+      "risk_level": "low",
+      "mean_flagged_deviation": 0.0
+    },
+    {
+      "region_id": 42,
+      "text": "*",
+      "ocr_confidence": 0.6985,
+      "box": [
+        282,
+        664,
+        302,
+        685
+      ],
+      "measurements": {
+        "width_px": 20,
+        "height_px": 21,
+        "aspect_ratio": 0.9524,
+        "stroke_width_estimate_px": 2.739,
+        "ink_density": 0.3881,
+        "edge_density": 0.2143,
+        "edge_sharpness": 12363.674,
+        "background_mean": 245.564,
+        "background_std": 1.807,
+        "estimated_slant_degrees_proxy": -17.974,
+        "word_gap_normalized": 0.0,
+        "character_spacing_proxy": 0.952,
+        "line_spacing_normalized": 1.262,
+        "baseline_deviation_px": -2.0,
+        "line_start_x_px": 282.0
+      },
+      "anomaly_scores": {
+        "height": 1.18,
+        "width": 1.424,
+        "stroke_width": 1.283,
+        "ink_density": 0.52,
+        "aspect_ratio": 1.712,
+        "estimated_slant": 17.949,
+        "edge_sharpness": 1.814,
+        "background_mean": 0.659,
+        "background_std": 0.674,
+        "edge_density": 0.231,
+        "word_gap": 0.0,
+        "char_gap": 3.515,
+        "line_spacing": 0.103,
+        "baseline": 1.349,
+        "indentation": 0.451
+      },
+      "flags": [
+        {
+          "feature": "estimated_slant",
+          "label": "text slant / style proxy",
+          "robust_z_score": 17.949
+        },
+        {
+          "feature": "char_gap",
+          "label": "character-spacing anomaly",
+          "robust_z_score": 3.515
+        }
+      ],
+      "risk_level": "moderate",
+      "mean_flagged_deviation": 10.732
+    },
+    {
+      "region_id": 43,
+      "text": "राजस्व",
+      "ocr_confidence": 0.9188,
+      "box": [
+        114,
+        701,
+        191,
+        730
+      ],
+      "measurements": {
+        "width_px": 77,
+        "height_px": 29,
+        "aspect_ratio": 2.6552,
+        "stroke_width_estimate_px": 2.739,
+        "ink_density": 0.3471,
+        "edge_density": 0.1984,
+        "edge_sharpness": 8419.022,
+        "background_mean": 231.198,
+        "background_std": 40.789,
+        "estimated_slant_degrees_proxy": 0.891,
+        "word_gap_normalized": 0.19,
+        "character_spacing_proxy": 0.443,
+        "line_spacing_normalized": 1.483,
+        "baseline_deviation_px": 0.0,
+        "line_start_x_px": 114.0
+      },
+      "anomaly_scores": {
+        "height": 0.506,
+        "width": 0.0,
+        "stroke_width": 1.283,
+        "ink_density": 0.194,
+        "aspect_ratio": 0.293,
+        "estimated_slant": 0.884,
+        "edge_sharpness": 0.596,
+        "background_mean": 0.156,
+        "background_std": 0.636,
+        "edge_density": 0.012,
+        "word_gap": 0.071,
+        "char_gap": 0.178,
+        "line_spacing": 0.301,
+        "baseline": 0.0,
+        "indentation": 0.441
+      },
+      "flags": [],
+      "risk_level": "low",
+      "mean_flagged_deviation": 0.0
+    },
+    {
+      "region_id": 44,
+      "text": "लेखा",
+      "ocr_confidence": 0.9996,
+      "box": [
+        197,
+        696,
+        259,
+        730
+      ],
+      "measurements": {
+        "width_px": 62,
+        "height_px": 34,
+        "aspect_ratio": 1.8235,
+        "stroke_width_estimate_px": 1.91,
+        "ink_density": 0.3449,
+        "edge_density": 0.2139,
+        "edge_sharpness": 12316.703,
+        "background_mean": 208.253,
+        "background_std": 73.823,
+        "estimated_slant_degrees_proxy": 0.443,
+        "word_gap_normalized": 0.0,
+        "character_spacing_proxy": 0.456,
+        "line_spacing_normalized": 1.265,
+        "baseline_deviation_px": 0.0,
+        "line_start_x_px": 197.0
+      },
+      "anomaly_scores": {
+        "height": 0.084,
+        "width": 0.375,
+        "stroke_width": 0.0,
+        "ink_density": 0.176,
+        "aspect_ratio": 0.686,
+        "estimated_slant": 0.437,
+        "edge_sharpness": 1.802,
+        "background_mean": 1.456,
+        "background_std": 1.747,
+        "edge_density": 0.227,
+        "word_gap": 0.0,
+        "char_gap": 0.265,
+        "line_spacing": 0.098,
+        "baseline": 0.0,
+        "indentation": 0.0
+      },
+      "flags": [],
+      "risk_level": "low",
+      "mean_flagged_deviation": 0.0
+    },
+    {
+      "region_id": 45,
+      "text": "प्रमाणित",
+      "ocr_confidence": 0.9206,
+      "box": [
+        145,
+        727,
+        232,
+        755
+      ],
+      "measurements": {
+        "width_px": 87,
+        "height_px": 28,
+        "aspect_ratio": 3.1071,
+        "stroke_width_estimate_px": 1.91,
+        "ink_density": 0.3534,
+        "edge_density": 0.2024,
+        "edge_sharpness": 9964.592,
+        "background_mean": 177.614,
+        "background_std": 86.27,
+        "estimated_slant_degrees_proxy": -1.126,
+        "word_gap_normalized": 0.0,
+        "character_spacing_proxy": 0.388,
+        "line_spacing_normalized": 0.893,
+        "baseline_deviation_px": 0.0,
+        "line_start_x_px": 145.0
+      },
+      "anomaly_scores": {
+        "height": 0.59,
+        "width": 0.25,
+        "stroke_width": 0.0,
+        "ink_density": 0.245,
+        "aspect_ratio": 0.825,
+        "estimated_slant": 1.13,
+        "edge_sharpness": 1.13,
+        "background_mean": 3.192,
+        "background_std": 2.166,
+        "edge_density": 0.067,
+        "word_gap": 0.0,
+        "char_gap": 0.177,
+        "line_spacing": 0.779,
+        "baseline": 0.0,
+        "indentation": 0.276
+      },
+      "flags": [
+        {
+          "feature": "background_mean",
+          "label": "local-background difference",
+          "robust_z_score": 3.192
+        }
+      ],
+      "risk_level": "moderate",
+      "mean_flagged_deviation": 3.192
+    },
+    {
+      "region_id": 46,
+      "text": "दिनांक",
+      "ocr_confidence": 0.9906,
+      "box": [
+        59,
+        762,
+        126,
+        795
+      ],
+      "measurements": {
+        "width_px": 67,
+        "height_px": 33,
+        "aspect_ratio": 2.0303,
+        "stroke_width_estimate_px": 1.91,
+        "ink_density": 0.2542,
+        "edge_density": 0.1741,
+        "edge_sharpness": 8445.885,
+        "background_mean": 228.829,
+        "background_std": 52.198,
+        "estimated_slant_degrees_proxy": 3.528,
+        "word_gap_normalized": 0.371,
+        "character_spacing_proxy": 0.338,
+        "line_spacing_normalized": 1.364,
+        "baseline_deviation_px": -5.0,
+        "line_start_x_px": 59.0
+      },
+      "anomaly_scores": {
+        "height": 0.169,
+        "width": 0.25,
+        "stroke_width": 0.0,
+        "ink_density": 0.545,
+        "aspect_ratio": 0.443,
+        "estimated_slant": 3.516,
+        "edge_sharpness": 0.606,
+        "background_mean": 0.29,
+        "background_std": 1.02,
+        "edge_density": 0.322,
+        "word_gap": 0.138,
+        "char_gap": 0.504,
+        "line_spacing": 0.083,
+        "baseline": 3.372,
+        "indentation": 0.733
+      },
+      "flags": [
+        {
+          "feature": "estimated_slant",
+          "label": "text slant / style proxy",
+          "robust_z_score": 3.516
+        },
+        {
+          "feature": "baseline",
+          "label": "baseline-alignment anomaly",
+          "robust_z_score": 3.372
+        }
+      ],
+      "risk_level": "moderate",
+      "mean_flagged_deviation": 3.444
+    },
+    {
+      "region_id": 47,
+      "text": "26",
+      "ocr_confidence": 0.9997,
+      "box": [
+        139,
+        765,
+        183,
+        800
+      ],
+      "measurements": {
+        "width_px": 44,
+        "height_px": 35,
+        "aspect_ratio": 1.2571,
+        "stroke_width_estimate_px": 2.739,
+        "ink_density": 0.313,
+        "edge_density": 0.1578,
+        "edge_sharpness": 8621.734,
+        "background_mean": 245.999,
+        "background_std": 1.171,
+        "estimated_slant_degrees_proxy": -0.127,
+        "word_gap_normalized": 0.143,
+        "character_spacing_proxy": 0.629,
+        "line_spacing_normalized": 1.286,
+        "baseline_deviation_px": 0.0,
+        "line_start_x_px": 139.0
+      },
+      "anomaly_scores": {
+        "height": 0.0,
+        "width": 0.824,
+        "stroke_width": 1.283,
+        "ink_density": 0.077,
+        "aspect_ratio": 1.353,
+        "estimated_slant": 0.132,
+        "edge_sharpness": 0.672,
+        "background_mean": 0.683,
+        "background_std": 0.696,
+        "edge_density": 0.548,
+        "word_gap": 0.053,
+        "char_gap": 1.395,
+        "line_spacing": 0.059,
+        "baseline": 0.0,
+        "indentation": 0.308
+      },
+      "flags": [],
+      "risk_level": "low",
+      "mean_flagged_deviation": 0.0
+    },
+    {
+      "region_id": 48,
+      "text": "MAY",
+      "ocr_confidence": 0.9997,
+      "box": [
+        188,
+        765,
+        242,
+        800
+      ],
+      "measurements": {
+        "width_px": 54,
+        "height_px": 35,
+        "aspect_ratio": 1.5429,
+        "stroke_width_estimate_px": 2.739,
+        "ink_density": 0.3365,
+        "edge_density": 0.1598,
+        "edge_sharpness": 8391.168,
+        "background_mean": 245.689,
+        "background_std": 1.293,
+        "estimated_slant_degrees_proxy": -2.346,
+        "word_gap_normalized": 0.114,
+        "character_spacing_proxy": 0.514,
+        "line_spacing_normalized": 1.286,
+        "baseline_deviation_px": 0.0,
+        "line_start_x_px": 188.0
+      },
+      "anomaly_scores": {
+        "height": 0.0,
+        "width": 0.575,
+        "stroke_width": 1.283,
+        "ink_density": 0.11,
+        "aspect_ratio": 1.016,
+        "estimated_slant": 2.348,
+        "edge_sharpness": 0.586,
+        "background_mean": 0.666,
+        "background_std": 0.692,
+        "edge_density": 0.52,
+        "word_gap": 0.042,
+        "char_gap": 0.647,
+        "line_spacing": 0.059,
+        "baseline": 0.0,
+        "indentation": 0.048
+      },
+      "flags": [],
+      "risk_level": "low",
+      "mean_flagged_deviation": 0.0
+    },
+    {
+      "region_id": 49,
+      "text": "2024",
+      "ocr_confidence": 0.9134,
+      "box": [
+        246,
+        765,
+        307,
+        800
+      ],
+      "measurements": {
+        "width_px": 61,
+        "height_px": 35,
+        "aspect_ratio": 1.7429,
+        "stroke_width_estimate_px": 2.739,
+        "ink_density": 0.3307,
+        "edge_density": 0.1827,
+        "edge_sharpness": 10703.815,
+        "background_mean": 244.643,
+        "background_std": 1.617,
+        "estimated_slant_degrees_proxy": -0.904,
+        "word_gap_normalized": 0.0,
+        "character_spacing_proxy": 0.436,
+        "line_spacing_normalized": 1.286,
+        "baseline_deviation_px": 0.0,
+        "line_start_x_px": 246.0
+      },
+      "anomaly_scores": {
+        "height": 0.0,
+        "width": 0.4,
+        "stroke_width": 1.283,
+        "ink_density": 0.063,
+        "aspect_ratio": 0.781,
+        "estimated_slant": 0.908,
+        "edge_sharpness": 1.357,
+        "background_mean": 0.606,
+        "background_std": 0.681,
+        "edge_density": 0.205,
+        "word_gap": 0.0,
+        "char_gap": 0.133,
+        "line_spacing": 0.059,
+        "baseline": 0.0,
+        "indentation": 0.26
+      },
+      "flags": [],
+      "risk_level": "low",
+      "mean_flagged_deviation": 0.0
+    },
+    {
+      "region_id": 50,
+      "text": "यह",
+      "ocr_confidence": 0.9999,
+      "box": [
+        71,
+        846,
+        111,
+        876
+      ],
+      "measurements": {
+        "width_px": 40,
+        "height_px": 30,
+        "aspect_ratio": 1.3333,
+        "stroke_width_estimate_px": 1.91,
+        "ink_density": 0.2767,
+        "edge_density": 0.1958,
+        "edge_sharpness": 11446.697,
+        "background_mean": 246.817,
+        "background_std": 0.871,
+        "estimated_slant_degrees_proxy": 10.202,
+        "word_gap_normalized": 0.083,
+        "character_spacing_proxy": 0.667,
+        "line_spacing_normalized": 2.6,
+        "baseline_deviation_px": -2.0,
+        "line_start_x_px": 71.0
+      },
+      "anomaly_scores": {
+        "height": 0.422,
+        "width": 0.924,
+        "stroke_width": 0.0,
+        "ink_density": 0.366,
+        "aspect_ratio": 1.263,
+        "estimated_slant": 10.178,
+        "edge_sharpness": 1.57,
+        "background_mean": 0.73,
+        "background_std": 0.706,
+        "edge_density": 0.023,
+        "word_gap": 0.031,
+        "char_gap": 1.645,
+        "line_spacing": 2.348,
+        "baseline": 1.349,
+        "indentation": 0.669
+      },
+      "flags": [
+        {
+          "feature": "estimated_slant",
+          "label": "text slant / style proxy",
+          "robust_z_score": 10.178
+        }
+      ],
+      "risk_level": "moderate",
+      "mean_flagged_deviation": 10.178
+    },
+    {
+      "region_id": 51,
+      "text": "प्रमाणित",
+      "ocr_confidence": 0.9997,
+      "box": [
+        114,
+        842,
+        213,
+        878
+      ],
+      "measurements": {
+        "width_px": 99,
+        "height_px": 36,
+        "aspect_ratio": 2.75,
+        "stroke_width_estimate_px": 1.91,
+        "ink_density": 0.2379,
+        "edge_density": 0.1625,
+        "edge_sharpness": 9194.905,
+        "background_mean": 246.815,
+        "background_std": 0.851,
+        "estimated_slant_degrees_proxy": -1.044,
+        "word_gap_normalized": 0.0,
+        "character_spacing_proxy": 0.344,
+        "line_spacing_normalized": 2.167,
+        "baseline_deviation_px": 0.0,
+        "line_start_x_px": 114.0
+      },
+      "anomaly_scores": {
+        "height": 0.084,
+        "width": 0.55,
+        "stroke_width": 0.0,
+        "ink_density": 0.674,
+        "aspect_ratio": 0.405,
+        "estimated_slant": 1.048,
+        "edge_sharpness": 0.876,
+        "background_mean": 0.73,
+        "background_std": 0.707,
+        "edge_density": 0.483,
+        "word_gap": 0.0,
+        "char_gap": 0.469,
+        "line_spacing": 1.554,
+        "baseline": 0.0,
+        "indentation": 0.441
+      },
+      "flags": [],
+      "risk_level": "low",
+      "mean_flagged_deviation": 0.0
+    },
+    {
+      "region_id": 52,
+      "text": "किया जाता है कि प्र्तुत दस्तावेज़ पर ₹25,000 (पच्चीस हजार रुपये) का",
+      "ocr_confidence": 0.9385,
+      "box": [
+        210,
+        838,
+        979,
+        885
+      ],
+      "measurements": {
+        "width_px": 769,
+        "height_px": 47,
+        "aspect_ratio": 16.3617,
+        "stroke_width_estimate_px": 1.91,
+        "ink_density": 0.1685,
+        "edge_density": 0.1217,
+        "edge_sharpness": 7576.407,
+        "background_mean": 244.528,
+        "background_std": 7.178,
+        "estimated_slant_degrees_proxy": -0.026,
+        "word_gap_normalized": 0.0,
+        "character_spacing_proxy": 0.292,
+        "line_spacing_normalized": 1.66,
+        "baseline_deviation_px": 7.0,
+        "line_start_x_px": 210.0
+      },
+      "anomaly_scores": {
+        "height": 1.012,
+        "width": 17.287,
+        "stroke_width": 0.0,
+        "ink_density": 1.227,
+        "aspect_ratio": 16.43,
+        "estimated_slant": 0.032,
+        "edge_sharpness": 0.262,
+        "background_mean": 0.6,
+        "background_std": 0.494,
+        "edge_density": 1.046,
+        "word_gap": 0.0,
+        "char_gap": 0.806,
+        "line_spacing": 0.625,
+        "baseline": 4.721,
+        "indentation": 0.069
+      },
+      "flags": [
+        {
+          "feature": "width",
+          "label": "text-width proxy",
+          "robust_z_score": 17.287
+        },
+        {
+          "feature": "aspect_ratio",
+          "label": "glyph/region shape proxy",
+          "robust_z_score": 16.43
+        },
+        {
+          "feature": "baseline",
+          "label": "baseline-alignment anomaly",
+          "robust_z_score": 4.721
+        }
+      ],
+      "risk_level": "high",
+      "mean_flagged_deviation": 12.813
+    },
+    {
+      "region_id": 53,
+      "text": "न्यायिक",
+      "ocr_confidence": 0.9932,
+      "box": [
+        72,
+        897,
+        159,
+        930
+      ],
+      "measurements": {
+        "width_px": 87,
+        "height_px": 33,
+        "aspect_ratio": 2.6364,
+        "stroke_width_estimate_px": 1.91,
+        "ink_density": 0.2644,
+        "edge_density": 0.1836,
+        "edge_sharpness": 10446.28,
+        "background_mean": 245.682,
+        "background_std": 11.261,
+        "estimated_slant_degrees_proxy": 1.77,
+        "word_gap_normalized": 0.0,
+        "character_spacing_proxy": 0.377,
+        "line_spacing_normalized": 1.636,
+        "baseline_deviation_px": -2.0,
+        "line_start_x_px": 72.0
+      },
+      "anomaly_scores": {
+        "height": 0.169,
+        "width": 0.25,
+        "stroke_width": 0.0,
+        "ink_density": 0.464,
+        "aspect_ratio": 0.271,
+        "estimated_slant": 1.761,
+        "edge_sharpness": 1.28,
+        "background_mean": 0.665,
+        "background_std": 0.357,
+        "edge_density": 0.192,
+        "word_gap": 0.0,
+        "char_gap": 0.254,
+        "line_spacing": 0.583,
+        "baseline": 1.349,
+        "indentation": 0.664
+      },
+      "flags": [],
+      "risk_level": "low",
+      "mean_flagged_deviation": 0.0
+    },
+    {
+      "region_id": 54,
+      "text": "स्टाम्प",
+      "ocr_confidence": 0.9877,
+      "box": [
+        154,
+        898,
+        229,
+        932
+      ],
+      "measurements": {
+        "width_px": 75,
+        "height_px": 34,
+        "aspect_ratio": 2.2059,
+        "stroke_width_estimate_px": 1.91,
+        "ink_density": 0.2035,
+        "edge_density": 0.1384,
+        "edge_sharpness": 8016.342,
+        "background_mean": 239.782,
+        "background_std": 35.378,
+        "estimated_slant_degrees_proxy": -1.67,
+        "word_gap_normalized": 0.0,
+        "character_spacing_proxy": 0.315,
+        "line_spacing_normalized": 1.588,
+        "baseline_deviation_px": 0.0,
+        "line_start_x_px": 154.0
+      },
+      "anomaly_scores": {
+        "height": 0.084,
+        "width": 0.05,
+        "stroke_width": 0.0,
+        "ink_density": 0.948,
+        "aspect_ratio": 0.236,
+        "estimated_slant": 1.673,
+        "edge_sharpness": 0.441,
+        "background_mean": 0.331,
+        "background_std": 0.454,
+        "edge_density": 0.815,
+        "word_gap": 0.0,
+        "char_gap": 0.656,
+        "line_spacing": 0.495,
+        "baseline": 0.0,
+        "indentation": 0.228
+      },
+      "flags": [],
+      "risk_level": "low",
+      "mean_flagged_deviation": 0.0
+    },
+    {
+      "region_id": 55,
+      "text": "शुल्क विधिवत रूप से अदा किया गया है। यह दस्तावेज़ दिनांक 26 मई 2024",
+      "ocr_confidence": 0.9612,
+      "box": [
+        218,
+        895,
+        980,
+        936
+      ],
+      "measurements": {
+        "width_px": 762,
+        "height_px": 41,
+        "aspect_ratio": 18.5854,
+        "stroke_width_estimate_px": 1.91,
+        "ink_density": 0.1994,
+        "edge_density": 0.1436,
+        "edge_sharpness": 8866.977,
+        "background_mean": 243.834,
+        "background_std": 15.202,
+        "estimated_slant_degrees_proxy": 0.022,
+        "word_gap_normalized": 0.0,
+        "character_spacing_proxy": 0.344,
+        "line_spacing_normalized": 1.317,
+        "baseline_deviation_px": 4.0,
+        "line_start_x_px": 218.0
+      },
+      "anomaly_scores": {
+        "height": 0.506,
+        "width": 17.112,
+        "stroke_width": 0.0,
+        "ink_density": 0.981,
+        "aspect_ratio": 19.048,
+        "estimated_slant": 0.016,
+        "edge_sharpness": 0.76,
+        "background_mean": 0.561,
+        "background_std": 0.224,
+        "edge_density": 0.743,
+        "word_gap": 0.0,
+        "char_gap": 0.466,
+        "line_spacing": 0.002,
+        "baseline": 2.698,
+        "indentation": 0.112
+      },
+      "flags": [
+        {
+          "feature": "width",
+          "label": "text-width proxy",
+          "robust_z_score": 17.112
+        },
+        {
+          "feature": "aspect_ratio",
+          "label": "glyph/region shape proxy",
+          "robust_z_score": 19.048
+        }
+      ],
+      "risk_level": "moderate",
+      "mean_flagged_deviation": 18.08
+    },
+    {
+      "region_id": 56,
+      "text": "को मेरे समक्ष प्रस्तुत किया गया, जिसमें निम्नलिखित विवरण दर्ज है:",
+      "ocr_confidence": 0.9718,
+      "box": [
+        70,
+        947,
+        755,
+        988
+      ],
+      "measurements": {
+        "width_px": 685,
+        "height_px": 41,
+        "aspect_ratio": 16.7073,
+        "stroke_width_estimate_px": 1.91,
+        "ink_density": 0.2074,
+        "edge_density": 0.1493,
+        "edge_sharpness": 8855.551,
+        "background_mean": 245.504,
+        "background_std": 0.796,
+        "estimated_slant_degrees_proxy": -0.062,
+        "word_gap_normalized": 0.0,
+        "character_spacing_proxy": 0.304,
+        "line_spacing_normalized": 1.366,
+        "baseline_deviation_px": 0.0,
+        "line_start_x_px": 70.0
+      },
+      "anomaly_scores": {
+        "height": 0.506,
+        "width": 15.189,
+        "stroke_width": 0.0,
+        "ink_density": 0.917,
+        "aspect_ratio": 16.837,
+        "estimated_slant": 0.068,
+        "edge_sharpness": 0.756,
+        "background_mean": 0.655,
+        "background_std": 0.709,
+        "edge_density": 0.665,
+        "word_gap": 0.0,
+        "char_gap": 0.731,
+        "line_spacing": 0.087,
+        "baseline": 0.0,
+        "indentation": 0.674
+      },
+      "flags": [
+        {
+          "feature": "width",
+          "label": "text-width proxy",
+          "robust_z_score": 15.189
+        },
+        {
+          "feature": "aspect_ratio",
+          "label": "glyph/region shape proxy",
+          "robust_z_score": 16.837
+        }
+      ],
+      "risk_level": "moderate",
+      "mean_flagged_deviation": 16.013
+    },
+    {
+      "region_id": 57,
+      "text": "श्री/श्रीमती राम कुमार पुत्र श्री सुरेश प्रसाद निवासी ग्राम सैदपुर, तहसील सदर,",
+      "ocr_confidence": 0.9552,
+      "box": [
+        69,
+        1004,
+        977,
+        1052
+      ],
+      "measurements": {
+        "width_px": 908,
+        "height_px": 48,
+        "aspect_ratio": 18.9167,
+        "stroke_width_estimate_px": 1.91,
+        "ink_density": 0.1625,
+        "edge_density": 0.1151,
+        "edge_sharpness": 6349.647,
+        "background_mean": 245.14,
+        "background_std": 0.842,
+        "estimated_slant_degrees_proxy": 0.136,
+        "word_gap_normalized": 0.0,
+        "character_spacing_proxy": 0.282,
+        "line_spacing_normalized": 1.333,
+        "baseline_deviation_px": 0.0,
+        "line_start_x_px": 69.0
+      },
+      "anomaly_scores": {
+        "height": 1.096,
+        "width": 20.759,
+        "stroke_width": 0.0,
+        "ink_density": 1.274,
+        "aspect_ratio": 19.438,
+        "estimated_slant": 0.13,
+        "edge_sharpness": 0.298,
+        "background_mean": 0.635,
+        "background_std": 0.707,
+        "edge_density": 1.136,
+        "word_gap": 0.0,
+        "char_gap": 0.871,
+        "line_spacing": 0.028,
+        "baseline": 0.0,
+        "indentation": 0.68
+      },
+      "flags": [
+        {
+          "feature": "width",
+          "label": "text-width proxy",
+          "robust_z_score": 20.759
+        },
+        {
+          "feature": "aspect_ratio",
+          "label": "glyph/region shape proxy",
+          "robust_z_score": 19.438
+        }
+      ],
+      "risk_level": "moderate",
+      "mean_flagged_deviation": 20.099
+    },
+    {
+      "region_id": 58,
+      "text": "जिला लखनऊ, उत्तर प्रदेश, द्वारा अपनी कृषि भूमि के स्वामित्व एवं विक्रय संबंधी",
+      "ocr_confidence": 0.9615,
+      "box": [
+        69,
+        1062,
+        977,
+        1105
+      ],
+      "measurements": {
+        "width_px": 908,
+        "height_px": 43,
+        "aspect_ratio": 21.1163,
+        "stroke_width_estimate_px": 1.91,
+        "ink_density": 0.1872,
+        "edge_density": 0.1313,
+        "edge_sharpness": 7151.196,
+        "background_mean": 245.116,
+        "background_std": 0.794,
+        "estimated_slant_degrees_proxy": 0.037,
+        "word_gap_normalized": 0.0,
+        "character_spacing_proxy": 0.325,
+        "line_spacing_normalized": 1.233,
+        "baseline_deviation_px": 0.0,
+        "line_start_x_px": 69.0
+      },
+      "anomaly_scores": {
+        "height": 0.674,
+        "width": 20.759,
+        "stroke_width": 0.0,
+        "ink_density": 1.078,
+        "aspect_ratio": 22.027,
+        "estimated_slant": 0.031,
+        "edge_sharpness": 0.079,
+        "background_mean": 0.633,
+        "background_std": 0.709,
+        "edge_density": 0.912,
+        "word_gap": 0.0,
+        "char_gap": 0.592,
+        "line_spacing": 0.157,
+        "baseline": 0.0,
+        "indentation": 0.68
+      },
+      "flags": [
+        {
+          "feature": "width",
+          "label": "text-width proxy",
+          "robust_z_score": 20.759
+        },
+        {
+          "feature": "aspect_ratio",
+          "label": "glyph/region shape proxy",
+          "robust_z_score": 22.027
+        }
+      ],
+      "risk_level": "moderate",
+      "mean_flagged_deviation": 21.393
+    },
+    {
+      "region_id": 59,
+      "text": "घोषणा पत्र प्र्तुत किया गया है। उक्त भूमि खसरा संख्या 142, रकबा 0.229 हेक्टेयर,",
+      "ocr_confidence": 0.9572,
+      "box": [
+        70,
+        1118,
+        977,
+        1162
+      ],
+      "measurements": {
+        "width_px": 907,
+        "height_px": 44,
+        "aspect_ratio": 20.6136,
+        "stroke_width_estimate_px": 1.91,
+        "ink_density": 0.1802,
+        "edge_density": 0.1265,
+        "edge_sharpness": 6755.302,
+        "background_mean": 245.25,
+        "background_std": 0.752,
+        "estimated_slant_degrees_proxy": 0.156,
+        "word_gap_normalized": 0.0,
+        "character_spacing_proxy": 0.312,
+        "line_spacing_normalized": 1.295,
+        "baseline_deviation_px": 0.0,
+        "line_start_x_px": 70.0
+      },
+      "anomaly_scores": {
+        "height": 0.759,
+        "width": 20.734,
+        "stroke_width": 0.0,
+        "ink_density": 1.134,
+        "aspect_ratio": 21.435,
+        "estimated_slant": 0.149,
+        "edge_sharpness": 0.102,
+        "background_mean": 0.641,
+        "background_std": 0.71,
+        "edge_density": 0.979,
+        "word_gap": 0.0,
+        "char_gap": 0.674,
+        "line_spacing": 0.042,
+        "baseline": 0.0,
+        "indentation": 0.674
+      },
+      "flags": [
+        {
+          "feature": "width",
+          "label": "text-width proxy",
+          "robust_z_score": 20.734
+        },
+        {
+          "feature": "aspect_ratio",
+          "label": "glyph/region shape proxy",
+          "robust_z_score": 21.435
+        }
+      ],
+      "risk_level": "moderate",
+      "mean_flagged_deviation": 21.084
+    },
+    {
+      "region_id": 60,
+      "text": "जो ग्राम सैदपुर, परगना मोहनलालगंज, तहसील सदर के अंतर्गत स्थित है, जिसकी",
+      "ocr_confidence": 0.9803,
+      "box": [
+        69,
+        1175,
+        978,
+        1218
+      ],
+      "measurements": {
+        "width_px": 909,
+        "height_px": 43,
+        "aspect_ratio": 21.1395,
+        "stroke_width_estimate_px": 1.91,
+        "ink_density": 0.1828,
+        "edge_density": 0.1299,
+        "edge_sharpness": 6937.946,
+        "background_mean": 245.568,
+        "background_std": 0.715,
+        "estimated_slant_degrees_proxy": 0.006,
+        "word_gap_normalized": 0.0,
+        "character_spacing_proxy": 0.352,
+        "line_spacing_normalized": 1.302,
+        "baseline_deviation_px": 0.0,
+        "line_start_x_px": 69.0
+      },
+      "anomaly_scores": {
+        "height": 0.674,
+        "width": 20.784,
+        "stroke_width": 0.0,
+        "ink_density": 1.113,
+        "aspect_ratio": 22.055,
+        "estimated_slant": 0.0,
+        "edge_sharpness": 0.017,
+        "background_mean": 0.659,
+        "background_std": 0.711,
+        "edge_density": 0.933,
+        "word_gap": 0.0,
+        "char_gap": 0.413,
+        "line_spacing": 0.029,
+        "baseline": 0.0,
+        "indentation": 0.68
+      },
+      "flags": [
+        {
+          "feature": "width",
+          "label": "text-width proxy",
+          "robust_z_score": 20.784
+        },
+        {
+          "feature": "aspect_ratio",
+          "label": "glyph/region shape proxy",
+          "robust_z_score": 22.055
+        }
+      ],
+      "risk_level": "moderate",
+      "mean_flagged_deviation": 21.419
+    },
+    {
+      "region_id": 61,
+      "text": "बिक्री/हस्तांतरण राशि र 94.50 (चौरानवे रूपये पचास पैसे मात्र) नि्ारित की गई है।",
+      "ocr_confidence": 0.9625,
+      "box": [
+        69,
+        1232,
+        981,
+        1276
+      ],
+      "measurements": {
+        "width_px": 912,
+        "height_px": 44,
+        "aspect_ratio": 20.7273,
+        "stroke_width_estimate_px": 1.91,
+        "ink_density": 0.1946,
+        "edge_density": 0.1368,
+        "edge_sharpness": 7395.728,
+        "background_mean": 245.244,
+        "background_std": 0.794,
+        "estimated_slant_degrees_proxy": 0.176,
+        "word_gap_normalized": 0.0,
+        "character_spacing_proxy": 0.309,
+        "line_spacing_normalized": 1.318,
+        "baseline_deviation_px": 0.0,
+        "line_start_x_px": 69.0
+      },
+      "anomaly_scores": {
+        "height": 0.759,
+        "width": 20.859,
+        "stroke_width": 0.0,
+        "ink_density": 1.019,
+        "aspect_ratio": 21.569,
+        "estimated_slant": 0.17,
+        "edge_sharpness": 0.185,
+        "background_mean": 0.64,
+        "background_std": 0.709,
+        "edge_density": 0.837,
+        "word_gap": 0.0,
+        "char_gap": 0.694,
+        "line_spacing": 0.0,
+        "baseline": 0.0,
+        "indentation": 0.68
+      },
+      "flags": [
+        {
+          "feature": "width",
+          "label": "text-width proxy",
+          "robust_z_score": 20.859
+        },
+        {
+          "feature": "aspect_ratio",
+          "label": "glyph/region shape proxy",
+          "robust_z_score": 21.569
+        }
+      ],
+      "risk_level": "moderate",
+      "mean_flagged_deviation": 21.214
+    },
+    {
+      "region_id": 62,
+      "text": "यह दस्तावेज पूर्णतः स्वच्छा से एवं बिना किसी दबाव के प्रस्तुत किया गया है।",
+      "ocr_confidence": 0.962,
+      "box": [
+        68,
+        1291,
+        890,
+        1336
+      ],
+      "measurements": {
+        "width_px": 822,
+        "height_px": 45,
+        "aspect_ratio": 18.2667,
+        "stroke_width_estimate_px": 1.91,
+        "ink_density": 0.1874,
+        "edge_density": 0.1317,
+        "edge_sharpness": 7322.393,
+        "background_mean": 244.964,
+        "background_std": 0.637,
+        "estimated_slant_degrees_proxy": 0.189,
+        "word_gap_normalized": 0.0,
+        "character_spacing_proxy": 0.299,
+        "line_spacing_normalized": 1.333,
+        "baseline_deviation_px": 0.0,
+        "line_start_x_px": 68.0
+      },
+      "anomaly_scores": {
+        "height": 0.843,
+        "width": 18.611,
+        "stroke_width": 0.0,
+        "ink_density": 1.077,
+        "aspect_ratio": 18.672,
+        "estimated_slant": 0.183,
+        "edge_sharpness": 0.154,
+        "background_mean": 0.625,
+        "background_std": 0.714,
+        "edge_density": 0.907,
+        "word_gap": 0.0,
+        "char_gap": 0.759,
+        "line_spacing": 0.028,
+        "baseline": 0.0,
+        "indentation": 0.685
+      },
+      "flags": [
+        {
+          "feature": "width",
+          "label": "text-width proxy",
+          "robust_z_score": 18.611
+        },
+        {
+          "feature": "aspect_ratio",
+          "label": "glyph/region shape proxy",
+          "robust_z_score": 18.672
+        }
+      ],
+      "risk_level": "moderate",
+      "mean_flagged_deviation": 18.642
+    },
+    {
+      "region_id": 63,
+      "text": "राम कुमार",
+      "ocr_confidence": 0.9543,
+      "box": [
+        86,
+        1366,
+        307,
+        1455
+      ],
+      "measurements": {
+        "width_px": 221,
+        "height_px": 89,
+        "aspect_ratio": 2.4831,
+        "stroke_width_estimate_px": 1.91,
+        "ink_density": 0.1015,
+        "edge_density": 0.0802,
+        "edge_sharpness": 4839.712,
+        "background_mean": 242.445,
+        "background_std": 19.797,
+        "estimated_slant_degrees_proxy": -10.916,
+        "word_gap_normalized": 0.0,
+        "character_spacing_proxy": 0.31,
+        "line_spacing_normalized": 1.337,
+        "baseline_deviation_px": 0.0,
+        "line_start_x_px": 86.0
+      },
+      "anomaly_scores": {
+        "height": 4.553,
+        "width": 3.597,
+        "stroke_width": 0.0,
+        "ink_density": 1.76,
+        "aspect_ratio": 0.091,
+        "estimated_slant": 10.902,
+        "edge_sharpness": 1.159,
+        "background_mean": 0.482,
+        "background_std": 0.07,
+        "edge_density": 1.618,
+        "word_gap": 0.0,
+        "char_gap": 0.687,
+        "line_spacing": 0.035,
+        "baseline": 0.0,
+        "indentation": 0.59
+      },
+      "flags": [
+        {
+          "feature": "height",
+          "label": "text-size / character-height proxy",
+          "robust_z_score": 4.553
+        },
+        {
+          "feature": "width",
+          "label": "text-width proxy",
+          "robust_z_score": 3.597
+        },
+        {
+          "feature": "estimated_slant",
+          "label": "text slant / style proxy",
+          "robust_z_score": 10.902
+        }
+      ],
+      "risk_level": "high",
+      "mean_flagged_deviation": 6.351
+    },
+    {
+      "region_id": 64,
+      "text": "(हस्ताक्षर)",
+      "ocr_confidence": 0.9992,
+      "box": [
+        138,
+        1466,
+        254,
+        1512
+      ],
+      "measurements": {
+        "width_px": 116,
+        "height_px": 46,
+        "aspect_ratio": 2.5217,
+        "stroke_width_estimate_px": 1.91,
+        "ink_density": 0.1737,
+        "edge_density": 0.1357,
+        "edge_sharpness": 8980.537,
+        "background_mean": 244.945,
+        "background_std": 0.429,
+        "estimated_slant_degrees_proxy": -0.366,
+        "word_gap_normalized": 2.959,
+        "character_spacing_proxy": 0.229,
+        "line_spacing_normalized": 1.522,
+        "baseline_deviation_px": -13.0,
+        "line_start_x_px": 138.0
+      },
+      "anomaly_scores": {
+        "height": 0.927,
+        "width": 0.974,
+        "stroke_width": 0.0,
+        "ink_density": 1.185,
+        "aspect_ratio": 0.136,
+        "estimated_slant": 0.371,
+        "edge_sharpness": 0.801,
+        "background_mean": 0.624,
+        "background_std": 0.721,
+        "edge_density": 0.853,
+        "word_gap": 1.099,
+        "char_gap": 1.218,
+        "line_spacing": 0.373,
+        "baseline": 8.768,
+        "indentation": 0.313
+      },
+      "flags": [
+        {
+          "feature": "baseline",
+          "label": "baseline-alignment anomaly",
+          "robust_z_score": 8.768
+        }
+      ],
+      "risk_level": "moderate",
+      "mean_flagged_deviation": 8.768
+    },
+    {
+      "region_id": 65,
+      "text": "(अंगुठा निशान)",
+      "ocr_confidence": 0.9657,
+      "box": [
+        399,
+        1476,
+        571,
+        1525
+      ],
+      "measurements": {
+        "width_px": 172,
+        "height_px": 49,
+        "aspect_ratio": 3.5102,
+        "stroke_width_estimate_px": 1.91,
+        "ink_density": 0.1735,
+        "edge_density": 0.1261,
+        "edge_sharpness": 8024.811,
+        "background_mean": 234.7,
+        "background_std": 42.11,
+        "estimated_slant_degrees_proxy": -0.52,
+        "word_gap_normalized": 4.592,
+        "character_spacing_proxy": 0.27,
+        "line_spacing_normalized": 1.429,
+        "baseline_deviation_px": 0.0,
+        "line_start_x_px": 399.0
+      },
+      "anomaly_scores": {
+        "height": 1.18,
+        "width": 2.373,
+        "stroke_width": 0.0,
+        "ink_density": 1.187,
+        "aspect_ratio": 1.3,
+        "estimated_slant": 0.525,
+        "edge_sharpness": 0.444,
+        "background_mean": 0.043,
+        "background_std": 0.681,
+        "edge_density": 0.984,
+        "word_gap": 1.706,
+        "char_gap": 0.951,
+        "line_spacing": 0.202,
+        "baseline": 0.0,
+        "indentation": 1.073
+      },
+      "flags": [],
+      "risk_level": "low",
+      "mean_flagged_deviation": 0.0
+    },
+    {
+      "region_id": 66,
+      "text": "(अंगूठा निशान)",
+      "ocr_confidence": 0.9503,
+      "box": [
+        796,
+        1478,
+        963,
+        1527
+      ],
+      "measurements": {
+        "width_px": 167,
+        "height_px": 49,
+        "aspect_ratio": 3.4082,
+        "stroke_width_estimate_px": 1.91,
+        "ink_density": 0.1683,
+        "edge_density": 0.1288,
+        "edge_sharpness": 7892.257,
+        "background_mean": 233.943,
+        "background_std": 41.858,
+        "estimated_slant_degrees_proxy": -0.552,
+        "word_gap_normalized": 0.0,
+        "character_spacing_proxy": 0.262,
+        "line_spacing_normalized": 1.429,
+        "baseline_deviation_px": 2.0,
+        "line_start_x_px": 796.0
+      },
+      "anomaly_scores": {
+        "height": 1.18,
+        "width": 2.248,
+        "stroke_width": 0.0,
+        "ink_density": 1.229,
+        "aspect_ratio": 1.18,
+        "estimated_slant": 0.556,
+        "edge_sharpness": 0.391,
+        "background_mean": 0.0,
+        "background_std": 0.672,
+        "edge_density": 0.947,
+        "word_gap": 0.0,
+        "char_gap": 1.003,
+        "line_spacing": 0.202,
+        "baseline": 1.349,
+        "indentation": 3.181
+      },
+      "flags": [
+        {
+          "feature": "indentation",
+          "label": "indentation / line-start anomaly",
+          "robust_z_score": 3.181
+        }
+      ],
+      "risk_level": "moderate",
+      "mean_flagged_deviation": 3.181
+    }
+  ],
+  "disclaimer": "This is a heuristic screening tool. An anomaly does not establish forgery; a lack of anomalies does not establish authenticity.",
+  "outputs": {
+    "annotated_image": "outputs\\test_font\\stamp_doc_1_font_anomalies.png",
+    "json_report": "outputs\\test_font\\stamp_doc_1_font_report.json"
+  }
+}

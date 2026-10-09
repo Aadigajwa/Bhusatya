@@ -1,0 +1,18 @@
+# FastAPI backend
+fastapi
+uvicorn[standard]
+python-multipart
+httpx
+
+# OCR engine
+paddleocr
+paddlepaddle
+
+# Image Processing
+opencv-python
+numpy
+Pillow
+
+# Desktop UI
+customtkinter
+requests

@@ -1,0 +1,55 @@
+{
+  "document_details": {
+    "document_type": "घोषणा पत्र",
+    "document_purpose": null
+  },
+  "owner_details": {
+    "owner_name": "राम कुमार",
+    "father_name": "सुरेश प्रसाद निवासी ग्राम सैदपुर",
+    "other_named_persons": []
+  },
+  "address_details": {
+    "village": "सैदपुर",
+    "tehsil": "सदर",
+    "district": "कोषागार",
+    "state": "उत्तर प्रदेश"
+  },
+  "land_details": {
+    "survey_or_khasra_number": "142",
+    "area": {
+      "value": "0.229",
+      "unit": "हेक्टेयर"
+    },
+    "land_type": "कृषि भूमि",
+    "pargana": "मोहनलालगंज"
+  },
+  "financial_details": {
+    "amounts_found": [
+      "25000",
+      "25,000"
+    ],
+    "sale_or_transaction_amount": "२",
+    "stamp_duty_amount": null,
+    "currency": "INR"
+  },
+  "date_details": {
+    "all_dates_found": [
+      "26\nMAY\n2024",
+      "26 मई 2024"
+    ],
+    "document_date": "26\nMAY\n2024"
+  },
+  "registration_details": {
+    "registration_number": null,
+    "stamp_number": null,
+    "signature_mentioned_in_text": true,
+    "fingerprint_mentioned_in_text": true
+  },
+  "other_information": {
+    "important_statements": [
+      "तहसील सदर, जिला लखनऊ, उत्तर प्रदेश,' द्वारा अपनी कृषि भूमि के स्वामित्व",
+      "एवं विक्रय संबंधी घोषणा पत्र प्र्तुत किया गया है। उक्त भूमि खसरा संख्या 142,",
+      "अंतर्गत स्थित है, जिसकी बिक्री/हस्तांतरण राशि २ 94.50 (चौरानवे रुपये पचास पैसे मात्र)"
+    ]
+  }
+}

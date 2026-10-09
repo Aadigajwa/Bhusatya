@@ -1,0 +1,92 @@
+{
+  "document_id": "test_stamp_doc_1",
+  "analysis_timestamp": "2026-10-09T19:53:08.413238",
+  "verdict": "HIGH_RISK_TAMPERED",
+  "verdict_label": "Tampered / High Risk of Forgery",
+  "status_color": "#E74C3C",
+  "tampering_risk_score": 82.0,
+  "executive_summary": "Document verification evaluated this document as 'Tampered / High Risk of Forgery' with an overall tampering risk score of 82.0%. Forensic screening identified 2 CRITICAL red flag(s): Left Thumb Impression Forgery: Synthetic Ridge Pattern & Ink Discontinuity; Right Thumb Impression Forgery: Spliced Ridge Discontinuity & Tampered Minutiae.",
+  "category_scores": {
+    "typography_and_font": 0.0,
+    "compression_ela": 0.0,
+    "cloning_copy_move": 0.0,
+    "edge_splicing": 0.0,
+    "stamp_seal_integrity": 0.0,
+    "semantic_logic": 0.0
+  },
+  "findings_summary": {
+    "total_findings": 2,
+    "critical_findings": 2,
+    "warning_findings": 0,
+    "info_findings": 0
+  },
+  "findings": [
+    {
+      "category": "BIOMETRIC_FORGERY",
+      "severity": "CRITICAL",
+      "title": "Left Thumb Impression Forgery: Synthetic Ridge Pattern & Ink Discontinuity",
+      "description": "Forensic biometric analysis indicates the primary party left thumb impression is a synthetic/counterfeit print. Ridge line flow shows abrupt artificial termination, absence of epidermal pore sweat structures, and uniform pixel opacity inconsistent with natural ink transfer.",
+      "evidence": "Galton point failure; 0 authentic ridge bifurcations; uniform pixel opacity",
+      "bounding_box": [
+        443,
+        1351,
+        534,
+        1478
+      ],
+      "affected_text": "अंगूठा निशान (प्रथम पक्ष)",
+      "confidence_score": 0.96
+    },
+    {
+      "category": "BIOMETRIC_FORGERY",
+      "severity": "CRITICAL",
+      "title": "Right Thumb Impression Forgery: Spliced Ridge Discontinuity & Tampered Minutiae",
+      "description": "Forensic examination confirms the secondary thumb impression is digitally spliced. High-frequency boundary halo artifacts, disrupted ridge flow vectors, and anomalous Error Level Analysis (ELA) compression noise verify a copied/forged imprint.",
+      "evidence": "Perimeter gradient step 4.8x; abrupt ridge termination vectors; ELA discrepancy",
+      "bounding_box": [
+        833,
+        1352,
+        928,
+        1479
+      ],
+      "affected_text": "अंगूठा निशान (द्वितीय पक्ष)",
+      "confidence_score": 0.94
+    }
+  ],
+  "forensic_details": {
+    "font_forensics": {
+      "total_regions": 1,
+      "flagged_regions": 0,
+      "high_risk_regions": 0,
+      "moderate_risk_regions": 0,
+      "anomaly_percentage": 0.0
+    },
+    "compression_forensics": {
+      "mean_difference": 59.05,
+      "anomalous_patches_count": 0
+    },
+    "copy_move_forensics": {
+      "cloned_clusters_count": 0,
+      "clusters": []
+    },
+    "splice_forensics": {
+      "spliced_regions_count": 0,
+      "spliced_regions": []
+    },
+    "stamp_forensics": {
+      "stamps_detected": 8,
+      "has_header_stamp": true
+    },
+    "semantic_forensics": {
+      "anomalies_detected": 0,
+      "anomalies": []
+    }
+  },
+  "recommendations": [
+    "Subject the physical document to microscopic inspection under oblique lighting to examine paper fibers and physical erasing.",
+    "Cross-reference the Registration Number, Deed Date, and Consideration Amount with the State Department of Registrations and Stamps portal."
+  ],
+  "generated_files": {
+    "annotated_evidence_image": "outputs\\test_stamp_doc_1\\tampering_annotated.png",
+    "ela_heatmap_image": "outputs\\test_stamp_doc_1\\ela_heatmap.png"
+  }
+}
