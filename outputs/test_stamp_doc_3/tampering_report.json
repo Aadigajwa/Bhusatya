@@ -1,0 +1,882 @@
+{
+  "document_id": "test_stamp_doc_3",
+  "analysis_timestamp": "2026-10-10T00:39:20.500517",
+  "verdict": "HIGH_RISK_TAMPERED",
+  "verdict_label": "Tampered / High Risk of Forgery",
+  "status_color": "#E74C3C",
+  "tampering_risk_score": 82.0,
+  "executive_summary": "Document verification evaluated this document as 'Tampered / High Risk of Forgery' with an overall tampering risk score of 82.0%. Forensic screening identified 17 CRITICAL red flag(s): Text Appearance Inconsistency: 'ऱ'; Text Appearance Inconsistency: 'न्यायिक'; Text Appearance Inconsistency: 'भारतीय'; Text Appearance Inconsistency: 'मd'; Text Appearance Inconsistency: '*'; Text Appearance Inconsistency: '0'; Text Appearance Inconsistency: 'सी'; Text Appearance Inconsistency: 'सपयो'; Font Size Inconsistency: 'तैयार किया गया है। इसमें ' (1.48x); Font Size Inconsistency: 'एक परीक्षण परिदृश्य के लि' (1.52x); Font Size Inconsistency: 'तरह से काल्पनिक और प्रायो' (1.56x); Font Size Inconsistency: 'हजार पांच सौ रुपये) का का' (1.64x); Font Size Inconsistency: '₹ 89,200 (नवासी हजार दो स' (1.64x); Font Size Inconsistency: 'श्री/श्रीमती मोहन लाल गुप' (1.68x); Inline Font Size Jump: 'राजस्व' <-> 'लेखा'; Gemini AI Logo / SynthID Watermark Detected at Thumb Impression; Gemini AI Generated Secondary Thumb Print: Synthetic Ridge Geometry. Typography analysis identified 8 high-risk text regions with anomalous stroke thickness, slant, or baseline offsets.",
+  "category_scores": {
+    "typography_and_font": 100.0,
+    "compression_ela": 0.0,
+    "cloning_copy_move": 0.0,
+    "edge_splicing": 0.0,
+    "stamp_seal_integrity": 0.0,
+    "semantic_logic": 0.0
+  },
+  "findings_summary": {
+    "total_findings": 55,
+    "critical_findings": 17,
+    "warning_findings": 38,
+    "info_findings": 0
+  },
+  "findings": [
+    {
+      "category": "FONT_INCONSISTENCY",
+      "severity": "CRITICAL",
+      "title": "Text Appearance Inconsistency: 'ऱ'",
+      "description": "Region displays significant statistical deviation in typography: text slant / style proxy, character-spacing anomaly, line-spacing anomaly. Different stroke thickness, slant, or baseline alignment suggests text was added or altered separately.",
+      "evidence": "Flagged features: text slant / style proxy, character-spacing anomaly, line-spacing anomaly",
+      "bounding_box": [
+        82,
+        69,
+        109,
+        101
+      ],
+      "affected_text": "ऱ",
+      "confidence_score": 0.88
+    },
+    {
+      "category": "FONT_INCONSISTENCY",
+      "severity": "WARNING",
+      "title": "Text Appearance Inconsistency: '27500'",
+      "description": "Region displays significant statistical deviation in typography: line-spacing anomaly. Different stroke thickness, slant, or baseline alignment suggests text was added or altered separately.",
+      "evidence": "Flagged features: line-spacing anomaly",
+      "bounding_box": [
+        115,
+        65,
+        233,
+        104
+      ],
+      "affected_text": "27500",
+      "confidence_score": 0.75
+    },
+    {
+      "category": "FONT_INCONSISTENCY",
+      "severity": "WARNING",
+      "title": "Text Appearance Inconsistency: 'गैर'",
+      "description": "Region displays significant statistical deviation in typography: text slant / style proxy, line-spacing anomaly. Different stroke thickness, slant, or baseline alignment suggests text was added or altered separately.",
+      "evidence": "Flagged features: text slant / style proxy, line-spacing anomaly",
+      "bounding_box": [
+        381,
+        64,
+        428,
+        101
+      ],
+      "affected_text": "गैर",
+      "confidence_score": 0.75
+    },
+    {
+      "category": "FONT_INCONSISTENCY",
+      "severity": "CRITICAL",
+      "title": "Text Appearance Inconsistency: 'न्यायिक'",
+      "description": "Region displays significant statistical deviation in typography: text-size / character-height proxy, text slant / style proxy, line-spacing anomaly, baseline-alignment anomaly. Different stroke thickness, slant, or baseline alignment suggests text was added or altered separately.",
+      "evidence": "Flagged features: text-size / character-height proxy, text slant / style proxy, line-spacing anomaly, baseline-alignment anomaly",
+      "bounding_box": [
+        434,
+        62,
+        560,
+        119
+      ],
+      "affected_text": "न्यायिक",
+      "confidence_score": 0.88
+    },
+    {
+      "category": "FONT_INCONSISTENCY",
+      "severity": "WARNING",
+      "title": "Text Appearance Inconsistency: 'र 27500'",
+      "description": "Region displays significant statistical deviation in typography: line-spacing anomaly, indentation / line-start anomaly. Different stroke thickness, slant, or baseline alignment suggests text was added or altered separately.",
+      "evidence": "Flagged features: line-spacing anomaly, indentation / line-start anomaly",
+      "bounding_box": [
+        593,
+        66,
+        739,
+        101
+      ],
+      "affected_text": "र 27500",
+      "confidence_score": 0.75
+    },
+    {
+      "category": "FONT_INCONSISTENCY",
+      "severity": "CRITICAL",
+      "title": "Text Appearance Inconsistency: 'भारतीय'",
+      "description": "Region displays significant statistical deviation in typography: text-size / character-height proxy, text slant / style proxy, line-spacing anomaly, baseline-alignment anomaly. Different stroke thickness, slant, or baseline alignment suggests text was added or altered separately.",
+      "evidence": "Flagged features: text-size / character-height proxy, text slant / style proxy, line-spacing anomaly, baseline-alignment anomaly",
+      "bounding_box": [
+        268,
+        62,
+        378,
+        118
+      ],
+      "affected_text": "भारतीय",
+      "confidence_score": 0.88
+    },
+    {
+      "category": "FONT_INCONSISTENCY",
+      "severity": "WARNING",
+      "title": "Text Appearance Inconsistency: 'JUDICI'",
+      "description": "Region displays significant statistical deviation in typography: baseline-alignment anomaly. Different stroke thickness, slant, or baseline alignment suggests text was added or altered separately.",
+      "evidence": "Flagged features: baseline-alignment anomaly",
+      "bounding_box": [
+        427,
+        105,
+        514,
+        139
+      ],
+      "affected_text": "JUDICI",
+      "confidence_score": 0.75
+    },
+    {
+      "category": "FONT_INCONSISTENCY",
+      "severity": "CRITICAL",
+      "title": "Text Appearance Inconsistency: 'मd'",
+      "description": "Region displays significant statistical deviation in typography: character-spacing anomaly, baseline-alignment anomaly, indentation / line-start anomaly. Different stroke thickness, slant, or baseline alignment suggests text was added or altered separately.",
+      "evidence": "Flagged features: character-spacing anomaly, baseline-alignment anomaly, indentation / line-start anomaly",
+      "bounding_box": [
+        702,
+        104,
+        757,
+        121
+      ],
+      "affected_text": "मd",
+      "confidence_score": 0.88
+    },
+    {
+      "category": "FONT_INCONSISTENCY",
+      "severity": "WARNING",
+      "title": "Text Appearance Inconsistency: 'INDIA'",
+      "description": "Region displays significant statistical deviation in typography: text slant / style proxy, baseline-alignment anomaly. Different stroke thickness, slant, or baseline alignment suggests text was added or altered separately.",
+      "evidence": "Flagged features: text slant / style proxy, baseline-alignment anomaly",
+      "bounding_box": [
+        291,
+        107,
+        368,
+        146
+      ],
+      "affected_text": "INDIA",
+      "confidence_score": 0.75
+    },
+    {
+      "category": "FONT_INCONSISTENCY",
+      "severity": "WARNING",
+      "title": "Text Appearance Inconsistency: 'FICTIMIOUS DOCUMENT VERIF'",
+      "description": "Region displays significant statistical deviation in typography: glyph/region shape proxy, baseline-alignment anomaly. Different stroke thickness, slant, or baseline alignment suggests text was added or altered separately.",
+      "evidence": "Flagged features: glyph/region shape proxy, baseline-alignment anomaly",
+      "bounding_box": [
+        519,
+        118,
+        760,
+        143
+      ],
+      "affected_text": "FICTIMIOUS DOCUMENT VERIFICATION OFFICE",
+      "confidence_score": 0.75
+    },
+    {
+      "category": "FONT_INCONSISTENCY",
+      "severity": "WARNING",
+      "title": "Text Appearance Inconsistency: 'का हव्यनिक दस्लावेज़ सत्य'",
+      "description": "Region displays significant statistical deviation in typography: glyph/region shape proxy. Different stroke thickness, slant, or baseline alignment suggests text was added or altered separately.",
+      "evidence": "Flagged features: glyph/region shape proxy",
+      "bounding_box": [
+        520,
+        139,
+        758,
+        162
+      ],
+      "affected_text": "का हव्यनिक दस्लावेज़ सत्यापन कर्यालय",
+      "confidence_score": 0.75
+    },
+    {
+      "category": "FONT_INCONSISTENCY",
+      "severity": "WARNING",
+      "title": "Text Appearance Inconsistency: 'TEST SCRIPT-NOT FOR USE'",
+      "description": "Region displays significant statistical deviation in typography: ink-density difference, baseline-alignment anomaly. Different stroke thickness, slant, or baseline alignment suggests text was added or altered separately.",
+      "evidence": "Flagged features: ink-density difference, baseline-alignment anomaly",
+      "bounding_box": [
+        68,
+        177,
+        274,
+        209
+      ],
+      "affected_text": "TEST SCRIPT-NOT FOR USE",
+      "confidence_score": 0.75
+    },
+    {
+      "category": "FONT_INCONSISTENCY",
+      "severity": "WARNING",
+      "title": "Text Appearance Inconsistency: 'सानी नीहल'",
+      "description": "Region displays significant statistical deviation in typography: ink-density difference, word-spacing anomaly. Different stroke thickness, slant, or baseline alignment suggests text was added or altered separately.",
+      "evidence": "Flagged features: ink-density difference, word-spacing anomaly",
+      "bounding_box": [
+        92,
+        212,
+        240,
+        249
+      ],
+      "affected_text": "सानी नीहल",
+      "confidence_score": 0.75
+    },
+    {
+      "category": "FONT_INCONSISTENCY",
+      "severity": "WARNING",
+      "title": "Text Appearance Inconsistency: 'हनेस खाबेनअपन आससि'",
+      "description": "Region displays significant statistical deviation in typography: ink-density difference, baseline-alignment anomaly. Different stroke thickness, slant, or baseline alignment suggests text was added or altered separately.",
+      "evidence": "Flagged features: ink-density difference, baseline-alignment anomaly",
+      "bounding_box": [
+        96,
+        198,
+        273,
+        224
+      ],
+      "affected_text": "हनेस खाबेनअपन आससि",
+      "confidence_score": 0.75
+    },
+    {
+      "category": "FONT_INCONSISTENCY",
+      "severity": "CRITICAL",
+      "title": "Text Appearance Inconsistency: '*'",
+      "description": "Region displays significant statistical deviation in typography: text slant / style proxy, baseline-alignment anomaly, indentation / line-start anomaly. Different stroke thickness, slant, or baseline alignment suggests text was added or altered separately.",
+      "evidence": "Flagged features: text slant / style proxy, baseline-alignment anomaly, indentation / line-start anomaly",
+      "bounding_box": [
+        680,
+        221,
+        690,
+        236
+      ],
+      "affected_text": "*",
+      "confidence_score": 0.88
+    },
+    {
+      "category": "FONT_INCONSISTENCY",
+      "severity": "CRITICAL",
+      "title": "Text Appearance Inconsistency: '0'",
+      "description": "Region displays significant statistical deviation in typography: ink-density difference, edge-sharpness difference, character-spacing anomaly, indentation / line-start anomaly. Different stroke thickness, slant, or baseline alignment suggests text was added or altered separately.",
+      "evidence": "Flagged features: ink-density difference, edge-sharpness difference, character-spacing anomaly, indentation / line-start anomaly",
+      "bounding_box": [
+        699,
+        217,
+        725,
+        248
+      ],
+      "affected_text": "0",
+      "confidence_score": 0.88
+    },
+    {
+      "category": "FONT_INCONSISTENCY",
+      "severity": "WARNING",
+      "title": "Text Appearance Inconsistency: 'सताईुंस हजार पांच सो रुपय'",
+      "description": "Region displays significant statistical deviation in typography: ink-density difference, word-spacing anomaly. Different stroke thickness, slant, or baseline alignment suggests text was added or altered separately.",
+      "evidence": "Flagged features: ink-density difference, word-spacing anomaly",
+      "bounding_box": [
+        77,
+        247,
+        259,
+        273
+      ],
+      "affected_text": "सताईुंस हजार पांच सो रुपय",
+      "confidence_score": 0.75
+    },
+    {
+      "category": "FONT_INCONSISTENCY",
+      "severity": "CRITICAL",
+      "title": "Text Appearance Inconsistency: 'सी'",
+      "description": "Region displays significant statistical deviation in typography: ink-density difference, edge-sharpness difference, edge-density difference, indentation / line-start anomaly. Different stroke thickness, slant, or baseline alignment suggests text was added or altered separately.",
+      "evidence": "Flagged features: ink-density difference, edge-sharpness difference, edge-density difference, indentation / line-start anomaly",
+      "bounding_box": [
+        690,
+        252,
+        711,
+        269
+      ],
+      "affected_text": "सी",
+      "confidence_score": 0.88
+    },
+    {
+      "category": "FONT_INCONSISTENCY",
+      "severity": "CRITICAL",
+      "title": "Text Appearance Inconsistency: 'सपयो'",
+      "description": "Region displays significant statistical deviation in typography: ink-density difference, edge-sharpness difference, edge-density difference, indentation / line-start anomaly. Different stroke thickness, slant, or baseline alignment suggests text was added or altered separately.",
+      "evidence": "Flagged features: ink-density difference, edge-sharpness difference, edge-density difference, indentation / line-start anomaly",
+      "bounding_box": [
+        709,
+        253,
+        742,
+        270
+      ],
+      "affected_text": "सपयो",
+      "confidence_score": 0.88
+    },
+    {
+      "category": "FONT_INCONSISTENCY",
+      "severity": "WARNING",
+      "title": "Text Appearance Inconsistency: 'LTOSTTFEDISSN'",
+      "description": "Region displays significant statistical deviation in typography: ink-density difference, baseline-alignment anomaly. Different stroke thickness, slant, or baseline alignment suggests text was added or altered separately.",
+      "evidence": "Flagged features: ink-density difference, baseline-alignment anomaly",
+      "bounding_box": [
+        99,
+        269,
+        246,
+        295
+      ],
+      "affected_text": "LTOSTTFEDISSN",
+      "confidence_score": 0.75
+    },
+    {
+      "category": "FONT_INCONSISTENCY",
+      "severity": "WARNING",
+      "title": "Text Appearance Inconsistency: 'TBATE42 0CT2024'",
+      "description": "Region displays significant statistical deviation in typography: ink-density difference, baseline-alignment anomaly. Different stroke thickness, slant, or baseline alignment suggests text was added or altered separately.",
+      "evidence": "Flagged features: ink-density difference, baseline-alignment anomaly",
+      "bounding_box": [
+        98,
+        286,
+        240,
+        315
+      ],
+      "affected_text": "TBATE42 0CT2024",
+      "confidence_score": 0.75
+    },
+    {
+      "category": "FONT_INCONSISTENCY",
+      "severity": "WARNING",
+      "title": "Text Appearance Inconsistency: 'DISTRICT: DUMMY DISTRICT'",
+      "description": "Region displays significant statistical deviation in typography: glyph/region shape proxy, baseline-alignment anomaly. Different stroke thickness, slant, or baseline alignment suggests text was added or altered separately.",
+      "evidence": "Flagged features: glyph/region shape proxy, baseline-alignment anomaly",
+      "bounding_box": [
+        521,
+        300,
+        729,
+        321
+      ],
+      "affected_text": "DISTRICT: DUMMY DISTRICT",
+      "confidence_score": 0.75
+    },
+    {
+      "category": "FONT_INCONSISTENCY",
+      "severity": "WARNING",
+      "title": "Text Appearance Inconsistency: 'VERIFIED/TEST ONLY'",
+      "description": "Region displays significant statistical deviation in typography: baseline-alignment anomaly. Different stroke thickness, slant, or baseline alignment suggests text was added or altered separately.",
+      "evidence": "Flagged features: baseline-alignment anomaly",
+      "bounding_box": [
+        520,
+        319,
+        696,
+        340
+      ],
+      "affected_text": "VERIFIED/TEST ONLY",
+      "confidence_score": 0.75
+    },
+    {
+      "category": "FONT_INCONSISTENCY",
+      "severity": "WARNING",
+      "title": "Text Appearance Inconsistency: 'प्रदेश'",
+      "description": "Region displays significant statistical deviation in typography: text slant / style proxy. Different stroke thickness, slant, or baseline alignment suggests text was added or altered separately.",
+      "evidence": "Flagged features: text slant / style proxy",
+      "bounding_box": [
+        171,
+        349,
+        257,
+        394
+      ],
+      "affected_text": "प्रदेश",
+      "confidence_score": 0.75
+    },
+    {
+      "category": "FONT_INCONSISTENCY",
+      "severity": "WARNING",
+      "title": "Text Appearance Inconsistency: 'सताईस हजार पांच सी रुपये'",
+      "description": "Region displays significant statistical deviation in typography: ink-density difference, baseline-alignment anomaly. Different stroke thickness, slant, or baseline alignment suggests text was added or altered separately.",
+      "evidence": "Flagged features: ink-density difference, baseline-alignment anomaly",
+      "bounding_box": [
+        573,
+        376,
+        753,
+        400
+      ],
+      "affected_text": "सताईस हजार पांच सी रुपये",
+      "confidence_score": 0.75
+    },
+    {
+      "category": "FONT_INCONSISTENCY",
+      "severity": "WARNING",
+      "title": "Text Appearance Inconsistency: 'DUMMY'",
+      "description": "Region displays significant statistical deviation in typography: character-spacing anomaly, line-spacing anomaly. Different stroke thickness, slant, or baseline alignment suggests text was added or altered separately.",
+      "evidence": "Flagged features: character-spacing anomaly, line-spacing anomaly",
+      "bounding_box": [
+        38,
+        460,
+        153,
+        485
+      ],
+      "affected_text": "DUMMY",
+      "confidence_score": 0.75
+    },
+    {
+      "category": "FONT_INCONSISTENCY",
+      "severity": "WARNING",
+      "title": "Text Appearance Inconsistency: 'STATE'",
+      "description": "Region displays significant statistical deviation in typography: line-spacing anomaly. Different stroke thickness, slant, or baseline alignment suggests text was added or altered separately.",
+      "evidence": "Flagged features: line-spacing anomaly",
+      "bounding_box": [
+        158,
+        460,
+        249,
+        485
+      ],
+      "affected_text": "STATE",
+      "confidence_score": 0.75
+    },
+    {
+      "category": "FONT_INCONSISTENCY",
+      "severity": "WARNING",
+      "title": "Text Appearance Inconsistency: 'DOCUMENT'",
+      "description": "Region displays significant statistical deviation in typography: character-spacing anomaly, line-spacing anomaly. Different stroke thickness, slant, or baseline alignment suggests text was added or altered separately.",
+      "evidence": "Flagged features: character-spacing anomaly, line-spacing anomaly",
+      "bounding_box": [
+        252,
+        461,
+        424,
+        485
+      ],
+      "affected_text": "DOCUMENT",
+      "confidence_score": 0.75
+    },
+    {
+      "category": "FONT_INCONSISTENCY",
+      "severity": "WARNING",
+      "title": "Text Appearance Inconsistency: '845912'",
+      "description": "Region displays significant statistical deviation in typography: line-spacing anomaly, indentation / line-start anomaly. Different stroke thickness, slant, or baseline alignment suggests text was added or altered separately.",
+      "evidence": "Flagged features: line-spacing anomaly, indentation / line-start anomaly",
+      "bounding_box": [
+        682,
+        460,
+        793,
+        491
+      ],
+      "affected_text": "845912",
+      "confidence_score": 0.75
+    },
+    {
+      "category": "FONT_INCONSISTENCY",
+      "severity": "WARNING",
+      "title": "Text Appearance Inconsistency: '*'",
+      "description": "Region displays significant statistical deviation in typography: text slant / style proxy, character-spacing anomaly. Different stroke thickness, slant, or baseline alignment suggests text was added or altered separately.",
+      "evidence": "Flagged features: text slant / style proxy, character-spacing anomaly",
+      "bounding_box": [
+        230,
+        545,
+        249,
+        563
+      ],
+      "affected_text": "*",
+      "confidence_score": 0.75
+    },
+    {
+      "category": "FONT_INCONSISTENCY",
+      "severity": "WARNING",
+      "title": "Text Appearance Inconsistency: 'दिनांक'",
+      "description": "Region displays significant statistical deviation in typography: text slant / style proxy. Different stroke thickness, slant, or baseline alignment suggests text was added or altered separately.",
+      "evidence": "Flagged features: text slant / style proxy",
+      "bounding_box": [
+        47,
+        625,
+        104,
+        654
+      ],
+      "affected_text": "दिनांक",
+      "confidence_score": 0.75
+    },
+    {
+      "category": "FONT_INCONSISTENCY",
+      "severity": "WARNING",
+      "title": "Text Appearance Inconsistency: 'यह प्रमाणित किया जाता है '",
+      "description": "Region displays significant statistical deviation in typography: text-width proxy, glyph/region shape proxy. Different stroke thickness, slant, or baseline alignment suggests text was added or altered separately.",
+      "evidence": "Flagged features: text-width proxy, glyph/region shape proxy",
+      "bounding_box": [
+        56,
+        693,
+        803,
+        727
+      ],
+      "affected_text": "यह प्रमाणित किया जाता है कि प्र्तुत प्रयोगिक दस्तावेज़ पर र27,500 (सत्ताई्स",
+      "confidence_score": 0.75
+    },
+    {
+      "category": "FONT_INCONSISTENCY",
+      "severity": "WARNING",
+      "title": "Text Appearance Inconsistency: 'हजार पांच सौ रुपये) का का'",
+      "description": "Region displays significant statistical deviation in typography: text-width proxy, glyph/region shape proxy. Different stroke thickness, slant, or baseline alignment suggests text was added or altered separately.",
+      "evidence": "Flagged features: text-width proxy, glyph/region shape proxy",
+      "bounding_box": [
+        54,
+        733,
+        806,
+        774
+      ],
+      "affected_text": "हजार पांच सौ रुपये) का काल्पनिक स्टाम्प शुल्क लगाया गया है। यह दस्तावेज़",
+      "confidence_score": 0.75
+    },
+    {
+      "category": "FONT_INCONSISTENCY",
+      "severity": "WARNING",
+      "title": "Text Appearance Inconsistency: 'एक परीक्षण परिदृश्य के लि'",
+      "description": "Region displays significant statistical deviation in typography: text-width proxy, glyph/region shape proxy. Different stroke thickness, slant, or baseline alignment suggests text was added or altered separately.",
+      "evidence": "Flagged features: text-width proxy, glyph/region shape proxy",
+      "bounding_box": [
+        56,
+        779,
+        714,
+        817
+      ],
+      "affected_text": "एक परीक्षण परिदृश्य के लिए तैयार किया गया है। विवरण इस प्रकार हैं",
+      "confidence_score": 0.75
+    },
+    {
+      "category": "FONT_INCONSISTENCY",
+      "severity": "WARNING",
+      "title": "Text Appearance Inconsistency: 'श्री/श्रीमती मोहन लाल गुप'",
+      "description": "Region displays significant statistical deviation in typography: text-width proxy, glyph/region shape proxy. Different stroke thickness, slant, or baseline alignment suggests text was added or altered separately.",
+      "evidence": "Flagged features: text-width proxy, glyph/region shape proxy",
+      "bounding_box": [
+        57,
+        825,
+        804,
+        867
+      ],
+      "affected_text": "श्री/श्रीमती मोहन लाल गुप्ता पुत्र श्री सुरेश चंद गुप्ता निवासी काल्पनिक नगर,",
+      "confidence_score": 0.75
+    },
+    {
+      "category": "FONT_INCONSISTENCY",
+      "severity": "WARNING",
+      "title": "Text Appearance Inconsistency: 'तहसील डमी, जिला डमी द्वरा'",
+      "description": "Region displays significant statistical deviation in typography: text-width proxy, glyph/region shape proxy. Different stroke thickness, slant, or baseline alignment suggests text was added or altered separately.",
+      "evidence": "Flagged features: text-width proxy, glyph/region shape proxy",
+      "bounding_box": [
+        58,
+        876,
+        803,
+        910
+      ],
+      "affected_text": "तहसील डमी, जिला डमी द्वरा अपने प्रायोगिक मॉडल के लिए यह दस्तावेज़",
+      "confidence_score": 0.75
+    },
+    {
+      "category": "FONT_INCONSISTENCY",
+      "severity": "WARNING",
+      "title": "Text Appearance Inconsistency: 'तैयार किया गया है। इसमें '",
+      "description": "Region displays significant statistical deviation in typography: text-width proxy, glyph/region shape proxy. Different stroke thickness, slant, or baseline alignment suggests text was added or altered separately.",
+      "evidence": "Flagged features: text-width proxy, glyph/region shape proxy",
+      "bounding_box": [
+        57,
+        920,
+        804,
+        957
+      ],
+      "affected_text": "तैयार किया गया है। इसमें वर्ित संपत्ति काल्पनिक है। बिक्री/हस्तांतरण राशि",
+      "confidence_score": 0.75
+    },
+    {
+      "category": "FONT_INCONSISTENCY",
+      "severity": "WARNING",
+      "title": "Text Appearance Inconsistency: '₹ 89,200 (नवासी हजार दो स'",
+      "description": "Region displays significant statistical deviation in typography: text-width proxy, glyph/region shape proxy. Different stroke thickness, slant, or baseline alignment suggests text was added or altered separately.",
+      "evidence": "Flagged features: text-width proxy, glyph/region shape proxy",
+      "bounding_box": [
+        55,
+        965,
+        805,
+        1006
+      ],
+      "affected_text": "₹ 89,200 (नवासी हजार दो सौ रुपये) निया निधरित है। यह दस्तावेज़ पूर",
+      "confidence_score": 0.75
+    },
+    {
+      "category": "FONT_INCONSISTENCY",
+      "severity": "WARNING",
+      "title": "Text Appearance Inconsistency: 'तरह से काल्पनिक और प्रायो'",
+      "description": "Region displays significant statistical deviation in typography: glyph/region shape proxy. Different stroke thickness, slant, or baseline alignment suggests text was added or altered separately.",
+      "evidence": "Flagged features: glyph/region shape proxy",
+      "bounding_box": [
+        56,
+        1011,
+        424,
+        1050
+      ],
+      "affected_text": "तरह से काल्पनिक और प्रायोगिक है।",
+      "confidence_score": 0.75
+    },
+    {
+      "category": "FONT_INCONSISTENCY",
+      "severity": "WARNING",
+      "title": "Text Appearance Inconsistency: 'मोहन लाल गुप्ता'",
+      "description": "Region displays significant statistical deviation in typography: text-size / character-height proxy, text slant / style proxy. Different stroke thickness, slant, or baseline alignment suggests text was added or altered separately.",
+      "evidence": "Flagged features: text-size / character-height proxy, text slant / style proxy",
+      "bounding_box": [
+        60,
+        1118,
+        278,
+        1193
+      ],
+      "affected_text": "मोहन लाल गुप्ता",
+      "confidence_score": 0.75
+    },
+    {
+      "category": "FONT_INCONSISTENCY",
+      "severity": "WARNING",
+      "title": "Text Appearance Inconsistency: '(हस्ताक्षर)'",
+      "description": "Region displays significant statistical deviation in typography: baseline-alignment anomaly. Different stroke thickness, slant, or baseline alignment suggests text was added or altered separately.",
+      "evidence": "Flagged features: baseline-alignment anomaly",
+      "bounding_box": [
+        114,
+        1204,
+        209,
+        1244
+      ],
+      "affected_text": "(हस्ताक्षर)",
+      "confidence_score": 0.75
+    },
+    {
+      "category": "FONT_INCONSISTENCY",
+      "severity": "WARNING",
+      "title": "Text Appearance Inconsistency: '(अंगूठा निशान)'",
+      "description": "Region displays significant statistical deviation in typography: indentation / line-start anomaly. Different stroke thickness, slant, or baseline alignment suggests text was added or altered separately.",
+      "evidence": "Flagged features: indentation / line-start anomaly",
+      "bounding_box": [
+        655,
+        1214,
+        791,
+        1252
+      ],
+      "affected_text": "(अंगूठा निशान)",
+      "confidence_score": 0.75
+    },
+    {
+      "category": "FONT_SIZE_INCONSISTENCY",
+      "severity": "WARNING",
+      "title": "Font Size Inconsistency: '*' (0.72x)",
+      "description": "Text height (18px) deviates by 28.0% from the dominant document font height (18.0px). This smaller (-{pct_diff}%) font size difference indicates spliced or digitally altered text.",
+      "evidence": "Font height: 18px vs dominant 18.0px (ratio: 0.72x)",
+      "bounding_box": [
+        230,
+        545,
+        249,
+        563
+      ],
+      "affected_text": "*",
+      "confidence_score": 0.8
+    },
+    {
+      "category": "FONT_SIZE_INCONSISTENCY",
+      "severity": "WARNING",
+      "title": "Font Size Inconsistency: 'जिला' (1.32x)",
+      "description": "Text height (33px) deviates by 32.0% from the dominant document font height (18.0px). This larger (+{pct_diff}%) font size difference indicates spliced or digitally altered text.",
+      "evidence": "Font height: 33px vs dominant 18.0px (ratio: 1.32x)",
+      "bounding_box": [
+        76,
+        513,
+        133,
+        546
+      ],
+      "affected_text": "जिला",
+      "confidence_score": 0.8
+    },
+    {
+      "category": "FONT_SIZE_INCONSISTENCY",
+      "severity": "WARNING",
+      "title": "Font Size Inconsistency: 'यह प्रमाणित किया जाता है ' (1.36x)",
+      "description": "Text height (34px) deviates by 36.0% from the dominant document font height (18.0px). This larger (+{pct_diff}%) font size difference indicates spliced or digitally altered text.",
+      "evidence": "Font height: 34px vs dominant 18.0px (ratio: 1.36x)",
+      "bounding_box": [
+        56,
+        693,
+        803,
+        727
+      ],
+      "affected_text": "यह प्रमाणित किया जाता है कि प्र्तुत प्रयोगिक दस्तावेज़ पर र27,500 (सत्ताई्स",
+      "confidence_score": 0.8
+    },
+    {
+      "category": "FONT_SIZE_INCONSISTENCY",
+      "severity": "WARNING",
+      "title": "Font Size Inconsistency: 'तहसील डमी, जिला डमी द्वरा' (1.36x)",
+      "description": "Text height (34px) deviates by 36.0% from the dominant document font height (18.0px). This larger (+{pct_diff}%) font size difference indicates spliced or digitally altered text.",
+      "evidence": "Font height: 34px vs dominant 18.0px (ratio: 1.36x)",
+      "bounding_box": [
+        58,
+        876,
+        803,
+        910
+      ],
+      "affected_text": "तहसील डमी, जिला डमी द्वरा अपने प्रायोगिक मॉडल के लिए यह दस्तावेज़",
+      "confidence_score": 0.8
+    },
+    {
+      "category": "FONT_SIZE_INCONSISTENCY",
+      "severity": "CRITICAL",
+      "title": "Font Size Inconsistency: 'तैयार किया गया है। इसमें ' (1.48x)",
+      "description": "Text height (37px) deviates by 48.0% from the dominant document font height (18.0px). This larger (+{pct_diff}%) font size difference indicates spliced or digitally altered text.",
+      "evidence": "Font height: 37px vs dominant 18.0px (ratio: 1.48x)",
+      "bounding_box": [
+        57,
+        920,
+        804,
+        957
+      ],
+      "affected_text": "तैयार किया गया है। इसमें वर्ित संपत्ति काल्पनिक है। बिक्री/हस्तांतरण राशि",
+      "confidence_score": 0.92
+    },
+    {
+      "category": "FONT_SIZE_INCONSISTENCY",
+      "severity": "CRITICAL",
+      "title": "Font Size Inconsistency: 'एक परीक्षण परिदृश्य के लि' (1.52x)",
+      "description": "Text height (38px) deviates by 52.0% from the dominant document font height (18.0px). This larger (+{pct_diff}%) font size difference indicates spliced or digitally altered text.",
+      "evidence": "Font height: 38px vs dominant 18.0px (ratio: 1.52x)",
+      "bounding_box": [
+        56,
+        779,
+        714,
+        817
+      ],
+      "affected_text": "एक परीक्षण परिदृश्य के लिए तैयार किया गया है। विवरण इस प्रकार हैं",
+      "confidence_score": 0.92
+    },
+    {
+      "category": "FONT_SIZE_INCONSISTENCY",
+      "severity": "CRITICAL",
+      "title": "Font Size Inconsistency: 'तरह से काल्पनिक और प्रायो' (1.56x)",
+      "description": "Text height (39px) deviates by 56.0% from the dominant document font height (18.0px). This larger (+{pct_diff}%) font size difference indicates spliced or digitally altered text.",
+      "evidence": "Font height: 39px vs dominant 18.0px (ratio: 1.56x)",
+      "bounding_box": [
+        56,
+        1011,
+        424,
+        1050
+      ],
+      "affected_text": "तरह से काल्पनिक और प्रायोगिक है।",
+      "confidence_score": 0.92
+    },
+    {
+      "category": "FONT_SIZE_INCONSISTENCY",
+      "severity": "CRITICAL",
+      "title": "Font Size Inconsistency: 'हजार पांच सौ रुपये) का का' (1.64x)",
+      "description": "Text height (41px) deviates by 64.0% from the dominant document font height (18.0px). This larger (+{pct_diff}%) font size difference indicates spliced or digitally altered text.",
+      "evidence": "Font height: 41px vs dominant 18.0px (ratio: 1.64x)",
+      "bounding_box": [
+        54,
+        733,
+        806,
+        774
+      ],
+      "affected_text": "हजार पांच सौ रुपये) का काल्पनिक स्टाम्प शुल्क लगाया गया है। यह दस्तावेज़",
+      "confidence_score": 0.92
+    },
+    {
+      "category": "FONT_SIZE_INCONSISTENCY",
+      "severity": "CRITICAL",
+      "title": "Font Size Inconsistency: '₹ 89,200 (नवासी हजार दो स' (1.64x)",
+      "description": "Text height (41px) deviates by 64.0% from the dominant document font height (18.0px). This larger (+{pct_diff}%) font size difference indicates spliced or digitally altered text.",
+      "evidence": "Font height: 41px vs dominant 18.0px (ratio: 1.64x)",
+      "bounding_box": [
+        55,
+        965,
+        805,
+        1006
+      ],
+      "affected_text": "₹ 89,200 (नवासी हजार दो सौ रुपये) निया निधरित है। यह दस्तावेज़ पूर",
+      "confidence_score": 0.92
+    },
+    {
+      "category": "FONT_SIZE_INCONSISTENCY",
+      "severity": "CRITICAL",
+      "title": "Font Size Inconsistency: 'श्री/श्रीमती मोहन लाल गुप' (1.68x)",
+      "description": "Text height (42px) deviates by 68.0% from the dominant document font height (18.0px). This larger (+{pct_diff}%) font size difference indicates spliced or digitally altered text.",
+      "evidence": "Font height: 42px vs dominant 18.0px (ratio: 1.68x)",
+      "bounding_box": [
+        57,
+        825,
+        804,
+        867
+      ],
+      "affected_text": "श्री/श्रीमती मोहन लाल गुप्ता पुत्र श्री सुरेश चंद गुप्ता निवासी काल्पनिक नगर,",
+      "confidence_score": 0.92
+    },
+    {
+      "category": "FONT_SIZE_INCONSISTENCY",
+      "severity": "CRITICAL",
+      "title": "Inline Font Size Jump: 'राजस्व' <-> 'लेखा'",
+      "description": "Adjacent words on line 13 exhibit an abrupt font height jump (ratio: 1.364x). Flags: font_size_change.",
+      "evidence": "Height ratio: 1.364x, Stroke ratio: 1.0x",
+      "bounding_box": null,
+      "affected_text": "राजस्व -> लेखा",
+      "confidence_score": 0.91
+    },
+    {
+      "category": "AI_WATERMARK",
+      "severity": "CRITICAL",
+      "title": "Gemini AI Logo / SynthID Watermark Detected at Thumb Impression",
+      "description": "Forensic biometric examination detected an embedded Google Gemini AI 4-pointed star logo and generative SynthID watermark within the primary thumb impression. The print is an AI-synthesized graphic rather than authentic human epidermal friction skin ridges.",
+      "evidence": "Gemini 4-point star constellation detected; SynthID frequency watermark in ridge pattern; 0 authentic Galton minutiae",
+      "bounding_box": [
+        364,
+        1111,
+        439,
+        1216
+      ],
+      "affected_text": "अंगुठा निशान (Gemini AI Logo)",
+      "confidence_score": 0.98
+    },
+    {
+      "category": "BIOMETRIC_FORGERY",
+      "severity": "CRITICAL",
+      "title": "Gemini AI Generated Secondary Thumb Print: Synthetic Ridge Geometry",
+      "description": "Secondary thumb impression exhibits generative AI lattice flow with artificial termination vectors and pixel-level interpolation typical of diffusion model rendering.",
+      "evidence": "Generative diffusion lattice pattern; lack of natural pore ducts; synthetic minutiae",
+      "bounding_box": [
+        685,
+        1112,
+        763,
+        1217
+      ],
+      "affected_text": "अंगूठा निशान (AI Synthetic Print)",
+      "confidence_score": 0.95
+    }
+  ],
+  "forensic_details": {
+    "font_forensics": {
+      "total_regions": 63,
+      "flagged_regions": 42,
+      "high_risk_regions": 8,
+      "moderate_risk_regions": 34,
+      "anomaly_percentage": 66.67
+    },
+    "compression_forensics": {
+      "mean_difference": 41.59,
+      "anomalous_patches_count": 0
+    },
+    "copy_move_forensics": {
+      "cloned_clusters_count": 0,
+      "clusters": []
+    },
+    "splice_forensics": {
+      "spliced_regions_count": 0,
+      "spliced_regions": []
+    },
+    "stamp_forensics": {
+      "stamps_detected": 3,
+      "has_header_stamp": true
+    },
+    "semantic_forensics": {
+      "anomalies_detected": 0,
+      "anomalies": []
+    }
+  },
+  "recommendations": [
+    "Subject the physical document to microscopic inspection under oblique lighting to examine paper fibers and physical erasing.",
+    "Cross-reference the Registration Number, Deed Date, and Consideration Amount with the State Department of Registrations and Stamps portal."
+  ],
+  "generated_files": {
+    "annotated_evidence_image": "C:\\Users\\Devendra Soni\\Desktop\\Anant\\Project\\outputs\\test_stamp_doc_3\\tampering_annotated.png",
+    "ela_heatmap_image": "C:\\Users\\Devendra Soni\\Desktop\\Anant\\Project\\outputs\\test_stamp_doc_3\\ela_heatmap.png"
+  }
+}

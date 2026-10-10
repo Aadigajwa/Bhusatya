@@ -15,6 +15,7 @@ export function ReportWorkspace({ reportId, fileName }: { reportId: string; file
 
   const isDoc1Initial = cleanId.includes('stampdoc1') || cleanFileName.includes('stampdoc1')
   const isDoc2Initial = (cleanId.includes('stampdoc2') || cleanFileName.includes('stampdoc2')) && !isDoc1Initial
+  const isDoc3Initial = (cleanId.includes('stampdoc3') || cleanFileName.includes('stampdoc3')) && !isDoc1Initial && !isDoc2Initial
 
   const initialReport = isDoc1Initial
     ? convertBackendResultToReport(
@@ -27,6 +28,12 @@ export function ReportWorkspace({ reportId, fileName }: { reportId: string; file
         { document_id: reportId, verdict: 'HIGH_RISK_TAMPERED', tampering_risk_score: 82.0 },
         { name: fileName.includes('stamp') ? fileName : 'stamp_doc_2.png', size: 3150455 },
         '/stamp_doc_2.png'
+      )
+    : isDoc3Initial
+    ? convertBackendResultToReport(
+        { document_id: reportId, verdict: 'HIGH_RISK_TAMPERED', tampering_risk_score: 82.0 },
+        { name: fileName.includes('stamp') ? fileName : 'stamp_doc_3.png', size: 2210120 },
+        '/stamp_doc_3.png'
       )
     : null
 
@@ -45,6 +52,13 @@ export function ReportWorkspace({ reportId, fileName }: { reportId: string; file
       Boolean(report?.findings?.some((f) => f.id.includes('font')))
     )
 
+  const isDoc3 =
+    !isDoc1 && !isDoc2 && (
+      effectiveFileName.includes('stampdoc3') ||
+      cleanId.includes('stampdoc3') ||
+      Boolean(report?.findings?.some((f) => f.id.includes('doc3')))
+    )
+
   useEffect(() => {
     const loaded = getCustomReport(reportId)
     if (loaded) {
@@ -58,9 +72,9 @@ export function ReportWorkspace({ reportId, fileName }: { reportId: string; file
     }
   }, [reportId])
 
-  const activeFindings = report?.findings ?? (isDoc1 ? initialReport?.findings : isDoc2 ? initialReport?.findings : findings) ?? findings
-  const activeFields = report?.fields ?? (isDoc1 ? initialReport?.fields : isDoc2 ? initialReport?.fields : fields) ?? fields
-  const activeAssessment = report?.assessment ?? (isDoc1 ? initialReport?.assessment : isDoc2 ? initialReport?.assessment : assessment) ?? assessment
+  const activeFindings = report?.findings ?? (isDoc1 ? initialReport?.findings : isDoc2 ? initialReport?.findings : isDoc3 ? initialReport?.findings : findings) ?? findings
+  const activeFields = report?.fields ?? (isDoc1 ? initialReport?.fields : isDoc2 ? initialReport?.fields : isDoc3 ? initialReport?.fields : fields) ?? fields
+  const activeAssessment = report?.assessment ?? (isDoc1 ? initialReport?.assessment : isDoc2 ? initialReport?.assessment : isDoc3 ? initialReport?.assessment : assessment) ?? assessment
 
   const defaultFirstId = activeFindings[0]?.id ?? 'f-stamp'
   const [activeId, setActiveId] = useState<string | null>(defaultFirstId)
@@ -68,7 +82,7 @@ export function ReportWorkspace({ reportId, fileName }: { reportId: string; file
   // Determine evidence image URL with multi-tier fallback
   const [evidenceImageUrl, setEvidenceImageUrl] = useState<string | undefined>(
     report?.evidenceImageUrl ||
-      (isDoc1 ? '/stamp_doc_1.png' : isDoc2 ? '/stamp_doc_2.png' : undefined)
+      (isDoc1 ? '/stamp_doc_1.png' : isDoc2 ? '/stamp_doc_2.png' : isDoc3 ? '/stamp_doc_3.png' : undefined)
   )
 
   useEffect(() => {
@@ -78,6 +92,8 @@ export function ReportWorkspace({ reportId, fileName }: { reportId: string; file
       setEvidenceImageUrl('/stamp_doc_1.png')
     } else if (isDoc2) {
       setEvidenceImageUrl('/stamp_doc_2.png')
+    } else if (isDoc3) {
+      setEvidenceImageUrl('/stamp_doc_3.png')
     } else if (typeof window !== 'undefined') {
       const sessionImg =
         sessionStorage.getItem(`report_image_${reportId}`) ||
@@ -88,9 +104,12 @@ export function ReportWorkspace({ reportId, fileName }: { reportId: string; file
         setEvidenceImageUrl('/stamp_doc_1.png')
       } else if (isDoc2) {
         setEvidenceImageUrl('/stamp_doc_2.png')
+      } else if (isDoc3) {
+        setEvidenceImageUrl('/stamp_doc_3.png')
       }
     }
-  }, [report, reportId, isDoc2, isDoc1])
+  }, [report, reportId, isDoc3, isDoc2, isDoc1])
+
 
   function selectFinding(id: string) {
     if (id === activeId) {

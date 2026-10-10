@@ -1,11 +1,11 @@
 {
-  "document_id": "eb7d5c8dea584513b999982c2716319b",
-  "analysis_timestamp": "2026-10-09T22:26:40.442142",
+  "document_id": "test_stamp_doc_2",
+  "analysis_timestamp": "2026-10-10T00:38:42.025653",
   "verdict": "HIGH_RISK_TAMPERED",
   "verdict_label": "Tampered / High Risk of Forgery",
   "status_color": "#E74C3C",
   "tampering_risk_score": 82.0,
-  "executive_summary": "Document verification evaluated this document as 'Tampered / High Risk of Forgery' with an overall tampering risk score of 82.0%. Forensic screening identified 17 CRITICAL red flag(s): Text Appearance Inconsistency: 'ऱ'; Text Appearance Inconsistency: '25000'; Text Appearance Inconsistency: 'र'; Text Appearance Inconsistency: '25000'; Text Appearance Inconsistency: 'हजार'; Text Appearance Inconsistency: 'रूपये'; Text Appearance Inconsistency: 'हजार'; Text Appearance Inconsistency: 'रूपये'; Text Appearance Inconsistency: 'ऱ'; Text Appearance Inconsistency: '25000'; Text Appearance Inconsistency: 'पच्वीस'; Text Appearance Inconsistency: 'हजार'; Text Appearance Inconsistency: 'रूपये'; Text Appearance Inconsistency: 'PRADESH'; Text Appearance Inconsistency: 'राम कुमार'; Left Thumb Impression Forgery: Synthetic Ridge Pattern & Ink Discontinuity; Right Thumb Impression Forgery: Spliced Ridge Discontinuity & Tampered Minutiae. Typography analysis identified 15 high-risk text regions with anomalous stroke thickness, slant, or baseline offsets.",
+  "executive_summary": "Document verification evaluated this document as 'Tampered / High Risk of Forgery' with an overall tampering risk score of 82.0%. Forensic screening identified 35 CRITICAL red flag(s): Text Appearance Inconsistency: 'ऱ'; Text Appearance Inconsistency: '25000'; Text Appearance Inconsistency: 'र'; Text Appearance Inconsistency: '25000'; Text Appearance Inconsistency: 'हजार'; Text Appearance Inconsistency: 'रूपये'; Text Appearance Inconsistency: 'हजार'; Text Appearance Inconsistency: 'रूपये'; Text Appearance Inconsistency: 'ऱ'; Text Appearance Inconsistency: '25000'; Text Appearance Inconsistency: 'पच्वीस'; Text Appearance Inconsistency: 'हजार'; Text Appearance Inconsistency: 'रूपये'; Text Appearance Inconsistency: 'PRADESH'; Text Appearance Inconsistency: 'राम कुमार'; Font Size Inconsistency: 'एवं विक्रय संबंधी घोषणा प' (1.457x); Font Size Inconsistency: '25000' (1.486x); Font Size Inconsistency: 'रकबा 0.229 हेक्टेयर, जो ग' (1.543x); Font Size Inconsistency: 'तहसील सदर, जिला लखनऊ, उत्' (1.571x); Font Size Inconsistency: 'को मेरे समक्ष प्र्तुत किय' (1.657x); Font Size Inconsistency: 'प्रदेश' (1.771x); Font Size Inconsistency: 'श्री/श्रीमती राम कुमार पु' (1.771x); Font Size Inconsistency: 'न्यायिक स्टाम्प शुल्क विध' (1.8x); Font Size Inconsistency: 'प्रमाणित किया जाता है कि ' (1.857x); Font Size Inconsistency: 'यह दस्तावेज पूर्णतः स्वेच' (1.886x); Inline Font Size Jump: 'उत्तर' <-> 'प्रदेश'; Inline Font Size Jump: 'प्रदेश' <-> 'UTTAR'; Inline Font Size Jump: 'ऱ' <-> '25000'; Inline Font Size Jump: '25000' <-> 'हजार'; Inline Font Size Jump: 'प्रदेश' <-> 'UTTAR'; Inline Font Size Jump: 'PRADESH' <-> '736301'; Inline Font Size Jump: 'प्रदेश' <-> 'X'; Inline Font Size Jump: 'यह' <-> 'प्रमाणित किया ज'; Left Thumb Impression Forgery: Synthetic Ridge Pattern & Ink Discontinuity; Right Thumb Impression Forgery: Spliced Ridge Discontinuity & Tampered Minutiae. Typography analysis identified 15 high-risk text regions with anomalous stroke thickness, slant, or baseline offsets.",
   "category_scores": {
     "typography_and_font": 100.0,
     "compression_ela": 0.0,
@@ -15,9 +15,9 @@
     "semantic_logic": 0.0
   },
   "findings_summary": {
-    "total_findings": 48,
-    "critical_findings": 17,
-    "warning_findings": 31,
+    "total_findings": 73,
+    "critical_findings": 35,
+    "warning_findings": 38,
     "info_findings": 0
   },
   "findings": [
@@ -712,6 +712,341 @@
       "confidence_score": 0.75
     },
     {
+      "category": "FONT_SIZE_INCONSISTENCY",
+      "severity": "WARNING",
+      "title": "Font Size Inconsistency: 'ऱ' (1.257x)",
+      "description": "Text height (44px) deviates by 25.7% from the dominant document font height (35.0px). This larger (+{pct_diff}%) font size difference indicates spliced or digitally altered text.",
+      "evidence": "Font height: 44px vs dominant 35.0px (ratio: 1.257x)",
+      "bounding_box": [
+        755,
+        260,
+        788,
+        304
+      ],
+      "affected_text": "ऱ",
+      "confidence_score": 0.8
+    },
+    {
+      "category": "FONT_SIZE_INCONSISTENCY",
+      "severity": "WARNING",
+      "title": "Font Size Inconsistency: 'उत्तर' (1.314x)",
+      "description": "Text height (46px) deviates by 31.4% from the dominant document font height (35.0px). This larger (+{pct_diff}%) font size difference indicates spliced or digitally altered text.",
+      "evidence": "Font height: 46px vs dominant 35.0px (ratio: 1.314x)",
+      "bounding_box": [
+        112,
+        461,
+        210,
+        507
+      ],
+      "affected_text": "उत्तर",
+      "confidence_score": 0.8
+    },
+    {
+      "category": "FONT_SIZE_INCONSISTENCY",
+      "severity": "WARNING",
+      "title": "Font Size Inconsistency: 'कोषागार' (1.314x)",
+      "description": "Text height (46px) deviates by 31.4% from the dominant document font height (35.0px). This larger (+{pct_diff}%) font size difference indicates spliced or digitally altered text.",
+      "evidence": "Font height: 46px vs dominant 35.0px (ratio: 1.314x)",
+      "bounding_box": [
+        175,
+        630,
+        290,
+        676
+      ],
+      "affected_text": "कोषागार",
+      "confidence_score": 0.8
+    },
+    {
+      "category": "FONT_SIZE_INCONSISTENCY",
+      "severity": "WARNING",
+      "title": "Font Size Inconsistency: 'प्रदेश' (1.343x)",
+      "description": "Text height (47px) deviates by 34.3% from the dominant document font height (35.0px). This larger (+{pct_diff}%) font size difference indicates spliced or digitally altered text.",
+      "evidence": "Font height: 47px vs dominant 35.0px (ratio: 1.343x)",
+      "bounding_box": [
+        124,
+        573,
+        199,
+        620
+      ],
+      "affected_text": "प्रदेश",
+      "confidence_score": 0.8
+    },
+    {
+      "category": "FONT_SIZE_INCONSISTENCY",
+      "severity": "WARNING",
+      "title": "Font Size Inconsistency: '25000' (1.371x)",
+      "description": "Text height (48px) deviates by 37.1% from the dominant document font height (35.0px). This larger (+{pct_diff}%) font size difference indicates spliced or digitally altered text.",
+      "evidence": "Font height: 48px vs dominant 35.0px (ratio: 1.371x)",
+      "bounding_box": [
+        149,
+        271,
+        278,
+        319
+      ],
+      "affected_text": "25000",
+      "confidence_score": 0.8
+    },
+    {
+      "category": "FONT_SIZE_INCONSISTENCY",
+      "severity": "WARNING",
+      "title": "Font Size Inconsistency: '25000' (1.4x)",
+      "description": "Text height (49px) deviates by 40.0% from the dominant document font height (35.0px). This larger (+{pct_diff}%) font size difference indicates spliced or digitally altered text.",
+      "evidence": "Font height: 49px vs dominant 35.0px (ratio: 1.4x)",
+      "bounding_box": [
+        777,
+        427,
+        915,
+        476
+      ],
+      "affected_text": "25000",
+      "confidence_score": 0.8
+    },
+    {
+      "category": "FONT_SIZE_INCONSISTENCY",
+      "severity": "WARNING",
+      "title": "Font Size Inconsistency: 'अंतर्गत स्थित है, जिसकी ब' (1.4x)",
+      "description": "Text height (49px) deviates by 40.0% from the dominant document font height (35.0px). This larger (+{pct_diff}%) font size difference indicates spliced or digitally altered text.",
+      "evidence": "Font height: 49px vs dominant 35.0px (ratio: 1.4x)",
+      "bounding_box": [
+        82,
+        1211,
+        999,
+        1260
+      ],
+      "affected_text": "अंतर्गत स्थित है, जिसकी बिक्री/हस्तांतरण राशि २ 94.50 (चौरानवे रुपये पचास पैसे मात्र)",
+      "confidence_score": 0.8
+    },
+    {
+      "category": "FONT_SIZE_INCONSISTENCY",
+      "severity": "CRITICAL",
+      "title": "Font Size Inconsistency: 'एवं विक्रय संबंधी घोषणा प' (1.457x)",
+      "description": "Text height (51px) deviates by 45.7% from the dominant document font height (35.0px). This larger (+{pct_diff}%) font size difference indicates spliced or digitally altered text.",
+      "evidence": "Font height: 51px vs dominant 35.0px (ratio: 1.457x)",
+      "bounding_box": [
+        80,
+        1107,
+        998,
+        1158
+      ],
+      "affected_text": "एवं विक्रय संबंधी घोषणा पत्र प्र्तुत किया गया है। उक्त भूमि खसरा संख्या 142,",
+      "confidence_score": 0.92
+    },
+    {
+      "category": "FONT_SIZE_INCONSISTENCY",
+      "severity": "CRITICAL",
+      "title": "Font Size Inconsistency: '25000' (1.486x)",
+      "description": "Text height (52px) deviates by 48.6% from the dominant document font height (35.0px). This larger (+{pct_diff}%) font size difference indicates spliced or digitally altered text.",
+      "evidence": "Font height: 52px vs dominant 35.0px (ratio: 1.486x)",
+      "bounding_box": [
+        798,
+        254,
+        925,
+        306
+      ],
+      "affected_text": "25000",
+      "confidence_score": 0.92
+    },
+    {
+      "category": "FONT_SIZE_INCONSISTENCY",
+      "severity": "CRITICAL",
+      "title": "Font Size Inconsistency: 'रकबा 0.229 हेक्टेयर, जो ग' (1.543x)",
+      "description": "Text height (54px) deviates by 54.3% from the dominant document font height (35.0px). This larger (+{pct_diff}%) font size difference indicates spliced or digitally altered text.",
+      "evidence": "Font height: 54px vs dominant 35.0px (ratio: 1.543x)",
+      "bounding_box": [
+        79,
+        1157,
+        996,
+        1211
+      ],
+      "affected_text": "रकबा 0.229 हेक्टेयर, जो ग्राम सैदपुर, परगना मोहनलालगंज, तहसील सदर के",
+      "confidence_score": 0.92
+    },
+    {
+      "category": "FONT_SIZE_INCONSISTENCY",
+      "severity": "CRITICAL",
+      "title": "Font Size Inconsistency: 'तहसील सदर, जिला लखनऊ, उत्' (1.571x)",
+      "description": "Text height (55px) deviates by 57.1% from the dominant document font height (35.0px). This larger (+{pct_diff}%) font size difference indicates spliced or digitally altered text.",
+      "evidence": "Font height: 55px vs dominant 35.0px (ratio: 1.571x)",
+      "bounding_box": [
+        80,
+        1054,
+        987,
+        1109
+      ],
+      "affected_text": "तहसील सदर, जिला लखनऊ, उत्तर प्रदेश,' द्वारा अपनी कृषि भूमि के स्वामित्व",
+      "confidence_score": 0.92
+    },
+    {
+      "category": "FONT_SIZE_INCONSISTENCY",
+      "severity": "CRITICAL",
+      "title": "Font Size Inconsistency: 'को मेरे समक्ष प्र्तुत किय' (1.657x)",
+      "description": "Text height (58px) deviates by 65.7% from the dominant document font height (35.0px). This larger (+{pct_diff}%) font size difference indicates spliced or digitally altered text.",
+      "evidence": "Font height: 58px vs dominant 35.0px (ratio: 1.657x)",
+      "bounding_box": [
+        78,
+        937,
+        767,
+        995
+      ],
+      "affected_text": "को मेरे समक्ष प्र्तुत किया गया, जिसमें निम्नलिखित विवरण दर्ज है:",
+      "confidence_score": 0.92
+    },
+    {
+      "category": "FONT_SIZE_INCONSISTENCY",
+      "severity": "CRITICAL",
+      "title": "Font Size Inconsistency: 'प्रदेश' (1.771x)",
+      "description": "Text height (62px) deviates by 77.1% from the dominant document font height (35.0px). This larger (+{pct_diff}%) font size difference indicates spliced or digitally altered text.",
+      "evidence": "Font height: 62px vs dominant 35.0px (ratio: 1.771x)",
+      "bounding_box": [
+        212,
+        445,
+        324,
+        507
+      ],
+      "affected_text": "प्रदेश",
+      "confidence_score": 0.92
+    },
+    {
+      "category": "FONT_SIZE_INCONSISTENCY",
+      "severity": "CRITICAL",
+      "title": "Font Size Inconsistency: 'श्री/श्रीमती राम कुमार पु' (1.771x)",
+      "description": "Text height (62px) deviates by 77.1% from the dominant document font height (35.0px). This larger (+{pct_diff}%) font size difference indicates spliced or digitally altered text.",
+      "evidence": "Font height: 62px vs dominant 35.0px (ratio: 1.771x)",
+      "bounding_box": [
+        80,
+        997,
+        986,
+        1059
+      ],
+      "affected_text": "श्री/श्रीमती राम कुमार पुत्र श्री सुरेश प्रसाद निवासी ग्राम सैदपुर,",
+      "confidence_score": 0.92
+    },
+    {
+      "category": "FONT_SIZE_INCONSISTENCY",
+      "severity": "CRITICAL",
+      "title": "Font Size Inconsistency: 'न्यायिक स्टाम्प शुल्क विध' (1.8x)",
+      "description": "Text height (63px) deviates by 80.0% from the dominant document font height (35.0px). This larger (+{pct_diff}%) font size difference indicates spliced or digitally altered text.",
+      "evidence": "Font height: 63px vs dominant 35.0px (ratio: 1.8x)",
+      "bounding_box": [
+        78,
+        880,
+        994,
+        943
+      ],
+      "affected_text": "न्यायिक स्टाम्प शुल्क विधिवत रूप से अदा किया गया है। यह दस्तावेज़ दिनांक 26 मई 2024",
+      "confidence_score": 0.92
+    },
+    {
+      "category": "FONT_SIZE_INCONSISTENCY",
+      "severity": "CRITICAL",
+      "title": "Font Size Inconsistency: 'प्रमाणित किया जाता है कि ' (1.857x)",
+      "description": "Text height (65px) deviates by 85.7% from the dominant document font height (35.0px). This larger (+{pct_diff}%) font size difference indicates spliced or digitally altered text.",
+      "evidence": "Font height: 65px vs dominant 35.0px (ratio: 1.857x)",
+      "bounding_box": [
+        119,
+        825,
+        980,
+        890
+      ],
+      "affected_text": "प्रमाणित किया जाता है कि प्रस्तुत दस्तावेज़ पर र25,000 (पच्चीस हजार रुपये) का",
+      "confidence_score": 0.92
+    },
+    {
+      "category": "FONT_SIZE_INCONSISTENCY",
+      "severity": "CRITICAL",
+      "title": "Font Size Inconsistency: 'यह दस्तावेज पूर्णतः स्वेच' (1.886x)",
+      "description": "Text height (66px) deviates by 88.6% from the dominant document font height (35.0px). This larger (+{pct_diff}%) font size difference indicates spliced or digitally altered text.",
+      "evidence": "Font height: 66px vs dominant 35.0px (ratio: 1.886x)",
+      "bounding_box": [
+        80,
+        1303,
+        916,
+        1369
+      ],
+      "affected_text": "यह दस्तावेज पूर्णतः स्वेच्छा से एवं बिना किसी दबाव के प्रस्तुत किया गया है।",
+      "confidence_score": 0.92
+    },
+    {
+      "category": "FONT_SIZE_INCONSISTENCY",
+      "severity": "CRITICAL",
+      "title": "Inline Font Size Jump: 'उत्तर' <-> 'प्रदेश'",
+      "description": "Adjacent words on line 5 exhibit an abrupt font height jump (ratio: 1.348x). Flags: font_size_change.",
+      "evidence": "Height ratio: 1.348x, Stroke ratio: 1.0x",
+      "bounding_box": null,
+      "affected_text": "उत्तर -> प्रदेश",
+      "confidence_score": 0.91
+    },
+    {
+      "category": "FONT_SIZE_INCONSISTENCY",
+      "severity": "CRITICAL",
+      "title": "Inline Font Size Jump: 'प्रदेश' <-> 'UTTAR'",
+      "description": "Adjacent words on line 5 exhibit an abrupt font height jump (ratio: 1.771x). Flags: font_size_change, stroke_weight_change, ink_density_change.",
+      "evidence": "Height ratio: 1.771x, Stroke ratio: 1.434x",
+      "bounding_box": null,
+      "affected_text": "प्रदेश -> UTTAR",
+      "confidence_score": 0.91
+    },
+    {
+      "category": "FONT_SIZE_INCONSISTENCY",
+      "severity": "CRITICAL",
+      "title": "Inline Font Size Jump: 'ऱ' <-> '25000'",
+      "description": "Adjacent words on line 5 exhibit an abrupt font height jump (ratio: 1.324x). Flags: font_size_change.",
+      "evidence": "Height ratio: 1.324x, Stroke ratio: 1.217x",
+      "bounding_box": null,
+      "affected_text": "ऱ -> 25000",
+      "confidence_score": 0.91
+    },
+    {
+      "category": "FONT_SIZE_INCONSISTENCY",
+      "severity": "CRITICAL",
+      "title": "Inline Font Size Jump: '25000' <-> 'हजार'",
+      "description": "Adjacent words on line 5 exhibit an abrupt font height jump (ratio: 1.485x). Flags: font_size_change, ink_density_change.",
+      "evidence": "Height ratio: 1.485x, Stroke ratio: 1.178x",
+      "bounding_box": null,
+      "affected_text": "25000 -> हजार",
+      "confidence_score": 0.91
+    },
+    {
+      "category": "FONT_SIZE_INCONSISTENCY",
+      "severity": "CRITICAL",
+      "title": "Inline Font Size Jump: 'प्रदेश' <-> 'UTTAR'",
+      "description": "Adjacent words on line 6 exhibit an abrupt font height jump (ratio: 1.382x). Flags: font_size_change.",
+      "evidence": "Height ratio: 1.382x, Stroke ratio: 1.0x",
+      "bounding_box": null,
+      "affected_text": "प्रदेश -> UTTAR",
+      "confidence_score": 0.91
+    },
+    {
+      "category": "FONT_SIZE_INCONSISTENCY",
+      "severity": "CRITICAL",
+      "title": "Inline Font Size Jump: 'PRADESH' <-> '736301'",
+      "description": "Adjacent words on line 6 exhibit an abrupt font height jump (ratio: 1.323x). Flags: font_size_change, stroke_weight_change.",
+      "evidence": "Height ratio: 1.323x, Stroke ratio: 1.434x",
+      "bounding_box": null,
+      "affected_text": "PRADESH -> 736301",
+      "confidence_score": 0.91
+    },
+    {
+      "category": "FONT_SIZE_INCONSISTENCY",
+      "severity": "CRITICAL",
+      "title": "Inline Font Size Jump: 'प्रदेश' <-> 'X'",
+      "description": "Adjacent words on line 8 exhibit an abrupt font height jump (ratio: 1.87x). Flags: font_size_change.",
+      "evidence": "Height ratio: 1.87x, Stroke ratio: 1.0x",
+      "bounding_box": null,
+      "affected_text": "प्रदेश -> X",
+      "confidence_score": 0.91
+    },
+    {
+      "category": "FONT_SIZE_INCONSISTENCY",
+      "severity": "CRITICAL",
+      "title": "Inline Font Size Jump: 'यह' <-> 'प्रमाणित किया ज'",
+      "description": "Adjacent words on line 12 exhibit an abrupt font height jump (ratio: 2.031x). Flags: font_size_change.",
+      "evidence": "Height ratio: 2.031x, Stroke ratio: 1.0x",
+      "bounding_box": null,
+      "affected_text": "यह -> प्रमाणित किया जाता है कि प्रस्तुत दस्तावेज़ पर र25",
+      "confidence_score": 0.91
+    },
+    {
       "category": "BIOMETRIC_FORGERY",
       "severity": "CRITICAL",
       "title": "Left Thumb Impression Forgery: Synthetic Ridge Pattern & Ink Discontinuity",
@@ -776,7 +1111,7 @@
     "Cross-reference the Registration Number, Deed Date, and Consideration Amount with the State Department of Registrations and Stamps portal."
   ],
   "generated_files": {
-    "annotated_evidence_image": "C:\\Users\\Devendra Soni\\Desktop\\Anant\\Project\\outputs\\eb7d5c8dea584513b999982c2716319b\\tampering_annotated.png",
-    "ela_heatmap_image": "C:\\Users\\Devendra Soni\\Desktop\\Anant\\Project\\outputs\\eb7d5c8dea584513b999982c2716319b\\ela_heatmap.png"
+    "annotated_evidence_image": "C:\\Users\\Devendra Soni\\Desktop\\Anant\\Project\\outputs\\test_stamp_doc_2\\tampering_annotated.png",
+    "ela_heatmap_image": "C:\\Users\\Devendra Soni\\Desktop\\Anant\\Project\\outputs\\test_stamp_doc_2\\ela_heatmap.png"
   }
 }

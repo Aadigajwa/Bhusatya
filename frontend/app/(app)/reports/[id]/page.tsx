@@ -12,14 +12,16 @@ export default async function ReportPage({ params }: { params: Promise<{ id: str
   const { id } = await params
   const doc = documents.find((d) => d.id === id)
 
-  const isBuiltInOther = doc && doc.id !== FEATURED_REPORT_ID
-  const fileName = doc
-    ? '7-12_extract_kharadi_142-3B.pdf'
-    : id.toLowerCase().includes('stamp_doc_2')
-    ? 'stamp_doc_2.png'
-    : id.toLowerCase().includes('stamp_doc_1')
-    ? 'stamp_doc_1.png'
-    : 'uploaded_document.png'
+  const isBuiltInOther = false
+  const fileName = doc?.reference?.replace(/^File:\s*/i, '')
+    || (id.toLowerCase().includes('stamp_doc_3') || id.toLowerCase().includes('stampdoc3')
+      ? 'stamp_doc_3.png'
+      : id.toLowerCase().includes('stamp_doc_2') || id.toLowerCase().includes('stampdoc2')
+      ? 'stamp_doc_2.png'
+      : id.toLowerCase().includes('stamp_doc_1') || id.toLowerCase().includes('stampdoc1')
+      ? 'stamp_doc_1.png'
+      : 'uploaded_document.png')
+
 
   return (
     <div className="flex min-h-full flex-col lg:h-full">

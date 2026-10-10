@@ -1,0 +1,50 @@
+{
+  "document_details": {
+    "document_type": null,
+    "document_purpose": null
+  },
+  "owner_details": {
+    "owner_name": "मोहन लाल गुप्ता",
+    "father_name": "सुरेश चंद गुप्ता निवासी काल्पनिक नगर",
+    "other_named_persons": []
+  },
+  "address_details": {
+    "village": null,
+    "tehsil": "डमी",
+    "district": "DUMMY DISTRICT",
+    "state": null
+  },
+  "land_details": {
+    "survey_or_khasra_number": null,
+    "area": null,
+    "land_type": null,
+    "pargana": null
+  },
+  "financial_details": {
+    "amounts_found": [
+      "27500",
+      "27,500",
+      "89,200"
+    ],
+    "sale_or_transaction_amount": "89,200",
+    "stamp_duty_amount": null,
+    "currency": "INR"
+  },
+  "date_details": {
+    "all_dates_found": [
+      "26\nMAY\n2०24"
+    ],
+    "document_date": "26\nMAY\n2०24"
+  },
+  "registration_details": {
+    "registration_number": null,
+    "stamp_number": null,
+    "signature_mentioned_in_text": true,
+    "fingerprint_mentioned_in_text": true
+  },
+  "other_information": {
+    "important_statements": [
+      "तैयार किया गया है। इसमें वर्ित संपत्ति काल्पनिक है। बिक्री/हस्तांतरण राशि"
+    ]
+  }
+}

@@ -4,7 +4,7 @@ import { useCallback, useEffect, useImperativeHandle, useRef, useState } from 'r
 import type { Ref } from 'react'
 import { Maximize2, ScanText, ShieldAlert, ZoomIn, ZoomOut } from 'lucide-react'
 import { cn } from '@/lib/utils'
-import { PAGE, fields, findings, type Box, type Severity } from '@/lib/report-data'
+import { PAGE, fields, findings, type Box, type Finding, type Severity } from '@/lib/report-data'
 import { LandRecordPage } from '@/components/report/land-record-page'
 
 export interface ViewerHandle {
@@ -47,11 +47,19 @@ const FONT_FINDING_LABELS: Record<string, string> = {
 
 // Biometric thumb impression findings get a prominent critical red badge & border
 const THUMB_FINDING_COLOR = '#dc2626'
-const THUMB_FINDING_IDS = new Set(['f-thumb-left', 'f-thumb-right'])
+const THUMB_FINDING_IDS = new Set([
+  'f-thumb-left',
+  'f-thumb-right',
+  'f-thumb-gemini-logo',
+  'f-thumb-ai-right',
+])
 const THUMB_FINDING_LABELS: Record<string, string> = {
   'f-thumb-left': 'Fake Thumb Impression (Left)',
   'f-thumb-right': 'Fake Thumb Impression (Right)',
+  'f-thumb-gemini-logo': 'Gemini AI Logo at Thumb Print',
+  'f-thumb-ai-right': 'AI Generated Thumb Impression',
 }
+
 
 const clamp = (v: number, lo: number, hi: number) => Math.min(hi, Math.max(lo, v))
 
@@ -123,8 +131,9 @@ export function EvidenceViewer({
                 ? THUMB_FINDING_COLOR
                 : FONT_FINDING_IDS.has(f.id)
                 ? FONT_FINDING_COLOR
-                : severityColor[f.severity],
+                : severityColor[f.severity as Severity] ?? '#a8352a',
               box: f.box,
+
             },
           ]
         : [],
@@ -608,8 +617,9 @@ export function EvidenceViewer({
                   y={f.box.y}
                   width={f.box.w}
                   height={f.box.h}
-                  fill={severityColor[f.severity]}
+                  fill={severityColor[f.severity as Severity] ?? '#a8352a'}
                   fillOpacity={0.35}
+
                 />
               ) : null,
             )}

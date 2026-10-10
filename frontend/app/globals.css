@@ -5,6 +5,11 @@
 @theme inline {
   --font-sans: var(--font-plex-sans), ui-sans-serif, system-ui, sans-serif;
   --font-mono: var(--font-plex-mono), ui-monospace, SFMono-Regular, monospace;
+  --font-outfit: var(--font-outfit), 'Outfit', sans-serif;
+
+  --color-neon-blue: #00f0ff;
+  --color-neon-purple: #b026ff;
+  --color-midnight: #0c1128;
 
   --color-background: var(--background);
   --color-foreground: var(--foreground);

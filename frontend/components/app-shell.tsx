@@ -17,20 +17,20 @@ import { cn } from '@/lib/utils'
 import { buttonVariants } from '@/components/ui/button'
 
 const nav = [
-  { href: '/', label: 'Dashboard', icon: LayoutDashboard },
+  { href: '/dashboard', label: 'Dashboard', icon: LayoutDashboard },
   { href: '/verification/new', label: 'New Verification', icon: FilePlus2 },
   { href: '/reports', label: 'Reports', icon: ClipboardCheck },
   { href: '/settings', label: 'Settings', icon: Settings },
 ]
 
 function isActive(pathname: string, href: string) {
-  if (href === '/') return pathname === '/'
+  if (href === '/dashboard') return pathname === '/dashboard' || pathname === '/'
   return pathname === href || pathname.startsWith(`${href}/`)
 }
 
 function crumbsFor(pathname: string): { label: string; href?: string }[] {
   const parts = pathname.split('/').filter(Boolean)
-  if (parts.length === 0) return [{ label: 'Dashboard' }]
+  if (parts.length === 0 || parts[0] === 'dashboard') return [{ label: 'Dashboard' }]
   if (parts[0] === 'verification') {
     return [{ label: 'Verification' }, { label: 'New Verification' }]
   }
@@ -38,6 +38,7 @@ function crumbsFor(pathname: string): { label: string; href?: string }[] {
     return [{ label: 'Reports', href: '/reports' }, { label: parts[1] }]
   }
   const labels: Record<string, string> = {
+    dashboard: 'Dashboard',
     reports: 'Reports',
     settings: 'Settings',
   }

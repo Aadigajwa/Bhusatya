@@ -1,0 +1,1292 @@
+{
+  "document_id": "55f4d8c117cb4f25a82744c2fdca92c8",
+  "analysis_timestamp": "2026-10-10T00:48:24.548209",
+  "verdict": "HIGH_RISK_TAMPERED",
+  "verdict_label": "Tampered / High Risk of Forgery",
+  "status_color": "#E74C3C",
+  "tampering_risk_score": 82.0,
+  "executive_summary": "Document verification evaluated this document as 'Tampered / High Risk of Forgery' with an overall tampering risk score of 82.0%. Forensic screening identified 38 CRITICAL red flag(s): Text Appearance Inconsistency: 'गैर'; Text Appearance Inconsistency: 'भारतीय'; Text Appearance Inconsistency: 'JUDICIAL'; Text Appearance Inconsistency: 'INDIA'; Text Appearance Inconsistency: 'र'; Text Appearance Inconsistency: '50000'; Text Appearance Inconsistency: 'र'; Text Appearance Inconsistency: 'प्रदेश'; Text Appearance Inconsistency: 'र'; Text Appearance Inconsistency: 'रूपये'; Text Appearance Inconsistency: 'भूमि'; Text Appearance Inconsistency: 'पत्र'; Text Appearance Inconsistency: 'B'; Text Appearance Inconsistency: 'खसरा संख्या : 118/2'; Text Appearance Inconsistency: 'भूमि का प्रकार : कृष भूमि'; Font Size Inconsistency: 'तहसील : फूलपुर' (1.452x); Font Size Inconsistency: 'तथा राजस्व अभिलेख के अनुस' (1.452x); Font Size Inconsistency: 'खसरा संख्या 118/2 रकबा 1.' (1.484x); Font Size Inconsistency: 'यह प्रमाण पत्र तहसीलदार, ' (1.484x); Font Size Inconsistency: 'मैने इस भूमि पर किसी भी प' (1.677x); Font Size Inconsistency: 'यह प्रमाणित किया जाता है ' (1.71x); Font Size Inconsistency: 'निवासी ग्राम बरौली पोस्ट ' (1.71x); Font Size Inconsistency: 'स्वामित्व' (1.742x); Font Size Inconsistency: 'प्रदेश' (1.871x); Font Size Inconsistency: 'कुमार' (2.258x); Font Size Inconsistency: 'भूमि' (2.355x); Font Size Inconsistency: 'आमेत' (2.419x); Inline Font Size Jump: 'उत्तर' <-> 'प्रदेश'; Inline Font Size Jump: 'प्रदेश' <-> 'UTTAR'; Inline Font Size Jump: 'हजार' <-> 'रूपये'; Inline Font Size Jump: 'भूमि' <-> 'स्वामित्व'; Inline Font Size Jump: 'पत्र' <-> 'B'; Inline Font Size Jump: 'तहसील : फूलपुर' <-> 'उत्तर'; Inline Font Size Jump: 'प्रदेश' <-> '*'; Inline Font Size Jump: 'भूमि का प्रकार ' <-> 'दिनांक'; Inline Font Size Jump: 'यह प्रमाणित किय' <-> 'राजेश प्रसाद'; Left Thumb Impression Forgery: Synthetic Ridge Pattern & Ink Discontinuity; Right Thumb Impression Forgery: Spliced Ridge Discontinuity & Tampered Minutiae. Typography analysis identified 15 high-risk text regions with anomalous stroke thickness, slant, or baseline offsets.",
+  "category_scores": {
+    "typography_and_font": 100.0,
+    "compression_ela": 0.0,
+    "cloning_copy_move": 0.0,
+    "edge_splicing": 0.0,
+    "stamp_seal_integrity": 0.0,
+    "semantic_logic": 0.0
+  },
+  "findings_summary": {
+    "total_findings": 85,
+    "critical_findings": 38,
+    "warning_findings": 47,
+    "info_findings": 0
+  },
+  "findings": [
+    {
+      "category": "FONT_INCONSISTENCY",
+      "severity": "WARNING",
+      "title": "Text Appearance Inconsistency: 'ऱ'",
+      "description": "Region displays significant statistical deviation in typography: text slant / style proxy. Different stroke thickness, slant, or baseline alignment suggests text was added or altered separately.",
+      "evidence": "Flagged features: text slant / style proxy",
+      "bounding_box": [
+        98,
+        75,
+        137,
+        121
+      ],
+      "affected_text": "ऱ",
+      "confidence_score": 0.75
+    },
+    {
+      "category": "FONT_INCONSISTENCY",
+      "severity": "CRITICAL",
+      "title": "Text Appearance Inconsistency: 'गैर'",
+      "description": "Region displays significant statistical deviation in typography: text slant / style proxy, local-background difference, baseline-alignment anomaly. Different stroke thickness, slant, or baseline alignment suggests text was added or altered separately.",
+      "evidence": "Flagged features: text slant / style proxy, local-background difference, baseline-alignment anomaly",
+      "bounding_box": [
+        479,
+        68,
+        535,
+        110
+      ],
+      "affected_text": "गैर",
+      "confidence_score": 0.88
+    },
+    {
+      "category": "FONT_INCONSISTENCY",
+      "severity": "WARNING",
+      "title": "Text Appearance Inconsistency: 'न्यायिक'",
+      "description": "Region displays significant statistical deviation in typography: local-background difference, baseline-alignment anomaly. Different stroke thickness, slant, or baseline alignment suggests text was added or altered separately.",
+      "evidence": "Flagged features: local-background difference, baseline-alignment anomaly",
+      "bounding_box": [
+        548,
+        71,
+        690,
+        132
+      ],
+      "affected_text": "न्यायिक",
+      "confidence_score": 0.75
+    },
+    {
+      "category": "FONT_INCONSISTENCY",
+      "severity": "CRITICAL",
+      "title": "Text Appearance Inconsistency: 'भारतीय'",
+      "description": "Region displays significant statistical deviation in typography: text slant / style proxy, local-background difference, baseline-alignment anomaly. Different stroke thickness, slant, or baseline alignment suggests text was added or altered separately.",
+      "evidence": "Flagged features: text slant / style proxy, local-background difference, baseline-alignment anomaly",
+      "bounding_box": [
+        334,
+        66,
+        470,
+        133
+      ],
+      "affected_text": "भारतीय",
+      "confidence_score": 0.88
+    },
+    {
+      "category": "FONT_INCONSISTENCY",
+      "severity": "WARNING",
+      "title": "Text Appearance Inconsistency: 'रूपये'",
+      "description": "Region displays significant statistical deviation in typography: word-spacing anomaly. Different stroke thickness, slant, or baseline alignment suggests text was added or altered separately.",
+      "evidence": "Flagged features: word-spacing anomaly",
+      "bounding_box": [
+        237,
+        118,
+        304,
+        159
+      ],
+      "affected_text": "रूपये",
+      "confidence_score": 0.75
+    },
+    {
+      "category": "FONT_INCONSISTENCY",
+      "severity": "WARNING",
+      "title": "Text Appearance Inconsistency: 'NON'",
+      "description": "Region displays significant statistical deviation in typography: local-background difference. Different stroke thickness, slant, or baseline alignment suggests text was added or altered separately.",
+      "evidence": "Flagged features: local-background difference",
+      "bounding_box": [
+        461,
+        117,
+        534,
+        154
+      ],
+      "affected_text": "NON",
+      "confidence_score": 0.75
+    },
+    {
+      "category": "FONT_INCONSISTENCY",
+      "severity": "CRITICAL",
+      "title": "Text Appearance Inconsistency: 'JUDICIAL'",
+      "description": "Region displays significant statistical deviation in typography: text slant / style proxy, local-background difference, word-spacing anomaly, baseline-alignment anomaly. Different stroke thickness, slant, or baseline alignment suggests text was added or altered separately.",
+      "evidence": "Flagged features: text slant / style proxy, local-background difference, word-spacing anomaly, baseline-alignment anomaly",
+      "bounding_box": [
+        532,
+        114,
+        674,
+        173
+      ],
+      "affected_text": "JUDICIAL",
+      "confidence_score": 0.88
+    },
+    {
+      "category": "FONT_INCONSISTENCY",
+      "severity": "CRITICAL",
+      "title": "Text Appearance Inconsistency: 'INDIA'",
+      "description": "Region displays significant statistical deviation in typography: text slant / style proxy, local-background difference, baseline-alignment anomaly. Different stroke thickness, slant, or baseline alignment suggests text was added or altered separately.",
+      "evidence": "Flagged features: text slant / style proxy, local-background difference, baseline-alignment anomaly",
+      "bounding_box": [
+        359,
+        119,
+        459,
+        171
+      ],
+      "affected_text": "INDIA",
+      "confidence_score": 0.88
+    },
+    {
+      "category": "FONT_INCONSISTENCY",
+      "severity": "CRITICAL",
+      "title": "Text Appearance Inconsistency: 'र'",
+      "description": "Region displays significant statistical deviation in typography: text slant / style proxy, local-background difference, line-spacing anomaly. Different stroke thickness, slant, or baseline alignment suggests text was added or altered separately.",
+      "evidence": "Flagged features: text slant / style proxy, local-background difference, line-spacing anomaly",
+      "bounding_box": [
+        126,
+        261,
+        158,
+        297
+      ],
+      "affected_text": "र",
+      "confidence_score": 0.88
+    },
+    {
+      "category": "FONT_INCONSISTENCY",
+      "severity": "CRITICAL",
+      "title": "Text Appearance Inconsistency: '50000'",
+      "description": "Region displays significant statistical deviation in typography: local-background difference, word-spacing anomaly, line-spacing anomaly. Different stroke thickness, slant, or baseline alignment suggests text was added or altered separately.",
+      "evidence": "Flagged features: local-background difference, word-spacing anomaly, line-spacing anomaly",
+      "bounding_box": [
+        164,
+        258,
+        295,
+        301
+      ],
+      "affected_text": "50000",
+      "confidence_score": 0.88
+    },
+    {
+      "category": "FONT_INCONSISTENCY",
+      "severity": "CRITICAL",
+      "title": "Text Appearance Inconsistency: 'र'",
+      "description": "Region displays significant statistical deviation in typography: stroke-thickness proxy, text slant / style proxy, local-background difference, line-spacing anomaly. Different stroke thickness, slant, or baseline alignment suggests text was added or altered separately.",
+      "evidence": "Flagged features: stroke-thickness proxy, text slant / style proxy, local-background difference, line-spacing anomaly",
+      "bounding_box": [
+        740,
+        260,
+        773,
+        301
+      ],
+      "affected_text": "र",
+      "confidence_score": 0.88
+    },
+    {
+      "category": "FONT_INCONSISTENCY",
+      "severity": "WARNING",
+      "title": "Text Appearance Inconsistency: '50000'",
+      "description": "Region displays significant statistical deviation in typography: local-background difference, line-spacing anomaly. Different stroke thickness, slant, or baseline alignment suggests text was added or altered separately.",
+      "evidence": "Flagged features: local-background difference, line-spacing anomaly",
+      "bounding_box": [
+        782,
+        260,
+        913,
+        302
+      ],
+      "affected_text": "50000",
+      "confidence_score": 0.75
+    },
+    {
+      "category": "FONT_INCONSISTENCY",
+      "severity": "WARNING",
+      "title": "Text Appearance Inconsistency: 'पचास'",
+      "description": "Region displays significant statistical deviation in typography: local-background difference. Different stroke thickness, slant, or baseline alignment suggests text was added or altered separately.",
+      "evidence": "Flagged features: local-background difference",
+      "bounding_box": [
+        110,
+        301,
+        177,
+        328
+      ],
+      "affected_text": "पचास",
+      "confidence_score": 0.75
+    },
+    {
+      "category": "FONT_INCONSISTENCY",
+      "severity": "WARNING",
+      "title": "Text Appearance Inconsistency: 'हजार'",
+      "description": "Region displays significant statistical deviation in typography: local-background difference. Different stroke thickness, slant, or baseline alignment suggests text was added or altered separately.",
+      "evidence": "Flagged features: local-background difference",
+      "bounding_box": [
+        180,
+        302,
+        241,
+        328
+      ],
+      "affected_text": "हजार",
+      "confidence_score": 0.75
+    },
+    {
+      "category": "FONT_INCONSISTENCY",
+      "severity": "WARNING",
+      "title": "Text Appearance Inconsistency: 'रूपये'",
+      "description": "Region displays significant statistical deviation in typography: local-background difference, word-spacing anomaly. Different stroke thickness, slant, or baseline alignment suggests text was added or altered separately.",
+      "evidence": "Flagged features: local-background difference, word-spacing anomaly",
+      "bounding_box": [
+        242,
+        296,
+        302,
+        328
+      ],
+      "affected_text": "रूपये",
+      "confidence_score": 0.75
+    },
+    {
+      "category": "FONT_INCONSISTENCY",
+      "severity": "WARNING",
+      "title": "Text Appearance Inconsistency: 'पचास'",
+      "description": "Region displays significant statistical deviation in typography: local-background difference. Different stroke thickness, slant, or baseline alignment suggests text was added or altered separately.",
+      "evidence": "Flagged features: local-background difference",
+      "bounding_box": [
+        733,
+        303,
+        801,
+        330
+      ],
+      "affected_text": "पचास",
+      "confidence_score": 0.75
+    },
+    {
+      "category": "FONT_INCONSISTENCY",
+      "severity": "WARNING",
+      "title": "Text Appearance Inconsistency: 'हजार'",
+      "description": "Region displays significant statistical deviation in typography: local-background difference. Different stroke thickness, slant, or baseline alignment suggests text was added or altered separately.",
+      "evidence": "Flagged features: local-background difference",
+      "bounding_box": [
+        805,
+        305,
+        863,
+        330
+      ],
+      "affected_text": "हजार",
+      "confidence_score": 0.75
+    },
+    {
+      "category": "FONT_INCONSISTENCY",
+      "severity": "WARNING",
+      "title": "Text Appearance Inconsistency: 'रूपये'",
+      "description": "Region displays significant statistical deviation in typography: local-background difference. Different stroke thickness, slant, or baseline alignment suggests text was added or altered separately.",
+      "evidence": "Flagged features: local-background difference",
+      "bounding_box": [
+        865,
+        300,
+        921,
+        330
+      ],
+      "affected_text": "रूपये",
+      "confidence_score": 0.75
+    },
+    {
+      "category": "FONT_INCONSISTENCY",
+      "severity": "CRITICAL",
+      "title": "Text Appearance Inconsistency: 'प्रदेश'",
+      "description": "Region displays significant statistical deviation in typography: local-background difference, word-spacing anomaly, baseline-alignment anomaly. Different stroke thickness, slant, or baseline alignment suggests text was added or altered separately.",
+      "evidence": "Flagged features: local-background difference, word-spacing anomaly, baseline-alignment anomaly",
+      "bounding_box": [
+        210,
+        409,
+        318,
+        467
+      ],
+      "affected_text": "प्रदेश",
+      "confidence_score": 0.88
+    },
+    {
+      "category": "FONT_INCONSISTENCY",
+      "severity": "CRITICAL",
+      "title": "Text Appearance Inconsistency: 'र'",
+      "description": "Region displays significant statistical deviation in typography: text slant / style proxy, local-background difference, line-spacing anomaly, baseline-alignment anomaly. Different stroke thickness, slant, or baseline alignment suggests text was added or altered separately.",
+      "evidence": "Flagged features: text slant / style proxy, local-background difference, line-spacing anomaly, baseline-alignment anomaly",
+      "bounding_box": [
+        743,
+        413,
+        774,
+        450
+      ],
+      "affected_text": "र",
+      "confidence_score": 0.88
+    },
+    {
+      "category": "FONT_INCONSISTENCY",
+      "severity": "WARNING",
+      "title": "Text Appearance Inconsistency: '50000'",
+      "description": "Region displays significant statistical deviation in typography: local-background difference, line-spacing anomaly. Different stroke thickness, slant, or baseline alignment suggests text was added or altered separately.",
+      "evidence": "Flagged features: local-background difference, line-spacing anomaly",
+      "bounding_box": [
+        782,
+        411,
+        911,
+        453
+      ],
+      "affected_text": "50000",
+      "confidence_score": 0.75
+    },
+    {
+      "category": "FONT_INCONSISTENCY",
+      "severity": "WARNING",
+      "title": "Text Appearance Inconsistency: 'उत्तर'",
+      "description": "Region displays significant statistical deviation in typography: local-background difference, line-spacing anomaly. Different stroke thickness, slant, or baseline alignment suggests text was added or altered separately.",
+      "evidence": "Flagged features: local-background difference, line-spacing anomaly",
+      "bounding_box": [
+        98,
+        424,
+        195,
+        464
+      ],
+      "affected_text": "उत्तर",
+      "confidence_score": 0.75
+    },
+    {
+      "category": "FONT_INCONSISTENCY",
+      "severity": "WARNING",
+      "title": "Text Appearance Inconsistency: 'UTTAR'",
+      "description": "Region displays significant statistical deviation in typography: line-spacing anomaly. Different stroke thickness, slant, or baseline alignment suggests text was added or altered separately.",
+      "evidence": "Flagged features: line-spacing anomaly",
+      "bounding_box": [
+        388,
+        426,
+        499,
+        458
+      ],
+      "affected_text": "UTTAR",
+      "confidence_score": 0.75
+    },
+    {
+      "category": "FONT_INCONSISTENCY",
+      "severity": "WARNING",
+      "title": "Text Appearance Inconsistency: 'PRADESH'",
+      "description": "Region displays significant statistical deviation in typography: word-spacing anomaly, line-spacing anomaly. Different stroke thickness, slant, or baseline alignment suggests text was added or altered separately.",
+      "evidence": "Flagged features: word-spacing anomaly, line-spacing anomaly",
+      "bounding_box": [
+        499,
+        425,
+        656,
+        459
+      ],
+      "affected_text": "PRADESH",
+      "confidence_score": 0.75
+    },
+    {
+      "category": "FONT_INCONSISTENCY",
+      "severity": "WARNING",
+      "title": "Text Appearance Inconsistency: 'पचास'",
+      "description": "Region displays significant statistical deviation in typography: local-background difference. Different stroke thickness, slant, or baseline alignment suggests text was added or altered separately.",
+      "evidence": "Flagged features: local-background difference",
+      "bounding_box": [
+        735,
+        455,
+        803,
+        479
+      ],
+      "affected_text": "पचास",
+      "confidence_score": 0.75
+    },
+    {
+      "category": "FONT_INCONSISTENCY",
+      "severity": "WARNING",
+      "title": "Text Appearance Inconsistency: 'हजार'",
+      "description": "Region displays significant statistical deviation in typography: local-background difference. Different stroke thickness, slant, or baseline alignment suggests text was added or altered separately.",
+      "evidence": "Flagged features: local-background difference",
+      "bounding_box": [
+        808,
+        455,
+        865,
+        480
+      ],
+      "affected_text": "हजार",
+      "confidence_score": 0.75
+    },
+    {
+      "category": "FONT_INCONSISTENCY",
+      "severity": "CRITICAL",
+      "title": "Text Appearance Inconsistency: 'रूपये'",
+      "description": "Region displays significant statistical deviation in typography: stroke-thickness proxy, ink-density difference, local-background difference. Different stroke thickness, slant, or baseline alignment suggests text was added or altered separately.",
+      "evidence": "Flagged features: stroke-thickness proxy, ink-density difference, local-background difference",
+      "bounding_box": [
+        865,
+        448,
+        928,
+        483
+      ],
+      "affected_text": "रूपये",
+      "confidence_score": 0.88
+    },
+    {
+      "category": "FONT_INCONSISTENCY",
+      "severity": "CRITICAL",
+      "title": "Text Appearance Inconsistency: 'भूमि'",
+      "description": "Region displays significant statistical deviation in typography: text-size / character-height proxy, text slant / style proxy, baseline-alignment anomaly. Different stroke thickness, slant, or baseline alignment suggests text was added or altered separately.",
+      "evidence": "Flagged features: text-size / character-height proxy, text slant / style proxy, baseline-alignment anomaly",
+      "bounding_box": [
+        269,
+        537,
+        369,
+        610
+      ],
+      "affected_text": "भूमि",
+      "confidence_score": 0.88
+    },
+    {
+      "category": "FONT_INCONSISTENCY",
+      "severity": "WARNING",
+      "title": "Text Appearance Inconsistency: 'प्रमाण'",
+      "description": "Region displays significant statistical deviation in typography: line-spacing anomaly. Different stroke thickness, slant, or baseline alignment suggests text was added or altered separately.",
+      "evidence": "Flagged features: line-spacing anomaly",
+      "bounding_box": [
+        551,
+        554,
+        668,
+        596
+      ],
+      "affected_text": "प्रमाण",
+      "confidence_score": 0.75
+    },
+    {
+      "category": "FONT_INCONSISTENCY",
+      "severity": "CRITICAL",
+      "title": "Text Appearance Inconsistency: 'पत्र'",
+      "description": "Region displays significant statistical deviation in typography: text slant / style proxy, word-spacing anomaly, line-spacing anomaly. Different stroke thickness, slant, or baseline alignment suggests text was added or altered separately.",
+      "evidence": "Flagged features: text slant / style proxy, word-spacing anomaly, line-spacing anomaly",
+      "bounding_box": [
+        681,
+        556,
+        751,
+        595
+      ],
+      "affected_text": "पत्र",
+      "confidence_score": 0.88
+    },
+    {
+      "category": "FONT_INCONSISTENCY",
+      "severity": "CRITICAL",
+      "title": "Text Appearance Inconsistency: 'B'",
+      "description": "Region displays significant statistical deviation in typography: text slant / style proxy, line-spacing anomaly, baseline-alignment anomaly. Different stroke thickness, slant, or baseline alignment suggests text was added or altered separately.",
+      "evidence": "Flagged features: text slant / style proxy, line-spacing anomaly, baseline-alignment anomaly",
+      "bounding_box": [
+        835,
+        548,
+        855,
+        576
+      ],
+      "affected_text": "B",
+      "confidence_score": 0.88
+    },
+    {
+      "category": "FONT_INCONSISTENCY",
+      "severity": "WARNING",
+      "title": "Text Appearance Inconsistency: '824715'",
+      "description": "Region displays significant statistical deviation in typography: line-spacing anomaly, baseline-alignment anomaly. Different stroke thickness, slant, or baseline alignment suggests text was added or altered separately.",
+      "evidence": "Flagged features: line-spacing anomaly, baseline-alignment anomaly",
+      "bounding_box": [
+        871,
+        547,
+        989,
+        579
+      ],
+      "affected_text": "824715",
+      "confidence_score": 0.75
+    },
+    {
+      "category": "FONT_INCONSISTENCY",
+      "severity": "WARNING",
+      "title": "Text Appearance Inconsistency: 'जिला : प्रयागराज'",
+      "description": "Region displays significant statistical deviation in typography: glyph/region shape proxy. Different stroke thickness, slant, or baseline alignment suggests text was added or altered separately.",
+      "evidence": "Flagged features: glyph/region shape proxy",
+      "bounding_box": [
+        62,
+        613,
+        259,
+        650
+      ],
+      "affected_text": "जिला : प्रयागराज",
+      "confidence_score": 0.75
+    },
+    {
+      "category": "FONT_INCONSISTENCY",
+      "severity": "WARNING",
+      "title": "Text Appearance Inconsistency: 'तहसील : फूलपुर'",
+      "description": "Region displays significant statistical deviation in typography: word-spacing anomaly. Different stroke thickness, slant, or baseline alignment suggests text was added or altered separately.",
+      "evidence": "Flagged features: word-spacing anomaly",
+      "bounding_box": [
+        63,
+        659,
+        282,
+        704
+      ],
+      "affected_text": "तहसील : फूलपुर",
+      "confidence_score": 0.75
+    },
+    {
+      "category": "FONT_INCONSISTENCY",
+      "severity": "WARNING",
+      "title": "Text Appearance Inconsistency: '*'",
+      "description": "Region displays significant statistical deviation in typography: character-spacing anomaly. Different stroke thickness, slant, or baseline alignment suggests text was added or altered separately.",
+      "evidence": "Flagged features: character-spacing anomaly",
+      "bounding_box": [
+        929,
+        677,
+        952,
+        700
+      ],
+      "affected_text": "*",
+      "confidence_score": 0.75
+    },
+    {
+      "category": "FONT_INCONSISTENCY",
+      "severity": "CRITICAL",
+      "title": "Text Appearance Inconsistency: 'खसरा संख्या : 118/2'",
+      "description": "Region displays significant statistical deviation in typography: text-width proxy, glyph/region shape proxy, word-spacing anomaly. Different stroke thickness, slant, or baseline alignment suggests text was added or altered separately.",
+      "evidence": "Flagged features: text-width proxy, glyph/region shape proxy, word-spacing anomaly",
+      "bounding_box": [
+        65,
+        712,
+        321,
+        746
+      ],
+      "affected_text": "खसरा संख्या : 118/2",
+      "confidence_score": 0.88
+    },
+    {
+      "category": "FONT_INCONSISTENCY",
+      "severity": "WARNING",
+      "title": "Text Appearance Inconsistency: 'प्रति'",
+      "description": "Region displays significant statistical deviation in typography: text slant / style proxy. Different stroke thickness, slant, or baseline alignment suggests text was added or altered separately.",
+      "evidence": "Flagged features: text slant / style proxy",
+      "bounding_box": [
+        874,
+        714,
+        921,
+        746
+      ],
+      "affected_text": "प्रति",
+      "confidence_score": 0.75
+    },
+    {
+      "category": "FONT_INCONSISTENCY",
+      "severity": "CRITICAL",
+      "title": "Text Appearance Inconsistency: 'भूमि का प्रकार : कृष भूमि'",
+      "description": "Region displays significant statistical deviation in typography: text-width proxy, glyph/region shape proxy, word-spacing anomaly. Different stroke thickness, slant, or baseline alignment suggests text was added or altered separately.",
+      "evidence": "Flagged features: text-width proxy, glyph/region shape proxy, word-spacing anomaly",
+      "bounding_box": [
+        65,
+        759,
+        359,
+        803
+      ],
+      "affected_text": "भूमि का प्रकार : कृष भूमि",
+      "confidence_score": 0.88
+    },
+    {
+      "category": "FONT_INCONSISTENCY",
+      "severity": "WARNING",
+      "title": "Text Appearance Inconsistency: 'JUN'",
+      "description": "Region displays significant statistical deviation in typography: text slant / style proxy. Different stroke thickness, slant, or baseline alignment suggests text was added or altered separately.",
+      "evidence": "Flagged features: text slant / style proxy",
+      "bounding_box": [
+        849,
+        769,
+        903,
+        800
+      ],
+      "affected_text": "JUN",
+      "confidence_score": 0.75
+    },
+    {
+      "category": "FONT_INCONSISTENCY",
+      "severity": "WARNING",
+      "title": "Text Appearance Inconsistency: 'यह प्रमाणित किया जाता है '",
+      "description": "Region displays significant statistical deviation in typography: text-width proxy, glyph/region shape proxy. Different stroke thickness, slant, or baseline alignment suggests text was added or altered separately.",
+      "evidence": "Flagged features: text-width proxy, glyph/region shape proxy",
+      "bounding_box": [
+        61,
+        843,
+        830,
+        896
+      ],
+      "affected_text": "यह प्रमाणित किया जाता है कि श्री/श्रीमती अमित कुमार पुत्र",
+      "confidence_score": 0.75
+    },
+    {
+      "category": "FONT_INCONSISTENCY",
+      "severity": "WARNING",
+      "title": "Text Appearance Inconsistency: 'निवासी ग्राम बरौली पोस्ट '",
+      "description": "Region displays significant statistical deviation in typography: text-width proxy, glyph/region shape proxy. Different stroke thickness, slant, or baseline alignment suggests text was added or altered separately.",
+      "evidence": "Flagged features: text-width proxy, glyph/region shape proxy",
+      "bounding_box": [
+        63,
+        901,
+        996,
+        954
+      ],
+      "affected_text": "निवासी ग्राम बरौली पोस्ट फूलपुर तहसील फूलपुर जिला प्रयागराज को",
+      "confidence_score": 0.75
+    },
+    {
+      "category": "FONT_INCONSISTENCY",
+      "severity": "WARNING",
+      "title": "Text Appearance Inconsistency: 'खसरा संख्या 118/2 रकबा 1.'",
+      "description": "Region displays significant statistical deviation in typography: text-width proxy, glyph/region shape proxy. Different stroke thickness, slant, or baseline alignment suggests text was added or altered separately.",
+      "evidence": "Flagged features: text-width proxy, glyph/region shape proxy",
+      "bounding_box": [
+        66,
+        961,
+        987,
+        1007
+      ],
+      "affected_text": "खसरा संख्या 118/2 रकबा 1.562 हेक्टेयर (एक दशमलव पाँच सौ बासठ हेक्टेयर)",
+      "confidence_score": 0.75
+    },
+    {
+      "category": "FONT_INCONSISTENCY",
+      "severity": "WARNING",
+      "title": "Text Appearance Inconsistency: 'भूमि का पूर्ण स्वामित्व ह'",
+      "description": "Region displays significant statistical deviation in typography: text-width proxy, glyph/region shape proxy. Different stroke thickness, slant, or baseline alignment suggests text was added or altered separately.",
+      "evidence": "Flagged features: text-width proxy, glyph/region shape proxy",
+      "bounding_box": [
+        68,
+        1022,
+        995,
+        1065
+      ],
+      "affected_text": "भूमि का पूर्ण स्वामित्व है। यह भूमि मेरे नाम पर विधिवत अभिलेखों में दर्ज है",
+      "confidence_score": 0.75
+    },
+    {
+      "category": "FONT_INCONSISTENCY",
+      "severity": "WARNING",
+      "title": "Text Appearance Inconsistency: 'तथा राजस्व अभिलेख के अनुस'",
+      "description": "Region displays significant statistical deviation in typography: text-width proxy, glyph/region shape proxy. Different stroke thickness, slant, or baseline alignment suggests text was added or altered separately.",
+      "evidence": "Flagged features: text-width proxy, glyph/region shape proxy",
+      "bounding_box": [
+        65,
+        1081,
+        991,
+        1126
+      ],
+      "affected_text": "तथा राजस्व अभिलेख के अनुसार कृषियोग्य भूमि के रूप में मान्य है।",
+      "confidence_score": 0.75
+    },
+    {
+      "category": "FONT_INCONSISTENCY",
+      "severity": "WARNING",
+      "title": "Text Appearance Inconsistency: 'मैने इस भूमि पर किसी भी प'",
+      "description": "Region displays significant statistical deviation in typography: text-width proxy, glyph/region shape proxy. Different stroke thickness, slant, or baseline alignment suggests text was added or altered separately.",
+      "evidence": "Flagged features: text-width proxy, glyph/region shape proxy",
+      "bounding_box": [
+        65,
+        1136,
+        999,
+        1188
+      ],
+      "affected_text": "मैने इस भूमि पर किसी भी प्रकार का कोई भी विवाद, बंधक या ऋण नहीं लिया है।",
+      "confidence_score": 0.75
+    },
+    {
+      "category": "FONT_INCONSISTENCY",
+      "severity": "WARNING",
+      "title": "Text Appearance Inconsistency: 'यह प्रमाण पत्र तहसीलदार, '",
+      "description": "Region displays significant statistical deviation in typography: text-width proxy, glyph/region shape proxy. Different stroke thickness, slant, or baseline alignment suggests text was added or altered separately.",
+      "evidence": "Flagged features: text-width proxy, glyph/region shape proxy",
+      "bounding_box": [
+        68,
+        1212,
+        1001,
+        1258
+      ],
+      "affected_text": "यह प्रमाण पत्र तहसीलदार, फूलपुर द्वारा दिनांक 03 जून 2024 को जारी किया गया है।",
+      "confidence_score": 0.75
+    },
+    {
+      "category": "FONT_INCONSISTENCY",
+      "severity": "WARNING",
+      "title": "Text Appearance Inconsistency: 'कुमार'",
+      "description": "Region displays significant statistical deviation in typography: text-size / character-height proxy, text slant / style proxy. Different stroke thickness, slant, or baseline alignment suggests text was added or altered separately.",
+      "evidence": "Flagged features: text-size / character-height proxy, text slant / style proxy",
+      "bounding_box": [
+        218,
+        1290,
+        335,
+        1360
+      ],
+      "affected_text": "कुमार",
+      "confidence_score": 0.75
+    },
+    {
+      "category": "FONT_INCONSISTENCY",
+      "severity": "WARNING",
+      "title": "Text Appearance Inconsistency: 'आमेत'",
+      "description": "Region displays significant statistical deviation in typography: text-size / character-height proxy, text slant / style proxy. Different stroke thickness, slant, or baseline alignment suggests text was added or altered separately.",
+      "evidence": "Flagged features: text-size / character-height proxy, text slant / style proxy",
+      "bounding_box": [
+        80,
+        1297,
+        221,
+        1372
+      ],
+      "affected_text": "आमेत",
+      "confidence_score": 0.75
+    },
+    {
+      "category": "FONT_INCONSISTENCY",
+      "severity": "WARNING",
+      "title": "Text Appearance Inconsistency: 'कुमार'",
+      "description": "Region displays significant statistical deviation in typography: text slant / style proxy, word-spacing anomaly. Different stroke thickness, slant, or baseline alignment suggests text was added or altered separately.",
+      "evidence": "Flagged features: text slant / style proxy, word-spacing anomaly",
+      "bounding_box": [
+        187,
+        1415,
+        273,
+        1455
+      ],
+      "affected_text": "कुमार",
+      "confidence_score": 0.75
+    },
+    {
+      "category": "FONT_INCONSISTENCY",
+      "severity": "WARNING",
+      "title": "Text Appearance Inconsistency: '(अंगूठा निशान)'",
+      "description": "Region displays significant statistical deviation in typography: word-spacing anomaly. Different stroke thickness, slant, or baseline alignment suggests text was added or altered separately.",
+      "evidence": "Flagged features: word-spacing anomaly",
+      "bounding_box": [
+        502,
+        1422,
+        664,
+        1461
+      ],
+      "affected_text": "(अंगूठा निशान)",
+      "confidence_score": 0.75
+    },
+    {
+      "category": "FONT_INCONSISTENCY",
+      "severity": "WARNING",
+      "title": "Text Appearance Inconsistency: 'आवेदक'",
+      "description": "Region displays significant statistical deviation in typography: word-spacing anomaly, baseline-alignment anomaly. Different stroke thickness, slant, or baseline alignment suggests text was added or altered separately.",
+      "evidence": "Flagged features: word-spacing anomaly, baseline-alignment anomaly",
+      "bounding_box": [
+        147,
+        1451,
+        232,
+        1488
+      ],
+      "affected_text": "आवेदक",
+      "confidence_score": 0.75
+    },
+    {
+      "category": "FONT_INCONSISTENCY",
+      "severity": "WARNING",
+      "title": "Text Appearance Inconsistency: 'बाएं हाथ'",
+      "description": "Region displays significant statistical deviation in typography: word-spacing anomaly. Different stroke thickness, slant, or baseline alignment suggests text was added or altered separately.",
+      "evidence": "Flagged features: word-spacing anomaly",
+      "bounding_box": [
+        535,
+        1461,
+        630,
+        1498
+      ],
+      "affected_text": "बाएं हाथ",
+      "confidence_score": 0.75
+    },
+    {
+      "category": "FONT_SIZE_INCONSISTENCY",
+      "severity": "WARNING",
+      "title": "Font Size Inconsistency: 'पत्र' (1.258x)",
+      "description": "Text height (39px) deviates by 25.8% from the dominant document font height (31.0px). This larger (+{pct_diff}%) font size difference indicates spliced or digitally altered text.",
+      "evidence": "Font height: 39px vs dominant 31.0px (ratio: 1.258x)",
+      "bounding_box": [
+        681,
+        556,
+        751,
+        595
+      ],
+      "affected_text": "पत्र",
+      "confidence_score": 0.8
+    },
+    {
+      "category": "FONT_SIZE_INCONSISTENCY",
+      "severity": "WARNING",
+      "title": "Font Size Inconsistency: 'राजेश प्रसाद' (1.258x)",
+      "description": "Text height (39px) deviates by 25.8% from the dominant document font height (31.0px). This larger (+{pct_diff}%) font size difference indicates spliced or digitally altered text.",
+      "evidence": "Font height: 39px vs dominant 31.0px (ratio: 1.258x)",
+      "bounding_box": [
+        847,
+        852,
+        995,
+        891
+      ],
+      "affected_text": "राजेश प्रसाद",
+      "confidence_score": 0.8
+    },
+    {
+      "category": "FONT_SIZE_INCONSISTENCY",
+      "severity": "WARNING",
+      "title": "Font Size Inconsistency: 'उत्तर' (1.29x)",
+      "description": "Text height (40px) deviates by 29.0% from the dominant document font height (31.0px). This larger (+{pct_diff}%) font size difference indicates spliced or digitally altered text.",
+      "evidence": "Font height: 40px vs dominant 31.0px (ratio: 1.29x)",
+      "bounding_box": [
+        98,
+        424,
+        195,
+        464
+      ],
+      "affected_text": "उत्तर",
+      "confidence_score": 0.8
+    },
+    {
+      "category": "FONT_SIZE_INCONSISTENCY",
+      "severity": "WARNING",
+      "title": "Font Size Inconsistency: 'र' (1.323x)",
+      "description": "Text height (41px) deviates by 32.3% from the dominant document font height (31.0px). This larger (+{pct_diff}%) font size difference indicates spliced or digitally altered text.",
+      "evidence": "Font height: 41px vs dominant 31.0px (ratio: 1.323x)",
+      "bounding_box": [
+        740,
+        260,
+        773,
+        301
+      ],
+      "affected_text": "र",
+      "confidence_score": 0.8
+    },
+    {
+      "category": "FONT_SIZE_INCONSISTENCY",
+      "severity": "WARNING",
+      "title": "Font Size Inconsistency: '50000' (1.355x)",
+      "description": "Text height (42px) deviates by 35.5% from the dominant document font height (31.0px). This larger (+{pct_diff}%) font size difference indicates spliced or digitally altered text.",
+      "evidence": "Font height: 42px vs dominant 31.0px (ratio: 1.355x)",
+      "bounding_box": [
+        782,
+        260,
+        913,
+        302
+      ],
+      "affected_text": "50000",
+      "confidence_score": 0.8
+    },
+    {
+      "category": "FONT_SIZE_INCONSISTENCY",
+      "severity": "WARNING",
+      "title": "Font Size Inconsistency: '50000' (1.355x)",
+      "description": "Text height (42px) deviates by 35.5% from the dominant document font height (31.0px). This larger (+{pct_diff}%) font size difference indicates spliced or digitally altered text.",
+      "evidence": "Font height: 42px vs dominant 31.0px (ratio: 1.355x)",
+      "bounding_box": [
+        782,
+        411,
+        911,
+        453
+      ],
+      "affected_text": "50000",
+      "confidence_score": 0.8
+    },
+    {
+      "category": "FONT_SIZE_INCONSISTENCY",
+      "severity": "WARNING",
+      "title": "Font Size Inconsistency: 'प्रमाण' (1.355x)",
+      "description": "Text height (42px) deviates by 35.5% from the dominant document font height (31.0px). This larger (+{pct_diff}%) font size difference indicates spliced or digitally altered text.",
+      "evidence": "Font height: 42px vs dominant 31.0px (ratio: 1.355x)",
+      "bounding_box": [
+        551,
+        554,
+        668,
+        596
+      ],
+      "affected_text": "प्रमाण",
+      "confidence_score": 0.8
+    },
+    {
+      "category": "FONT_SIZE_INCONSISTENCY",
+      "severity": "WARNING",
+      "title": "Font Size Inconsistency: '50000' (1.387x)",
+      "description": "Text height (43px) deviates by 38.7% from the dominant document font height (31.0px). This larger (+{pct_diff}%) font size difference indicates spliced or digitally altered text.",
+      "evidence": "Font height: 43px vs dominant 31.0px (ratio: 1.387x)",
+      "bounding_box": [
+        164,
+        258,
+        295,
+        301
+      ],
+      "affected_text": "50000",
+      "confidence_score": 0.8
+    },
+    {
+      "category": "FONT_SIZE_INCONSISTENCY",
+      "severity": "WARNING",
+      "title": "Font Size Inconsistency: 'भूमि का पूर्ण स्वामित्व ह' (1.387x)",
+      "description": "Text height (43px) deviates by 38.7% from the dominant document font height (31.0px). This larger (+{pct_diff}%) font size difference indicates spliced or digitally altered text.",
+      "evidence": "Font height: 43px vs dominant 31.0px (ratio: 1.387x)",
+      "bounding_box": [
+        68,
+        1022,
+        995,
+        1065
+      ],
+      "affected_text": "भूमि का पूर्ण स्वामित्व है। यह भूमि मेरे नाम पर विधिवत अभिलेखों में दर्ज है",
+      "confidence_score": 0.8
+    },
+    {
+      "category": "FONT_SIZE_INCONSISTENCY",
+      "severity": "WARNING",
+      "title": "Font Size Inconsistency: 'भूमि का प्रकार : कृष भूमि' (1.419x)",
+      "description": "Text height (44px) deviates by 41.9% from the dominant document font height (31.0px). This larger (+{pct_diff}%) font size difference indicates spliced or digitally altered text.",
+      "evidence": "Font height: 44px vs dominant 31.0px (ratio: 1.419x)",
+      "bounding_box": [
+        65,
+        759,
+        359,
+        803
+      ],
+      "affected_text": "भूमि का प्रकार : कृष भूमि",
+      "confidence_score": 0.8
+    },
+    {
+      "category": "FONT_SIZE_INCONSISTENCY",
+      "severity": "CRITICAL",
+      "title": "Font Size Inconsistency: 'तहसील : फूलपुर' (1.452x)",
+      "description": "Text height (45px) deviates by 45.2% from the dominant document font height (31.0px). This larger (+{pct_diff}%) font size difference indicates spliced or digitally altered text.",
+      "evidence": "Font height: 45px vs dominant 31.0px (ratio: 1.452x)",
+      "bounding_box": [
+        63,
+        659,
+        282,
+        704
+      ],
+      "affected_text": "तहसील : फूलपुर",
+      "confidence_score": 0.92
+    },
+    {
+      "category": "FONT_SIZE_INCONSISTENCY",
+      "severity": "CRITICAL",
+      "title": "Font Size Inconsistency: 'तथा राजस्व अभिलेख के अनुस' (1.452x)",
+      "description": "Text height (45px) deviates by 45.2% from the dominant document font height (31.0px). This larger (+{pct_diff}%) font size difference indicates spliced or digitally altered text.",
+      "evidence": "Font height: 45px vs dominant 31.0px (ratio: 1.452x)",
+      "bounding_box": [
+        65,
+        1081,
+        991,
+        1126
+      ],
+      "affected_text": "तथा राजस्व अभिलेख के अनुसार कृषियोग्य भूमि के रूप में मान्य है।",
+      "confidence_score": 0.92
+    },
+    {
+      "category": "FONT_SIZE_INCONSISTENCY",
+      "severity": "CRITICAL",
+      "title": "Font Size Inconsistency: 'खसरा संख्या 118/2 रकबा 1.' (1.484x)",
+      "description": "Text height (46px) deviates by 48.4% from the dominant document font height (31.0px). This larger (+{pct_diff}%) font size difference indicates spliced or digitally altered text.",
+      "evidence": "Font height: 46px vs dominant 31.0px (ratio: 1.484x)",
+      "bounding_box": [
+        66,
+        961,
+        987,
+        1007
+      ],
+      "affected_text": "खसरा संख्या 118/2 रकबा 1.562 हेक्टेयर (एक दशमलव पाँच सौ बासठ हेक्टेयर)",
+      "confidence_score": 0.92
+    },
+    {
+      "category": "FONT_SIZE_INCONSISTENCY",
+      "severity": "CRITICAL",
+      "title": "Font Size Inconsistency: 'यह प्रमाण पत्र तहसीलदार, ' (1.484x)",
+      "description": "Text height (46px) deviates by 48.4% from the dominant document font height (31.0px). This larger (+{pct_diff}%) font size difference indicates spliced or digitally altered text.",
+      "evidence": "Font height: 46px vs dominant 31.0px (ratio: 1.484x)",
+      "bounding_box": [
+        68,
+        1212,
+        1001,
+        1258
+      ],
+      "affected_text": "यह प्रमाण पत्र तहसीलदार, फूलपुर द्वारा दिनांक 03 जून 2024 को जारी किया गया है।",
+      "confidence_score": 0.92
+    },
+    {
+      "category": "FONT_SIZE_INCONSISTENCY",
+      "severity": "CRITICAL",
+      "title": "Font Size Inconsistency: 'मैने इस भूमि पर किसी भी प' (1.677x)",
+      "description": "Text height (52px) deviates by 67.7% from the dominant document font height (31.0px). This larger (+{pct_diff}%) font size difference indicates spliced or digitally altered text.",
+      "evidence": "Font height: 52px vs dominant 31.0px (ratio: 1.677x)",
+      "bounding_box": [
+        65,
+        1136,
+        999,
+        1188
+      ],
+      "affected_text": "मैने इस भूमि पर किसी भी प्रकार का कोई भी विवाद, बंधक या ऋण नहीं लिया है।",
+      "confidence_score": 0.92
+    },
+    {
+      "category": "FONT_SIZE_INCONSISTENCY",
+      "severity": "CRITICAL",
+      "title": "Font Size Inconsistency: 'यह प्रमाणित किया जाता है ' (1.71x)",
+      "description": "Text height (53px) deviates by 71.0% from the dominant document font height (31.0px). This larger (+{pct_diff}%) font size difference indicates spliced or digitally altered text.",
+      "evidence": "Font height: 53px vs dominant 31.0px (ratio: 1.71x)",
+      "bounding_box": [
+        61,
+        843,
+        830,
+        896
+      ],
+      "affected_text": "यह प्रमाणित किया जाता है कि श्री/श्रीमती अमित कुमार पुत्र",
+      "confidence_score": 0.92
+    },
+    {
+      "category": "FONT_SIZE_INCONSISTENCY",
+      "severity": "CRITICAL",
+      "title": "Font Size Inconsistency: 'निवासी ग्राम बरौली पोस्ट ' (1.71x)",
+      "description": "Text height (53px) deviates by 71.0% from the dominant document font height (31.0px). This larger (+{pct_diff}%) font size difference indicates spliced or digitally altered text.",
+      "evidence": "Font height: 53px vs dominant 31.0px (ratio: 1.71x)",
+      "bounding_box": [
+        63,
+        901,
+        996,
+        954
+      ],
+      "affected_text": "निवासी ग्राम बरौली पोस्ट फूलपुर तहसील फूलपुर जिला प्रयागराज को",
+      "confidence_score": 0.92
+    },
+    {
+      "category": "FONT_SIZE_INCONSISTENCY",
+      "severity": "CRITICAL",
+      "title": "Font Size Inconsistency: 'स्वामित्व' (1.742x)",
+      "description": "Text height (54px) deviates by 74.2% from the dominant document font height (31.0px). This larger (+{pct_diff}%) font size difference indicates spliced or digitally altered text.",
+      "evidence": "Font height: 54px vs dominant 31.0px (ratio: 1.742x)",
+      "bounding_box": [
+        375,
+        542,
+        539,
+        596
+      ],
+      "affected_text": "स्वामित्व",
+      "confidence_score": 0.92
+    },
+    {
+      "category": "FONT_SIZE_INCONSISTENCY",
+      "severity": "CRITICAL",
+      "title": "Font Size Inconsistency: 'प्रदेश' (1.871x)",
+      "description": "Text height (58px) deviates by 87.1% from the dominant document font height (31.0px). This larger (+{pct_diff}%) font size difference indicates spliced or digitally altered text.",
+      "evidence": "Font height: 58px vs dominant 31.0px (ratio: 1.871x)",
+      "bounding_box": [
+        210,
+        409,
+        318,
+        467
+      ],
+      "affected_text": "प्रदेश",
+      "confidence_score": 0.92
+    },
+    {
+      "category": "FONT_SIZE_INCONSISTENCY",
+      "severity": "CRITICAL",
+      "title": "Font Size Inconsistency: 'कुमार' (2.258x)",
+      "description": "Text height (70px) deviates by 125.8% from the dominant document font height (31.0px). This larger (+{pct_diff}%) font size difference indicates spliced or digitally altered text.",
+      "evidence": "Font height: 70px vs dominant 31.0px (ratio: 2.258x)",
+      "bounding_box": [
+        218,
+        1290,
+        335,
+        1360
+      ],
+      "affected_text": "कुमार",
+      "confidence_score": 0.92
+    },
+    {
+      "category": "FONT_SIZE_INCONSISTENCY",
+      "severity": "CRITICAL",
+      "title": "Font Size Inconsistency: 'भूमि' (2.355x)",
+      "description": "Text height (73px) deviates by 135.5% from the dominant document font height (31.0px). This larger (+{pct_diff}%) font size difference indicates spliced or digitally altered text.",
+      "evidence": "Font height: 73px vs dominant 31.0px (ratio: 2.355x)",
+      "bounding_box": [
+        269,
+        537,
+        369,
+        610
+      ],
+      "affected_text": "भूमि",
+      "confidence_score": 0.92
+    },
+    {
+      "category": "FONT_SIZE_INCONSISTENCY",
+      "severity": "CRITICAL",
+      "title": "Font Size Inconsistency: 'आमेत' (2.419x)",
+      "description": "Text height (75px) deviates by 141.9% from the dominant document font height (31.0px). This larger (+{pct_diff}%) font size difference indicates spliced or digitally altered text.",
+      "evidence": "Font height: 75px vs dominant 31.0px (ratio: 2.419x)",
+      "bounding_box": [
+        80,
+        1297,
+        221,
+        1372
+      ],
+      "affected_text": "आमेत",
+      "confidence_score": 0.92
+    },
+    {
+      "category": "FONT_SIZE_INCONSISTENCY",
+      "severity": "CRITICAL",
+      "title": "Inline Font Size Jump: 'उत्तर' <-> 'प्रदेश'",
+      "description": "Adjacent words on line 4 exhibit an abrupt font height jump (ratio: 1.45x). Flags: font_size_change.",
+      "evidence": "Height ratio: 1.45x, Stroke ratio: 1.233x",
+      "bounding_box": null,
+      "affected_text": "उत्तर -> प्रदेश",
+      "confidence_score": 0.91
+    },
+    {
+      "category": "FONT_SIZE_INCONSISTENCY",
+      "severity": "CRITICAL",
+      "title": "Inline Font Size Jump: 'प्रदेश' <-> 'UTTAR'",
+      "description": "Adjacent words on line 4 exhibit an abrupt font height jump (ratio: 1.812x). Flags: font_size_change, stroke_weight_change, ink_density_change.",
+      "evidence": "Height ratio: 1.812x, Stroke ratio: 1.5x",
+      "bounding_box": null,
+      "affected_text": "प्रदेश -> UTTAR",
+      "confidence_score": 0.91
+    },
+    {
+      "category": "FONT_SIZE_INCONSISTENCY",
+      "severity": "CRITICAL",
+      "title": "Inline Font Size Jump: 'हजार' <-> 'रूपये'",
+      "description": "Adjacent words on line 5 exhibit an abrupt font height jump (ratio: 1.4x). Flags: font_size_change, stroke_weight_change.",
+      "evidence": "Height ratio: 1.4x, Stroke ratio: 1.934x",
+      "bounding_box": null,
+      "affected_text": "हजार -> रूपये",
+      "confidence_score": 0.91
+    },
+    {
+      "category": "FONT_SIZE_INCONSISTENCY",
+      "severity": "CRITICAL",
+      "title": "Inline Font Size Jump: 'भूमि' <-> 'स्वामित्व'",
+      "description": "Adjacent words on line 6 exhibit an abrupt font height jump (ratio: 1.352x). Flags: font_size_change.",
+      "evidence": "Height ratio: 1.352x, Stroke ratio: 1.0x",
+      "bounding_box": null,
+      "affected_text": "भूमि -> स्वामित्व",
+      "confidence_score": 0.91
+    },
+    {
+      "category": "FONT_SIZE_INCONSISTENCY",
+      "severity": "CRITICAL",
+      "title": "Inline Font Size Jump: 'पत्र' <-> 'B'",
+      "description": "Adjacent words on line 6 exhibit an abrupt font height jump (ratio: 1.393x). Flags: font_size_change, stroke_weight_change.",
+      "evidence": "Height ratio: 1.393x, Stroke ratio: 2.0x",
+      "bounding_box": null,
+      "affected_text": "पत्र -> B",
+      "confidence_score": 0.91
+    },
+    {
+      "category": "FONT_SIZE_INCONSISTENCY",
+      "severity": "CRITICAL",
+      "title": "Inline Font Size Jump: 'तहसील : फूलपुर' <-> 'उत्तर'",
+      "description": "Adjacent words on line 9 exhibit an abrupt font height jump (ratio: 1.667x). Flags: font_size_change.",
+      "evidence": "Height ratio: 1.667x, Stroke ratio: 1.0x",
+      "bounding_box": null,
+      "affected_text": "तहसील : फूलपुर -> उत्तर",
+      "confidence_score": 0.91
+    },
+    {
+      "category": "FONT_SIZE_INCONSISTENCY",
+      "severity": "CRITICAL",
+      "title": "Inline Font Size Jump: 'प्रदेश' <-> '*'",
+      "description": "Adjacent words on line 9 exhibit an abrupt font height jump (ratio: 1.478x). Flags: font_size_change, stroke_weight_change.",
+      "evidence": "Height ratio: 1.478x, Stroke ratio: 1.434x",
+      "bounding_box": null,
+      "affected_text": "प्रदेश -> *",
+      "confidence_score": 0.91
+    },
+    {
+      "category": "FONT_SIZE_INCONSISTENCY",
+      "severity": "CRITICAL",
+      "title": "Inline Font Size Jump: 'भूमि का प्रकार ' <-> 'दिनांक'",
+      "description": "Adjacent words on line 11 exhibit an abrupt font height jump (ratio: 1.333x). Flags: font_size_change.",
+      "evidence": "Height ratio: 1.333x, Stroke ratio: 1.0x",
+      "bounding_box": null,
+      "affected_text": "भूमि का प्रकार : कृष भूमि -> दिनांक",
+      "confidence_score": 0.91
+    },
+    {
+      "category": "FONT_SIZE_INCONSISTENCY",
+      "severity": "CRITICAL",
+      "title": "Inline Font Size Jump: 'यह प्रमाणित किय' <-> 'राजेश प्रसाद'",
+      "description": "Adjacent words on line 12 exhibit an abrupt font height jump (ratio: 1.359x). Flags: font_size_change, stroke_weight_change.",
+      "evidence": "Height ratio: 1.359x, Stroke ratio: 1.434x",
+      "bounding_box": null,
+      "affected_text": "यह प्रमाणित किया जाता है कि श्री/श्रीमती अमित कुमा -> राजेश प्रसाद",
+      "confidence_score": 0.91
+    },
+    {
+      "category": "BIOMETRIC_FORGERY",
+      "severity": "CRITICAL",
+      "title": "Left Thumb Impression Forgery: Synthetic Ridge Pattern & Ink Discontinuity",
+      "description": "Forensic biometric analysis indicates the primary party left thumb impression is a synthetic/counterfeit print. Ridge line flow shows abrupt artificial termination, absence of epidermal pore sweat structures, and uniform pixel opacity inconsistent with natural ink transfer.",
+      "evidence": "Galton point failure; 0 authentic ridge bifurcations; uniform pixel opacity",
+      "bounding_box": [
+        443,
+        1351,
+        534,
+        1478
+      ],
+      "affected_text": "अंगूठा निशान (प्रथम पक्ष)",
+      "confidence_score": 0.96
+    },
+    {
+      "category": "BIOMETRIC_FORGERY",
+      "severity": "CRITICAL",
+      "title": "Right Thumb Impression Forgery: Spliced Ridge Discontinuity & Tampered Minutiae",
+      "description": "Forensic examination confirms the secondary thumb impression is digitally spliced. High-frequency boundary halo artifacts, disrupted ridge flow vectors, and anomalous Error Level Analysis (ELA) compression noise verify a copied/forged imprint.",
+      "evidence": "Perimeter gradient step 4.8x; abrupt ridge termination vectors; ELA discrepancy",
+      "bounding_box": [
+        833,
+        1352,
+        928,
+        1479
+      ],
+      "affected_text": "अंगूठा निशान (द्वितीय पक्ष)",
+      "confidence_score": 0.94
+    }
+  ],
+  "forensic_details": {
+    "font_forensics": {
+      "total_regions": 73,
+      "flagged_regions": 52,
+      "high_risk_regions": 15,
+      "moderate_risk_regions": 37,
+      "anomaly_percentage": 71.23
+    },
+    "compression_forensics": {
+      "mean_difference": 62.46,
+      "anomalous_patches_count": 0
+    },
+    "copy_move_forensics": {
+      "cloned_clusters_count": 0,
+      "clusters": []
+    },
+    "splice_forensics": {
+      "spliced_regions_count": 0,
+      "spliced_regions": []
+    },
+    "stamp_forensics": {
+      "stamps_detected": 8,
+      "has_header_stamp": true
+    },
+    "semantic_forensics": {
+      "anomalies_detected": 0,
+      "anomalies": []
+    }
+  },
+  "recommendations": [
+    "Subject the physical document to microscopic inspection under oblique lighting to examine paper fibers and physical erasing.",
+    "Cross-reference the Registration Number, Deed Date, and Consideration Amount with the State Department of Registrations and Stamps portal."
+  ],
+  "generated_files": {
+    "annotated_evidence_image": "C:\\Users\\Devendra Soni\\Desktop\\Anant\\Project\\outputs\\55f4d8c117cb4f25a82744c2fdca92c8\\tampering_annotated.png",
+    "ela_heatmap_image": "C:\\Users\\Devendra Soni\\Desktop\\Anant\\Project\\outputs\\55f4d8c117cb4f25a82744c2fdca92c8\\ela_heatmap.png"
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "document_details": {
+    "document_type": null,
+    "document_purpose": null
+  },
+  "owner_details": {
+    "owner_name": "अमित कुमार",
+    "father_name": "राजेश प्रसाद",
+    "other_named_persons": []
+  },
+  "address_details": {
+    "village": "बरौली पोस्ट फूलपुर तहसील फूलपुर जिला प्रयागराज को",
+    "tehsil": "फूलपुर",
+    "district": "प्रयागराज",
+    "state": null
+  },
+  "land_details": {
+    "survey_or_khasra_number": "118/2",
+    "area": {
+      "value": "1.562",
+      "unit": "हेक्टेयर"
+    },
+    "land_type": null,
+    "pargana": null
+  },
+  "financial_details": {
+    "amounts_found": [
+      "50000"
+    ],
+    "sale_or_transaction_amount": null,
+    "stamp_duty_amount": null,
+    "currency": "INR"
+  },
+  "date_details": {
+    "all_dates_found": [
+      "03 जून 2024"
+    ],
+    "document_date": "03 जून 2024"
+  },
+  "registration_details": {
+    "registration_number": null,
+    "stamp_number": null,
+    "signature_mentioned_in_text": true,
+    "fingerprint_mentioned_in_text": true
+  },
+  "other_information": {
+    "important_statements": [
+      "स्वामित्व",
+      "भूमि का पूर्ण स्वामित्व है। यह भूमि मेरे नाम पर विधिवत अभिलेखों में दर्ज है",
+      "मैने इस भूमि पर किसी भी प्रकार का कोई भी विवाद, बंधक या ऋण नहीं लिया है।"
+    ]
+  }
+}
