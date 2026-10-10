@@ -37,10 +37,10 @@ export function Navbar() {
       className="fixed top-6 left-1/2 -translate-x-1/2 z-50 w-[calc(100%-2rem)] max-w-5xl"
     >
       <motion.nav
-        className={`w-full border border-white/10 shadow-[0_12px_40px_0_rgba(0,0,0,0.7)] backdrop-blur-2xl transition-all duration-300 ${
+        className={`w-full border border-[#e6e2d8] shadow-[0_12px_40px_0_rgba(42,33,27,0.12)] backdrop-blur-2xl transition-all duration-300 ${
           mobileMenuOpen
-            ? 'rounded-3xl bg-[#0c1128]/95 p-5'
-            : 'rounded-full bg-[#0c1128]/85 px-4 py-2.5 sm:px-6'
+            ? 'rounded-3xl bg-[#fbfbf9]/95 p-5'
+            : 'rounded-full bg-[#fbfbf9]/85 px-4 py-2.5 sm:px-6'
         }`}
         aria-label="Main Navigation"
       >
@@ -48,18 +48,18 @@ export function Navbar() {
           {/* BhuSatya Brand Logo */}
           <Link
             href="/"
-            className="group flex items-center gap-2.5 font-black text-xl tracking-tighter text-white transition-opacity hover:opacity-90"
+            className="group flex items-center gap-2.5 font-black text-xl tracking-tighter text-[#2a211b] transition-opacity hover:opacity-90"
           >
-            <div className="relative flex size-8 items-center justify-center rounded-full bg-gradient-to-tr from-blue-500 via-indigo-500 to-purple-600 p-[1px] shadow-[0_0_15px_rgba(0,240,255,0.4)]">
-              <div className="flex size-full items-center justify-center rounded-full bg-[#0c1128]">
-                <ShieldCheck className="size-4.5 text-[#00f0ff] transition-transform duration-500 group-hover:scale-110" />
+            <div className="relative flex size-8 items-center justify-center rounded-full bg-gradient-to-tr from-[#b34e2b] via-[#9c4222] to-[#3b2b21] p-[1px] shadow-[0_0_15px_rgba(179,78,43,0.3)]">
+              <div className="flex size-full items-center justify-center rounded-full bg-[#fbfbf9]">
+                <ShieldCheck className="size-4.5 text-[#b34e2b] transition-transform duration-500 group-hover:scale-110" />
               </div>
             </div>
             <div className="flex flex-col text-left leading-none">
-              <span className="font-outfit font-extrabold tracking-tight text-lg text-white">
-                BhuSatya<span className="text-[#00f0ff]">.ai</span>
+              <span className="font-outfit font-extrabold tracking-tight text-lg text-[#2a211b]">
+                BhuSatya<span className="text-[#b34e2b]">.ai</span>
               </span>
-              <span className="text-[9px] uppercase tracking-widest text-gray-400 font-mono">
+              <span className="text-[9px] uppercase tracking-widest text-[#6b6158] font-mono">
                 Land Forensics
               </span>
             </div>
@@ -71,10 +71,10 @@ export function Navbar() {
               <a
                 key={link.label}
                 href={link.href}
-                className="group relative font-outfit text-sm font-medium text-gray-300 transition-colors hover:text-white py-1"
+                className="group relative font-outfit text-sm font-medium text-[#6b6158] transition-colors hover:text-[#2a211b] py-1"
               >
                 {link.label}
-                <span className="absolute bottom-0 left-0 h-[1.5px] w-0 bg-gradient-to-r from-blue-400 to-purple-500 transition-all duration-300 ease-out group-hover:w-full" />
+                <span className="absolute bottom-0 left-0 h-[1.5px] w-0 bg-gradient-to-r from-[#b34e2b] to-[#9c4222] transition-all duration-300 ease-out group-hover:w-full" />
               </a>
             ))}
           </div>
@@ -83,14 +83,14 @@ export function Navbar() {
           <div className="hidden md:flex items-center gap-3">
             <Link
               href="/dashboard"
-              className="group text-xs font-semibold tracking-wider uppercase text-gray-300 hover:text-[#00f0ff] transition-colors px-3 py-1.5 flex items-center gap-1.5"
+              className="group text-xs font-semibold tracking-wider uppercase text-[#6b6158] hover:text-[#b34e2b] transition-colors px-3 py-1.5 flex items-center gap-1.5"
             >
-              <span className="size-1.5 rounded-full bg-emerald-400 animate-pulse" />
+              <span className="size-1.5 rounded-full bg-[#2f6b46] animate-pulse" />
               Command Center
             </Link>
             <Link
               href="/verification/new"
-              className="group relative inline-flex items-center gap-2 rounded-full bg-white px-5 py-2 font-outfit text-sm font-bold text-black shadow-[0_0_20px_rgba(255,255,255,0.25)] transition-all duration-300 hover:scale-105 active:scale-95 hover:bg-gray-100"
+              className="group relative inline-flex items-center gap-2 rounded-full bg-[#b34e2b] px-5 py-2 font-outfit text-sm font-bold text-white shadow-[0_0_20px_rgba(179,78,43,0.25)] transition-all duration-300 hover:scale-105 active:scale-95 hover:bg-[#9c4222]"
             >
               Verify Document
               <ArrowUpRight className="size-3.5 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
@@ -101,7 +101,7 @@ export function Navbar() {
           <button
             type="button"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="flex md:hidden size-9 items-center justify-center rounded-full border border-white/10 bg-white/5 text-gray-300 hover:text-white"
+            className="flex md:hidden size-9 items-center justify-center rounded-full border border-[#e6e2d8] bg-[#f3f1ea] text-[#6b6158] hover:text-[#2a211b]"
             aria-label={mobileMenuOpen ? 'Close navigation menu' : 'Open navigation menu'}
           >
             {mobileMenuOpen ? <X className="size-5" /> : <Menu className="size-5" />}
@@ -124,7 +124,7 @@ export function Navbar() {
                     key={link.label}
                     href={link.href}
                     onClick={() => setMobileMenuOpen(false)}
-                    className="font-outfit text-base font-medium text-gray-300 hover:text-white transition-colors px-2 py-1.5 rounded-lg hover:bg-white/5"
+                    className="font-outfit text-base font-medium text-[#6b6158] hover:text-[#2a211b] transition-colors px-2 py-1.5 rounded-lg hover:bg-[#f3f1ea]"
                   >
                     {link.label}
                   </a>
@@ -132,7 +132,7 @@ export function Navbar() {
                 <Link
                   href="/dashboard"
                   onClick={() => setMobileMenuOpen(false)}
-                  className="font-outfit text-base font-medium text-[#00f0ff] px-2 py-1.5 rounded-lg hover:bg-white/5 flex items-center justify-between"
+                  className="font-outfit text-base font-medium text-[#b34e2b] px-2 py-1.5 rounded-lg hover:bg-[#f3f1ea] flex items-center justify-between"
                 >
                   Live Command Center
                   <ArrowUpRight className="size-4" />
@@ -140,18 +140,18 @@ export function Navbar() {
                 <Link
                   href="/reports"
                   onClick={() => setMobileMenuOpen(false)}
-                  className="font-outfit text-base font-medium text-gray-300 px-2 py-1.5 rounded-lg hover:bg-white/5 flex items-center justify-between"
+                  className="font-outfit text-base font-medium text-[#6b6158] px-2 py-1.5 rounded-lg hover:bg-[#f3f1ea] flex items-center justify-between"
                 >
                   Forensic Review Queue
                   <FileSearch className="size-4" />
                 </Link>
               </div>
 
-              <div className="pt-2 border-t border-white/10">
+              <div className="pt-2 border-t border-[#e6e2d8]">
                 <Link
                   href="/verification/new"
                   onClick={() => setMobileMenuOpen(false)}
-                  className="flex w-full items-center justify-center gap-2 rounded-full bg-white py-3 font-outfit text-sm font-bold text-black shadow-[0_0_20px_rgba(255,255,255,0.2)]"
+                  className="flex w-full items-center justify-center gap-2 rounded-full bg-[#b34e2b] py-3 font-outfit text-sm font-bold text-white shadow-[0_0_20px_rgba(179,78,43,0.2)]"
                 >
                   Start New Verification
                   <ArrowUpRight className="size-4" />

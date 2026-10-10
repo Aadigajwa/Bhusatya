@@ -12,7 +12,10 @@ import {
   Settings,
   ShieldCheck,
   X,
+  LogOut,
 } from 'lucide-react'
+import { useRouter } from 'next/navigation'
+import { logoutUser } from '@/lib/auth'
 import { cn } from '@/lib/utils'
 import { buttonVariants } from '@/components/ui/button'
 
@@ -104,22 +107,46 @@ function SidebarNav({ pathname, onNavigate }: { pathname: string; onNavigate?: (
   )
 }
 
-function SidebarFooter() {
+function SidebarFooter({ onLogout }: { onLogout: () => void }) {
   return (
-    <div className="mt-auto border-t border-sidebar-border px-5 py-4">
-      <div className="flex items-center gap-2 text-sm text-sidebar-muted">
-        <span aria-hidden className="size-1.5 rounded-full bg-[#6fae86]" />
-        Registry connection healthy
+    <div className="mt-auto border-t border-sidebar-border px-4 py-3.5 flex flex-col gap-3">
+      <div className="flex items-center justify-between">
+        <div className="flex items-center gap-2 text-xs text-sidebar-muted">
+          <span aria-hidden className="size-1.5 rounded-full bg-[#6fae86]" />
+          Registry healthy
+        </div>
+        <p className="font-mono text-[10px] text-sidebar-muted/70">v2.4-GOV</p>
       </div>
-      <p className="mt-1 font-mono text-xs text-sidebar-muted/80">Last sync 09 Oct 2026, 09:58</p>
+
+      <button
+        type="button"
+        onClick={onLogout}
+        className="group flex w-full items-center justify-between rounded-md border border-sidebar-border/70 bg-sidebar-accent/50 px-2.5 py-2 text-xs font-medium text-sidebar-muted transition-all hover:border-[#b34e2b]/50 hover:bg-[#b34e2b]/15 hover:text-white"
+        aria-label="Log out of verifier session"
+      >
+        <span className="flex items-center gap-2">
+          <LogOut className="size-3.5 text-[#e06c52] transition-transform group-hover:-translate-x-0.5" />
+          <span>Sign Out</span>
+        </span>
+        <span className="text-[10px] uppercase font-mono tracking-wider text-sidebar-muted group-hover:text-sidebar-foreground">
+          admin
+        </span>
+      </button>
     </div>
   )
 }
 
 export function AppShell({ children }: { children: React.ReactNode }) {
   const pathname = usePathname()
+  const router = useRouter()
   const [mobileOpen, setMobileOpen] = useState(false)
   const crumbs = crumbsFor(pathname)
+
+  const handleLogout = async () => {
+    await logoutUser()
+    router.push('/')
+    router.refresh()
+  }
 
   return (
     <div className="flex h-dvh overflow-hidden bg-background">
@@ -132,7 +159,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
         <div className="flex-1 overflow-y-auto py-4">
           <SidebarNav pathname={pathname} />
         </div>
-        <SidebarFooter />
+        <SidebarFooter onLogout={handleLogout} />
       </aside>
 
       {mobileOpen ? (
@@ -158,7 +185,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
             <div className="flex-1 overflow-y-auto py-4">
               <SidebarNav pathname={pathname} onNavigate={() => setMobileOpen(false)} />
             </div>
-            <SidebarFooter />
+            <SidebarFooter onLogout={handleLogout} />
           </aside>
         </div>
       ) : null}

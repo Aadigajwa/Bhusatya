@@ -26,8 +26,8 @@ const capabilities = [
       'Regional Glyph Anomalies (ऱ vs ₹)',
     ],
     icon: Type,
-    accent: 'from-blue-500/30 to-cyan-500/10',
-    iconColor: 'text-[#00f0ff]',
+    accent: 'from-[#b34e2b]/20 to-[#b34e2b]/5',
+    iconColor: 'text-[#b34e2b]',
   },
   {
     id: 'biometrics-seals',
@@ -42,8 +42,8 @@ const capabilities = [
       'Treasury Seal Star Marker (*) Inspection',
     ],
     icon: Fingerprint,
-    accent: 'from-purple-500/30 to-pink-500/10',
-    iconColor: 'text-[#b026ff]',
+    accent: 'from-[#3b2b21]/20 to-[#3b2b21]/5',
+    iconColor: 'text-[#3b2b21]',
   },
   {
     id: 'ela-splicing',
@@ -58,8 +58,8 @@ const capabilities = [
       'Copy-Move & Cloning Detection',
     ],
     icon: Layers,
-    accent: 'from-indigo-500/30 to-blue-500/10',
-    iconColor: 'text-indigo-400',
+    accent: 'from-[#8a5a0b]/20 to-[#8a5a0b]/5',
+    iconColor: 'text-[#8a5a0b]',
   },
   {
     id: 'registry-crosscheck',
@@ -74,8 +74,8 @@ const capabilities = [
       'Mutation Entry No. Integrity',
     ],
     icon: Database,
-    accent: 'from-emerald-500/30 to-teal-500/10',
-    iconColor: 'text-emerald-400',
+    accent: 'from-[#2f6b46]/20 to-[#2f6b46]/5',
+    iconColor: 'text-[#2f6b46]',
   },
 ]
 
@@ -83,7 +83,7 @@ export function Services() {
   return (
     <section
       id="capabilities"
-      className="relative w-full py-24 sm:py-32 bg-[#0c1128] overflow-hidden"
+      className="relative w-full py-24 sm:py-32 bg-[#fbfbf9] overflow-hidden"
       aria-label="Capabilities Section"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -95,17 +95,17 @@ export function Services() {
           transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
           className="flex flex-col items-start mb-16 sm:mb-20 max-w-3xl"
         >
-          <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3.5 py-1 backdrop-blur-md">
-            <span className="text-xs font-bold uppercase tracking-widest text-[#00f0ff]">
+          <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-[#e6e2d8] bg-[#f3f1ea] px-3.5 py-1 backdrop-blur-md">
+            <span className="text-xs font-bold uppercase tracking-widest text-[#b34e2b]">
               Forensic Suite
             </span>
           </div>
 
-          <h2 className="font-outfit font-black tracking-tighter text-3xl sm:text-5xl md:text-6xl text-white leading-[1.1]">
+          <h2 className="font-outfit font-black tracking-tighter text-3xl sm:text-5xl md:text-6xl text-[#2a211b] leading-[1.1]">
             Capabilities Built Specifically for Land Record Verification
           </h2>
 
-          <p className="mt-6 font-outfit text-base sm:text-lg font-light leading-relaxed text-gray-300">
+          <p className="mt-6 font-outfit text-base sm:text-lg font-light leading-relaxed text-[#6b6158]">
             Engineered to assist sub-registrars, revenue officers, and forensic investigators in identifying high-stakes forgery before fraudulent mutations are registered.
           </p>
         </motion.div>
@@ -121,35 +121,35 @@ export function Services() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: '-100px' }}
                 transition={{ duration: 0.7, delay: index * 0.1, ease: [0.16, 1, 0.3, 1] }}
-                className="group relative flex flex-col justify-between overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-8 sm:p-10 backdrop-blur-md transition-all duration-500 hover:border-white/20 hover:bg-white/[0.08] hover:shadow-[0_20px_50px_rgba(0,0,0,0.5)]"
+                className="group relative flex flex-col justify-between overflow-hidden rounded-3xl border border-[#e6e2d8] bg-[#fbfbf9] p-8 sm:p-10 backdrop-blur-md transition-all duration-500 hover:border-[#d9d4c7] hover:bg-[#f3f1ea]/50 hover:shadow-[0_20px_50px_rgba(42,33,27,0.08)]"
               >
                 {/* Quarter-Circle Icon Container situated in top-right corner */}
-                <div className="absolute top-0 right-0 size-28 sm:size-32 rounded-bl-full bg-gradient-to-bl from-white/10 via-white/5 to-transparent flex items-start justify-end p-5 transition-transform duration-500 group-hover:scale-105">
-                  <div className="flex size-11 sm:size-12 items-center justify-center rounded-full bg-[#0c1128]/90 border border-white/10 shadow-lg">
+                <div className="absolute top-0 right-0 size-28 sm:size-32 rounded-bl-full bg-gradient-to-bl from-[#f0ede5] via-[#f3f1ea]/50 to-transparent flex items-start justify-end p-5 transition-transform duration-500 group-hover:scale-105">
+                  <div className="flex size-11 sm:size-12 items-center justify-center rounded-full bg-[#fbfbf9] border border-[#e6e2d8] shadow-lg">
                     <Icon className={`size-5 sm:size-6 ${service.iconColor}`} />
                   </div>
                 </div>
 
                 {/* Card Content */}
                 <div className="relative z-10 pr-16 sm:pr-20">
-                  <span className="text-xs font-bold uppercase tracking-widest text-gray-400">
+                  <span className="text-xs font-bold uppercase tracking-widest text-[#a99f92]">
                     {service.category}
                   </span>
-                  <h3 className="mt-3 font-outfit font-black text-2xl sm:text-3xl text-white tracking-tight group-hover:text-blue-200 transition-colors">
+                  <h3 className="mt-3 font-outfit font-black text-2xl sm:text-3xl text-[#2a211b] tracking-tight group-hover:text-[#3b2b21] transition-colors">
                     {service.title}
                   </h3>
-                  <p className="mt-4 font-outfit text-sm sm:text-base font-light leading-relaxed text-gray-300">
+                  <p className="mt-4 font-outfit text-sm sm:text-base font-light leading-relaxed text-[#6b6158]">
                     {service.description}
                   </p>
                 </div>
 
                 {/* Features Pill List & Live Action */}
-                <div className="relative z-10 mt-8 pt-6 border-t border-white/5 flex flex-wrap items-center justify-between gap-4">
+                <div className="relative z-10 mt-8 pt-6 border-t border-[#e6e2d8] flex flex-wrap items-center justify-between gap-4">
                   <div className="flex flex-wrap gap-2">
                     {service.features.map((feat) => (
                       <span
                         key={feat}
-                        className="rounded-full bg-white/5 px-3 py-1 font-outfit text-xs font-medium text-gray-400 border border-white/5"
+                        className="rounded-full bg-[#f3f1ea] px-3 py-1 font-outfit text-xs font-medium text-[#6b6158] border border-[#e6e2d8]"
                       >
                         {feat}
                       </span>
@@ -158,7 +158,7 @@ export function Services() {
 
                   <Link
                     href="/verification/new"
-                    className="inline-flex items-center gap-1.5 font-outfit text-xs font-bold uppercase tracking-wider text-white hover:text-[#00f0ff] transition-colors"
+                    className="inline-flex items-center gap-1.5 font-outfit text-xs font-bold uppercase tracking-wider text-[#2a211b] hover:text-[#b34e2b] transition-colors"
                   >
                     Test Feature
                     <ArrowUpRight className="size-3.5 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
